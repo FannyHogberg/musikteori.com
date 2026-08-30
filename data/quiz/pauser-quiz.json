@@ -1,0 +1,278 @@
+{
+  "title": "Quiz: Pauser",
+  "description": "Testa dina kunskaper om pauser",
+  "passingScore": 60,
+  "randomQuestions": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/helpaus.png",
+      "options": [
+        { "text": "Helpaus", "correct": true },
+        { "text": "Halvpaus", "correct": false },
+        { "text": "Fjärdedelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/halvpaus.png",
+      "options": [
+        { "text": "Helpaus", "correct": false },
+        { "text": "Halvpaus", "correct": true },
+        { "text": "Fjärdedelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/fjardedelsPause.png",
+      "options": [
+        { "text": "Halvpaus", "correct": false },
+        { "text": "Fjärdedelspaus", "correct": true },
+        { "text": "Åttondelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/attondelspause.png",
+      "options": [
+        { "text": "Fjärdedelspaus", "correct": false },
+        { "text": "Åttondelspaus", "correct": true },
+        { "text": "Sextondelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/sextondelsPause.png",
+      "options": [
+        { "text": "Åttondelspaus", "correct": false },
+        { "text": "Sextondelspaus", "correct": true },
+        { "text": "Fjärdedelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en helpaus?",
+      "options": [
+        { "image": "/images/noter/helpaus.png", "alt": "Paus 1", "correct": true },
+        { "image": "/images/noter/halvpaus.png", "alt": "Paus 2", "correct": false },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Paus 3", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en halvpaus?",
+      "options": [
+        { "image": "/images/noter/helpaus.png", "alt": "Paus 1", "correct": false },
+        { "image": "/images/noter/halvpaus.png", "alt": "Paus 2", "correct": true },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Paus 3", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en fjärdedelspaus?",
+      "options": [
+        { "image": "/images/noter/halvpaus.png", "alt": "Paus 1", "correct": false },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Paus 2", "correct": true },
+        { "image": "/images/noter/attondelspause.png", "alt": "Paus 3", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en åttondelspaus?",
+      "options": [
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Paus 1", "correct": false },
+        { "image": "/images/noter/attondelspause.png", "alt": "Paus 2", "correct": true },
+        { "image": "/images/noter/sextondelsPause.png", "alt": "Paus 3", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en sextondelspaus?",
+      "options": [
+        { "image": "/images/noter/attondelspause.png", "alt": "Paus 1", "correct": false },
+        { "image": "/images/noter/sextondelsPause.png", "alt": "Paus 2", "correct": true },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Paus 3", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en helpaus?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en halvpaus?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en fjärdedelspaus?",
+      "options": [
+        { "text": "1/8 (en åttondel)", "correct": false },
+        { "text": "1/4 (en fjärdedel)", "correct": false },
+        { "text": "1/2 (halv)", "correct": false },
+        { "text": "1 stycken", "correct": true }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en åttondelspaus?",
+      "options": [
+        { "text": "1/8 (en åttondel)", "correct": false },
+        { "text": "1/4 (en fjärdedel)", "correct": false },
+        { "text": "1/2 (halv fjärdedelsnot)", "correct": true },
+        { "text": "1 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Hur många åttondelspauser går det på en fjärdedelspaus?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "Hur många sextondelspauser går det på en fjärdedelspaus?",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false },
+        { "text": "16 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Hur många halvpauser går det på en helpaus?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelspauser går det på en helpaus?",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false },
+        { "text": "16 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Hur många åttondelspauser går det på en helpaus?",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": true },
+        { "text": "16 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "Vilken paus hänger ned från notstrecket?",
+      "options": [
+        { "text": "Helpaus", "correct": true },
+        { "text": "Halvpaus", "correct": false },
+        { "text": "Fjärdedelspaus", "correct": false },
+        { "text": "Åttondelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Vilken paus vilar på notstrecket?",
+      "options": [
+        { "text": "Helpaus", "correct": false },
+        { "text": "Halvpaus", "correct": true },
+        { "text": "Fjärdedelspaus", "correct": false },
+        { "text": "Åttondelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "Vilken paus motsvarar en helnot?",
+      "options": [
+        { "text": "Helpaus", "correct": true },
+        { "text": "Halvpaus", "correct": false },
+        { "text": "Fjärdedelspaus", "correct": false },
+        { "text": "Åttondelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "single-choice",
+      "question": "Vilken paus motsvarar en halvnot?",
+      "options": [
+        { "text": "Helpaus", "correct": false },
+        { "text": "Halvpaus", "correct": true },
+        { "text": "Fjärdedelspaus", "correct": false },
+        { "text": "Åttondelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "single-choice",
+      "question": "Vilken paus motsvarar en fjärdedelsnot?",
+      "options": [
+        { "text": "Halvpaus", "correct": false },
+        { "text": "Fjärdedelspaus", "correct": true },
+        { "text": "Åttondelspaus", "correct": false },
+        { "text": "Sextondelspaus", "correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "single-choice",
+      "question": "I en 4/4-takt, hur länge ska det vara tyst om det står en fjärdedelspaus?",
+      "options": [
+        { "text": "Ett halvt slag", "correct": false },
+        { "text": "Ett slag", "correct": true },
+        { "text": "Två slag", "correct": false },
+        { "text": "Fyra slag", "correct": false }
+      ]
+    }
+  ]
+}

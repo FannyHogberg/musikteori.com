@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Startsida -->
+    <url>
+        <loc>https://musikteori.com/</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Huvudsidor -->
+    <url>
+        <loc>https://musikteori.com/kurser.html</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/ovningar.html</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/quiz.html</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kontakt.html</loc>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Kurs: Grundläggande Musikteori -->
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/index.html</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-1-tonernas-namn.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-2-notsystemet.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-3-klavar-och-oktaver.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-4-oktaver.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-5-kors-och-b-fortecken.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-6-notvarden.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-7-pauser.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-8-taktarter.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Quiz -->
+    <url>
+        <loc>https://musikteori.com/quiz/tonernas-namn-quiz.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/quiz/noterna-quiz.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/quiz/pauser-quiz.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/quiz/taktarter-quiz.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/quiz/avslutande-prov.html</loc>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Övningshubbar -->
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-hub.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/ovningar/noter-g-klav-hub.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/ovningar/noter-f-klav-hub.html</loc>
+        <priority>0.8</priority>
+    </url>
+</urlset>

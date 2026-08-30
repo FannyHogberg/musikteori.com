@@ -1,0 +1,2021 @@
+{
+  "title": "Avslutande prov: Grundläggande Musikteori",
+  "description": "Testa dina kunskaper från hela kursen",
+  "passingScore": 80,
+  "randomQuestions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/helnot.svg",
+      "options": [
+        {
+          "text": "Helnot",
+          "correct": true
+        },
+        {
+          "text": "Halvnot",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelsnot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        {
+          "text": "Helnot",
+          "correct": false
+        },
+        {
+          "text": "Halvnot",
+          "correct": true
+        },
+        {
+          "text": "Fjärdedelsnot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        {
+          "text": "Halvnot",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelsnot",
+          "correct": true
+        },
+        {
+          "text": "Åttondelsnot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        {
+          "text": "Fjärdedelsnot",
+          "correct": false
+        },
+        {
+          "text": "Sextondelsnot",
+          "correct": false
+        },
+        {
+          "text": "Åttondelsnot",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/sextondelsnot.svg",
+      "options": [
+        {
+          "text": "Sextondelsnot",
+          "correct": true
+        },
+        {
+          "text": "Trettiotvåondelsnot",
+          "correct": false
+        },
+        {
+          "text": "Åttondelsnot",
+          "correct": false
+        }
+      ]
+    },
+{
+      "id": 7,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en helnot?",
+      "options": [
+        {
+          "image": "/images/noter/helnot.svg",
+          "alt": "Not 1",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/halvnot.svg",
+          "alt": "Not 2",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/fjardedelsnot.svg",
+          "alt": "Not 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en halvnot?",
+      "options": [
+        {
+          "image": "/images/noter/helnot.svg",
+          "alt": "Not 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/halvnot.svg",
+          "alt": "Not 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/fjardedelsnot.svg",
+          "alt": "Not 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en fjärdedelsnot?",
+      "options": [
+        {
+          "image": "/images/noter/halvnot.svg",
+          "alt": "Not 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/fjardedelsnot.svg",
+          "alt": "Not 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/attondelsnot.svg",
+          "alt": "Not 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en åttondelsnot?",
+      "options": [
+        {
+          "image": "/images/noter/fjardedelsnot.svg",
+          "alt": "Not 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/attondelsnot.svg",
+          "alt": "Not 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/sextondelsnot.svg",
+          "alt": "Not 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en sextondelsnot?",
+      "options": [
+        {
+          "image": "/images/noter/attondelsnot.svg",
+          "alt": "Not 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/sextondelsnot.svg",
+          "alt": "Not 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/trettiotvaondelsnot.svg",
+          "alt": "Not 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en helnot?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en halvnot?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en fjärdedelsnot?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Hur många sextondelsnoter går det på en fjärdedelsnot?",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        },
+        {
+          "text": "16 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "Hur många halvnoter går det på en helnot?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en helnot?",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        },
+        {
+          "text": "16 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en helnot?",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": true
+        },
+        {
+          "text": "16 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en halvnot?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en fjärdedelsnot?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Vilket nothuvud är ifyllt (inte ihåligt)?",
+      "options": [
+        {
+          "text": "Helnot",
+          "correct": false
+        },
+        {
+          "text": "Halvnot",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelsnot",
+          "correct": true
+        },
+        {
+          "text": "Alla ovanstående",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "Vilken not har endast en flagga på skaftet?",
+      "options": [
+        {
+          "text": "Halvnot",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelsnot",
+          "correct": false
+        },
+        {
+          "text": "Åttondelsnot",
+          "correct": true
+        },
+        {
+          "text": "Sextondelsnot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "single-choice",
+      "question": "Hur många flaggor har en sextondelsnot?",
+      "options": [
+        {
+          "text": "En flagga",
+          "correct": false
+        },
+        {
+          "text": "Två flaggor",
+          "correct": true
+        },
+        {
+          "text": "Tre flaggor",
+          "correct": false
+        },
+        {
+          "text": "Inga flaggor",
+          "correct": false
+        }
+      ]
+    },
+{
+      "id": 25,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/helpaus.png",
+      "options": [
+        {
+          "text": "Helpaus",
+          "correct": true
+        },
+        {
+          "text": "Halvpaus",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/halvpaus.png",
+      "options": [
+        {
+          "text": "Helpaus",
+          "correct": false
+        },
+        {
+          "text": "Halvpaus",
+          "correct": true
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/fjardedelsPause.png",
+      "options": [
+        {
+          "text": "Halvpaus",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": true
+        },
+        {
+          "text": "Åttondelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/attondelspause.png",
+      "options": [
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        },
+        {
+          "text": "Åttondelspaus",
+          "correct": true
+        },
+        {
+          "text": "Sextondelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "type": "single-choice",
+      "question": "Vilken typ av paus är detta?",
+      "image": "/images/noter/sextondelsPause.png",
+      "options": [
+        {
+          "text": "Åttondelspaus",
+          "correct": false
+        },
+        {
+          "text": "Sextondelspaus",
+          "correct": true
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en helpaus?",
+      "options": [
+        {
+          "image": "/images/noter/helpaus.png",
+          "alt": "Paus 1",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/halvpaus.png",
+          "alt": "Paus 2",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/fjardedelsPause.png",
+          "alt": "Paus 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en halvpaus?",
+      "options": [
+        {
+          "image": "/images/noter/helpaus.png",
+          "alt": "Paus 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/halvpaus.png",
+          "alt": "Paus 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/fjardedelsPause.png",
+          "alt": "Paus 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en fjärdedelspaus?",
+      "options": [
+        {
+          "image": "/images/noter/halvpaus.png",
+          "alt": "Paus 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/fjardedelsPause.png",
+          "alt": "Paus 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/attondelspause.png",
+          "alt": "Paus 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en åttondelspaus?",
+      "options": [
+        {
+          "image": "/images/noter/fjardedelsPause.png",
+          "alt": "Paus 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/attondelspause.png",
+          "alt": "Paus 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/sextondelsPause.png",
+          "alt": "Paus 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en sextondelspaus?",
+      "options": [
+        {
+          "image": "/images/noter/attondelspause.png",
+          "alt": "Paus 1",
+          "correct": false
+        },
+        {
+          "image": "/images/noter/sextondelsPause.png",
+          "alt": "Paus 2",
+          "correct": true
+        },
+        {
+          "image": "/images/noter/fjardedelsPause.png",
+          "alt": "Paus 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en helpaus?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en halvpaus?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en fjärdedelspaus?",
+      "options": [
+        {
+          "text": "1/8 (en åttondel)",
+          "correct": false
+        },
+        {
+          "text": "1/4 (en fjärdedel)",
+          "correct": false
+        },
+        {
+          "text": "1/2 (halv)",
+          "correct": false
+        },
+        {
+          "text": "1 stycken",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en åttondelspaus?",
+      "options": [
+        {
+          "text": "1/8 (en åttondel)",
+          "correct": false
+        },
+        {
+          "text": "1/4 (en fjärdedel)",
+          "correct": false
+        },
+        {
+          "text": "1/2 (halv fjärdedelsnot)",
+          "correct": true
+        },
+        {
+          "text": "1 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "single-choice",
+      "question": "Hur många åttondelspauser går det på en fjärdedelspaus?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "type": "single-choice",
+      "question": "Hur många sextondelspauser går det på en fjärdedelspaus?",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        },
+        {
+          "text": "16 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "type": "single-choice",
+      "question": "Hur många halvpauser går det på en helpaus?",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelspauser går det på en helpaus?",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        },
+        {
+          "text": "16 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "type": "single-choice",
+      "question": "Hur många åttondelspauser går det på en helpaus?",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": true
+        },
+        {
+          "text": "16 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "type": "single-choice",
+      "question": "Vilken paus hänger ned från notstrecket?",
+      "options": [
+        {
+          "text": "Helpaus",
+          "correct": true
+        },
+        {
+          "text": "Halvpaus",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        },
+        {
+          "text": "Åttondelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "type": "single-choice",
+      "question": "Vilken paus vilar på notstrecket?",
+      "options": [
+        {
+          "text": "Helpaus",
+          "correct": false
+        },
+        {
+          "text": "Halvpaus",
+          "correct": true
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        },
+        {
+          "text": "Åttondelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "type": "single-choice",
+      "question": "Vilken paus motsvarar en helnot?",
+      "options": [
+        {
+          "text": "Helpaus",
+          "correct": true
+        },
+        {
+          "text": "Halvpaus",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        },
+        {
+          "text": "Åttondelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "type": "single-choice",
+      "question": "Vilken paus motsvarar en halvnot?",
+      "options": [
+        {
+          "text": "Helpaus",
+          "correct": false
+        },
+        {
+          "text": "Halvpaus",
+          "correct": true
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": false
+        },
+        {
+          "text": "Åttondelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "single-choice",
+      "question": "Vilken paus motsvarar en fjärdedelsnot?",
+      "options": [
+        {
+          "text": "Halvpaus",
+          "correct": false
+        },
+        {
+          "text": "Fjärdedelspaus",
+          "correct": true
+        },
+        {
+          "text": "Åttondelspaus",
+          "correct": false
+        },
+        {
+          "text": "Sextondelspaus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "type": "single-choice",
+      "question": "I en 4/4-takt, hur länge ska det vara tyst om det står en fjärdedelspaus?",
+      "options": [
+        {
+          "text": "Ett halvt slag",
+          "correct": false
+        },
+        {
+          "text": "Ett slag",
+          "correct": true
+        },
+        {
+          "text": "Två slag",
+          "correct": false
+        },
+        {
+          "text": "Fyra slag",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "type": "single-choice",
+      "question": "Hur många taktslag finns det i varje takt i denna taktart?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        {
+          "text": "1 slag",
+          "correct": false
+        },
+        {
+          "text": "2 slag",
+          "correct": true
+        },
+        {
+          "text": "3 slag",
+          "correct": false
+        },
+        {
+          "text": "4 slag",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "type": "single-choice",
+      "question": "Hur många taktslag finns det i varje takt i denna taktart?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        {
+          "text": "2 slag",
+          "correct": false
+        },
+        {
+          "text": "3 slag",
+          "correct": true
+        },
+        {
+          "text": "4 slag",
+          "correct": false
+        },
+        {
+          "text": "6 slag",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "type": "single-choice",
+      "question": "Hur många taktslag finns det i varje takt i denna taktart?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        {
+          "text": "2 slag",
+          "correct": false
+        },
+        {
+          "text": "3 slag",
+          "correct": false
+        },
+        {
+          "text": "4 slag",
+          "correct": true
+        },
+        {
+          "text": "8 slag",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "type": "single-choice",
+      "question": "Vilken taktart är detta?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        {
+          "text": "2/4-takt (två fjärdedelstakt)",
+          "correct": true
+        },
+        {
+          "text": "3/4-takt (tre fjärdedelstakt)",
+          "correct": false
+        },
+        {
+          "text": "4/4-takt (fyra fjärdedelstakt)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "type": "single-choice",
+      "question": "Vilken taktart är detta?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        {
+          "text": "2/4-takt (två fjärdedelstakt)",
+          "correct": false
+        },
+        {
+          "text": "3/4-takt (tre fjärdedelstakt)",
+          "correct": true
+        },
+        {
+          "text": "4/4-takt (fyra fjärdedelstakt)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "type": "single-choice",
+      "question": "Vilken taktart är detta?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        {
+          "text": "2/4-takt (två fjärdedelstakt)",
+          "correct": false
+        },
+        {
+          "text": "3/4-takt (tre fjärdedelstakt)",
+          "correct": false
+        },
+        {
+          "text": "4/4-takt (fyra fjärdedelstakt)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "type": "single-choice",
+      "question": "Vilken är den vanligaste taktarten i västerländsk musik?",
+      "options": [
+        {
+          "text": "2/4-takt (två fjärdedelstakt)",
+          "correct": false
+        },
+        {
+          "text": "3/4-takt (tre fjärdedelstakt)",
+          "correct": false
+        },
+        {
+          "text": "4/4-takt (fyra fjärdedelstakt)",
+          "correct": true
+        },
+        {
+          "text": "6/8-takt (sex åttondelstakt)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "type": "single-choice",
+      "question": "Vad betyder den övre siffran i en taktart?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        {
+          "text": "Vilket notvärde som räknas per slag",
+          "correct": false
+        },
+        {
+          "text": "Hur många slag som ska räknas i varje takt",
+          "correct": true
+        },
+        {
+          "text": "Hur snabbt musiken ska spelas",
+          "correct": false
+        },
+        {
+          "text": "Hur lång varje takt är i sekunder",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "type": "single-choice",
+      "question": "Vad betyder den undre siffran i en taktart?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        {
+          "text": "Hur många slag per takt",
+          "correct": false
+        },
+        {
+          "text": "Vilket notvärde som ska räknas på varje slag",
+          "correct": true
+        },
+        {
+          "text": "Hur många takter i stycket",
+          "correct": false
+        },
+        {
+          "text": "Tempot på musiken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "type": "single-choice",
+      "question": "Vad används ett taktstreck till?",
+      "image": "/images/takt/taktstreck.png",
+      "options": [
+        {
+          "text": "För att visa när en takt slutar och nästa börjar",
+          "correct": true
+        },
+        {
+          "text": "För att visa att ett stycke är slut",
+          "correct": false
+        },
+        {
+          "text": "För att visa att man ska pausa",
+          "correct": false
+        },
+        {
+          "text": "För att visa tempot",
+          "correct": false
+        }
+      ]
+    },
+{
+      "id": 61,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter får plats i en 4/4-takt?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "3 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": true
+        },
+        {
+          "text": "8 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter får plats i en 2/4-takt?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "3 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter får plats i en 3/4-takt?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        {
+          "text": "2 stycken",
+          "correct": false
+        },
+        {
+          "text": "3 stycken",
+          "correct": true
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "6 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter får plats i en 4/4-takt?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        {
+          "text": "4 stycken",
+          "correct": false
+        },
+        {
+          "text": "6 stycken",
+          "correct": false
+        },
+        {
+          "text": "8 stycken",
+          "correct": true
+        },
+        {
+          "text": "16 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "type": "single-choice",
+      "question": "Hur många halvnoter får plats i en 4/4-takt?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        {
+          "text": "1 stycken",
+          "correct": false
+        },
+        {
+          "text": "2 stycken",
+          "correct": true
+        },
+        {
+          "text": "3 stycken",
+          "correct": false
+        },
+        {
+          "text": "4 stycken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (4/4-takt)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-1-halvnot.png",
+      "options": [
+        {
+          "image": "/images/quiz/helnot.png",
+          "alt": "helnot",
+          "correct": false
+        },
+        {
+          "image": "/images/quiz/3-fjardedelar",
+          "alt": "3 fjärdedelar",
+          "correct": false
+        },
+        {
+          "image": "/images/quiz/halvnot.png",
+          "alt": "1 halvnot",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (4/4-takt)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-3-fjardedelar.png",
+      "options": [
+        {
+          "image": "/images/quiz/fjardedel.png",
+          "alt": "En fjärdedelsnot",
+          "correct": true
+        },
+        {
+          "image": "/images/quiz/2-halvnoter.png",
+          "alt": "Två halvnoter",
+          "correct": false
+        },
+        {
+          "image": "/images/quiz/helnot.png",
+          "alt": "En helnot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (3/4-takt)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-2-attondelar-1-fjardedel.png",
+      "options": [
+        {
+          "image": "/images/quiz/halvnot.png",
+          "alt": "En halvnot",
+          "correct": false
+        },
+        {
+          "image": "/images/quiz/fjardedel.png",
+          "alt": "En fjädedelsnot",
+          "correct": true
+        },
+        {
+          "image": "/images/quiz/attondel.png",
+          "alt": "En åttondelsnot",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (3/4-takt)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-1-halvnot.png",
+      "options": [
+        {
+          "image": "/images/quiz/attondel.png",
+          "alt": "En åttondelsnot",
+          "correct": false
+        },
+        {
+          "image": "/images/quiz/fjardedel.png",
+          "alt": "En fjädedelsnot",
+          "correct": true
+        },
+        {
+          "image": "/images/quiz/halvnot.png",
+          "alt": "En halvnot",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "type": "single-choice",
+      "question": "Kan en 4/4-takt fyllas med bara en helnot?",
+      "options": [
+        {
+          "text": "Ja, en helnot är värd 4/4",
+          "correct": true
+        },
+        {
+          "text": "Nej, man behöver minst två noter",
+          "correct": false
+        },
+        {
+          "text": "Nej, en helnot är för lång",
+          "correct": false
+        },
+        {
+          "text": "Ja, men bara om det är sista takten",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "type": "single-choice",
+      "question": "I en 4/4-takt, hur många olika sätt kan man fylla takten?",
+      "options": [
+        {
+          "text": "Bara ett sätt",
+          "correct": false
+        },
+        {
+          "text": "Bara med fjärdedelsnoter",
+          "correct": false
+        },
+        {
+          "text": "Många olika sätt, så länge det blir 4/4 totalt",
+          "correct": true
+        },
+        {
+          "text": "Fyra olika sätt",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "type": "multiple-choice",
+      "question": "Vilka av dessa toner hör till de vita tangenterna på ett piano?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        {
+          "text": "C",
+          "correct": true
+        },
+        {
+          "text": "D",
+          "correct": true
+        },
+        {
+          "text": "Ciss",
+          "correct": false
+        },
+        {
+          "text": "E",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "type": "single-choice",
+      "question": "Vad används ett korsförtecken till?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        {
+          "text": "Att höja tonen ett halvt tonsteg",
+          "correct": true
+        },
+        {
+          "text": "Att sänka tonen ett halvt tonsteg",
+          "correct": false
+        },
+        {
+          "text": "Att återställa tonen",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "type": "single-choice",
+      "question": "Vad blir ändelsen när man höjer en ton med korsförtecken?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        {
+          "text": "-ess",
+          "correct": false
+        },
+        {
+          "text": "-iss",
+          "correct": true
+        },
+        {
+          "text": "-ississ",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "type": "single-choice",
+      "question": "Vad används ett b-förtecken till?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        {
+          "text": "Att höja tonen ett halvt tonsteg",
+          "correct": false
+        },
+        {
+          "text": "Att sänka tonen ett halvt tonsteg",
+          "correct": true
+        },
+        {
+          "text": "Att återställa tonen",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "type": "multiple-choice",
+      "question": "Mellan vilka vita tangenter finns det INTE ett helt tonsteg?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        {
+          "text": "C och D",
+          "correct": false
+        },
+        {
+          "text": "E och F",
+          "correct": true
+        },
+        {
+          "text": "G och A",
+          "correct": false
+        },
+        {
+          "text": "B och C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "type": "single-choice",
+      "question": "Vad kallas ett höjt C?",
+      "options": [
+        {
+          "text": "Cess",
+          "correct": false
+        },
+        {
+          "text": "Ciss",
+          "correct": true
+        },
+        {
+          "text": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "type": "single-choice",
+      "question": "Vad används ett återställningstecken till?",
+      "image": "/images/toner/aterstallningstecken.png",
+      "options": [
+        {
+          "text": "Att höja tonen",
+          "correct": false
+        },
+        {
+          "text": "Att sänka tonen",
+          "correct": false
+        },
+        {
+          "text": "Att ta bort förtecken från en not",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "type": "single-choice",
+      "question": "Ciss är samma ton som:",
+      "options": [
+        {
+          "text": "C",
+          "correct": false
+        },
+        {
+          "text": "Dess",
+          "correct": true
+        },
+        {
+          "text": "D",
+          "correct": false
+        },
+        {
+          "text": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "type": "single-choice",
+      "question": "Vad kallas ett sänkt D?",
+      "options": [
+        {
+          "text": "Diss",
+          "correct": false
+        },
+        {
+          "text": "Dess",
+          "correct": true
+        },
+        {
+          "text": "C",
+          "correct": false
+        },
+        {
+          "text": "E",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "type": "single-choice",
+      "question": "Vad blir ändelsen när man sänker en ton med b-förtecken?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        {
+          "text": "-iss",
+          "correct": false
+        },
+        {
+          "text": "-ess",
+          "correct": true
+        },
+        {
+          "text": "-ississ",
+          "correct": false
+        },
+        {
+          "text": "-essess",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: C D E ?",
+      "options": [
+        {
+          "text": "E",
+          "correct": false
+        },
+        {
+          "text": "F",
+          "correct": true
+        },
+        {
+          "text": "G",
+          "correct": false
+        },
+        {
+          "text": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: F G A ?",
+      "options": [
+        {
+          "text": "G",
+          "correct": false
+        },
+        {
+          "text": "C",
+          "correct": false
+        },
+        {
+          "text": "B",
+          "correct": true
+        },
+        {
+          "text": "E",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: E ? G",
+      "options": [
+        {
+          "text": "D",
+          "correct": false
+        },
+        {
+          "text": "F",
+          "correct": true
+        },
+        {
+          "text": "A",
+          "correct": false
+        },
+        {
+          "text": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: ? D E",
+      "options": [
+        {
+          "text": "C",
+          "correct": true
+        },
+        {
+          "text": "F",
+          "correct": false
+        },
+        {
+          "text": "B",
+          "correct": false
+        },
+        {
+          "text": "A",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: A B ?",
+      "options": [
+        {
+          "text": "D",
+          "correct": false
+        },
+        {
+          "text": "G",
+          "correct": false
+        },
+        {
+          "text": "C",
+          "correct": true
+        },
+        {
+          "text": "E",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: G A ? C",
+      "options": [
+        {
+          "text": "F",
+          "correct": false
+        },
+        {
+          "text": "B",
+          "correct": true
+        },
+        {
+          "text": "E",
+          "correct": false
+        },
+        {
+          "text": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "type": "single-choice",
+      "question": "Vad kallas ett sänkt A?",
+      "options": [
+        {
+          "text": "Aiss",
+          "correct": false
+        },
+        {
+          "text": "Ass",
+          "correct": true
+        },
+        {
+          "text": "Giss",
+          "correct": false
+        },
+        {
+          "text": "Bess",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "type": "single-choice",
+      "question": "Vilket förtecken höjer en ton?",
+      "options": [
+        {
+          "text": "Korsförtecken (#)",
+          "correct": true
+        },
+        {
+          "text": "B-förtecken (♭)",
+          "correct": false
+        },
+        {
+          "text": "Återställningstecken (♮)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan C och D?",
+      "options": [
+        {
+          "text": "Ett helt tonsteg",
+          "correct": true
+        },
+        {
+          "text": "Ett halvt tonsteg",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan E och F?",
+      "options": [
+        {
+          "text": "Ett helt tonsteg",
+          "correct": false
+        },
+        {
+          "text": "Ett halvt tonsteg",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan B och C?",
+      "options": [
+        {
+          "text": "Ett helt tonsteg",
+          "correct": false
+        },
+        {
+          "text": "Ett halvt tonsteg",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan F och G?",
+      "options": [
+        {
+          "text": "Ett helt tonsteg",
+          "correct": true
+        },
+        {
+          "text": "Ett halvt tonsteg",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan D och E?",
+      "options": [
+        {
+          "text": "Ett helt tonsteg",
+          "correct": true
+        },
+        {
+          "text": "Ett halvt tonsteg",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan A och B?",
+      "options": [
+        {
+          "text": "Ett helt tonsteg",
+          "correct": true
+        },
+        {
+          "text": "Ett halvt tonsteg",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

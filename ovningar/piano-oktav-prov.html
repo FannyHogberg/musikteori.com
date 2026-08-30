@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prov: Notläsning - Musikteori.com</title>
+    <meta name="description" content="Testa din notläsning. Prov med 30 frågor där du kopplar noter i notsystemet till pianots tangenter.">
+    <link rel="canonical" href="https://musikteori.com/ovningar/piano-oktav-prov.html">
+    <meta property="og:title" content="Prov: Notläsning">
+    <meta property="og:description" content="Testa din notläsning. Prov med 30 frågor där du kopplar noter i notsystemet till pianots tangenter.">
+    <meta property="og:image" content="https://musikteori.com/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://musikteori.com/ovningar/piano-oktav-prov.html">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:site_name" content="Musikteori.com">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .piano-test {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .test-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .test-header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .question-counter {
+            background: var(--background-alt);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            display: inline-block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        @keyframes questionUpdate {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+                background: #e8f5e9;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .question-counter.updated {
+            animation: questionUpdate 0.4s ease-out;
+        }
+
+        .question {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 0 1.5rem 0;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .note-image {
+            width: 160px;
+            height: 95px;
+            object-fit: contain;
+            background: white;
+            padding: 0.3rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            flex-shrink: 0;
+        }
+
+        .piano {
+            position: relative;
+            height: 200px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .piano-keys {
+            position: relative;
+            display: flex;
+            gap: 2px;
+        }
+
+        .white-key {
+            width: 50px;
+            height: 180px;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 0 0 5px 5px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.1s;
+        }
+
+        .white-key:hover {
+            background: #f0f0f0;
+        }
+
+        .white-key:active {
+            background: #e0e0e0;
+            transform: translateY(2px);
+        }
+
+        .black-key {
+            width: 35px;
+            height: 110px;
+            background: #333;
+            border: 2px solid #000;
+            border-radius: 0 0 3px 3px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+            transition: all 0.1s;
+        }
+
+        .black-key:hover {
+            background: #444;
+        }
+
+        .black-key:active {
+            background: #555;
+            transform: translateY(2px);
+        }
+
+        .test-body {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+
+        #results-container {
+            display: none;
+        }
+
+        /* Responsiv design */
+        @media (max-width: 768px) {
+            .piano-test {
+                padding: 1rem;
+            }
+
+            .question {
+                font-size: 1.5rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .note-image {
+                width: 140px;
+                height: 85px;
+            }
+
+            .piano {
+                padding: 15px 10px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .white-key {
+                width: 42px;
+                height: 160px;
+            }
+
+            .black-key {
+                width: 30px;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .piano-test {
+                padding: 0.5rem;
+            }
+
+            .question {
+                font-size: 1.25rem;
+            }
+
+            .note-image {
+                width: 120px;
+                height: 70px;
+            }
+
+            .piano {
+                padding: 10px 5px;
+            }
+
+            .white-key {
+                width: 34px;
+                height: 140px;
+            }
+
+            .black-key {
+                width: 24px;
+                height: 85px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Musikteori.com</a>
+            <button class="menu-toggle" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="../kurser.html">Kurser</a></li>
+                <li><a href="../ovningar.html" class="active">Övningar</a></li>
+                <li><a href="../quiz.html">Quiz</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="piano-test">
+            <div class="test-header">
+                <h1 id="test-title">Prov</h1>
+                <div class="question-counter">
+                    Fråga <span id="question-number">1</span> av <span id="total-questions">30</span>
+                </div>
+            </div>
+
+            <div class="test-body">
+                <div class="question" id="question">
+                    <span>Vilken tangent är detta?</span>
+                    <img src="" alt="Not att identifiera" class="note-image" id="note-image">
+                </div>
+
+                <div class="piano">
+                    <div class="piano-keys" id="piano-keys">
+                        <!-- Piano keys will be generated by JavaScript -->
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button class="btn" id="back-to-hub-btn">← Byt övning</button>
+                </div>
+            </div>
+
+            <div id="results-container">
+                <!-- Results will be shown here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Musikteori.com</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ads.js"></script>
+    <script src="../js/piano-oktav-prov.js"></script>
+</body>
+</html>

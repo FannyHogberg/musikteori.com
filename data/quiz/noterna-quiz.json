@@ -1,0 +1,289 @@
+{
+  "title": "Quiz: Noterna och deras värden",
+  "description": "Testa dina kunskaper om noter",
+  "passingScore": 60,
+  "randomQuestions": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/helnot.svg",
+      "options": [
+        { "text": "Helnot", "correct": true },
+        { "text": "Halvnot", "correct": false },
+        { "text": "Fjärdedelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        { "text": "Helnot", "correct": false },
+        { "text": "Halvnot", "correct": true },
+        { "text": "Fjärdedelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "Halvnot", "correct": false },
+        { "text": "Fjärdedelsnot", "correct": true },
+        { "text": "Åttondelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        { "text": "Fjärdedelsnot", "correct": false },
+        { "text": "Sextondelsnot", "correct": false },
+        { "text": "Åttondelsnot", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "Vilken typ av not är detta?",
+      "image": "/images/noter/sextondelsnot.svg",
+      "options": [
+        { "text": "Sextondelsnot", "correct": true },
+        { "text": "Fjärdedelsnot", "correct": false },
+        { "text": "Åttondelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en helnot?",
+      "options": [
+        { "image": "/images/noter/helnot.svg", "alt": "Not 1", "correct": true },
+        { "image": "/images/noter/halvnot.svg", "alt": "Not 2", "correct": false },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Not 3", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en halvnot?",
+      "options": [
+        { "image": "/images/noter/helnot.svg", "alt": "Not 1", "correct": false },
+        { "image": "/images/noter/halvnot.svg", "alt": "Not 2", "correct": true },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Not 3", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en fjärdedelsnot?",
+      "options": [
+        { "image": "/images/noter/halvnot.svg", "alt": "Not 1", "correct": false },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Not 2", "correct": true },
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Not 3", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en åttondelsnot?",
+      "options": [
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Not 1", "correct": false },
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Not 2", "correct": true },
+        { "image": "/images/noter/sextondelsnot.svg", "alt": "Not 3", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Vilken bild föreställer en sextondelsnot?",
+      "options": [
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Not 1", "correct": false },
+        { "image": "/images/noter/sextondelsnot.svg", "alt": "Not 2", "correct": true },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Not 3", "correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en helnot?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en halvnot?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en fjärdedelsnot?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Hur många sextondelsnoter går det på en fjärdedelsnot?",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false },
+        { "text": "16 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "Hur många halvnoter går det på en helnot?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter går det på en helnot?",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false },
+        { "text": "16 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en helnot?",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": true },
+        { "text": "16 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en halvnot?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter går det på en fjärdedelsnot?",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Vilket nothuvud är ifyllt (inte ihåligt)?",
+      "options": [
+        { "text": "Helnot", "correct": false },
+        { "text": "Halvnot", "correct": false },
+        { "text": "Fjärdedelsnot", "correct": true },
+        { "text": "Alla ovanstående", "correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "Vilken not har endast en flagga på skaftet?",
+      "options": [
+        { "text": "Halvnot", "correct": false },
+        { "text": "Fjärdedelsnot", "correct": false },
+        { "text": "Åttondelsnot", "correct": true },
+        { "text": "Sextondelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "single-choice",
+      "question": "Hur många flaggor har en sextondelsnot?",
+      "options": [
+        { "text": "En flagga", "correct": false },
+        { "text": "Två flaggor", "correct": true },
+        { "text": "Tre flaggor", "correct": false },
+        { "text": "Inga flaggor", "correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "single-choice",
+      "question": "Lyssna och svara: vilket notvärde hör du?",
+      "audio": "helnot",
+      "options": [
+        { "text": "Helnot", "correct": true },
+        { "text": "Halvnot", "correct": false },
+        { "text": "Fjärdedelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "single-choice",
+      "question": "Lyssna och svara: vilket notvärde hör du?",
+      "audio": "halvnot",
+      "options": [
+        { "text": "Helnot", "correct": false },
+        { "text": "Halvnot", "correct": true },
+        { "text": "Fjärdedelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "single-choice",
+      "question": "Lyssna och svara: vilket notvärde hör du?",
+      "audio": "fjardedelsnot",
+      "options": [
+        { "text": "Halvnot", "correct": false },
+        { "text": "Fjärdedelsnot", "correct": true },
+        { "text": "Åttondelsnot", "correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "single-choice",
+      "question": "Lyssna och svara: vilket notvärde hör du?",
+      "audio": "attondelsnot",
+      "options": [
+        { "text": "Fjärdedelsnot", "correct": false },
+        { "text": "Åttondelsnot", "correct": true },
+        { "text": "Sextondelsnot", "correct": false }
+      ]
+    }
+  ]
+}

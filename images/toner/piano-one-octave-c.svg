@@ -1,0 +1,41 @@
+<svg width="350" height="300" viewBox="0 0 350 300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Padding group -->
+  <g transform="translate(0, 20)">
+    <!-- White keys (7 keys = 1 octave) -->
+    <g fill="white" stroke="black" stroke-width="2">
+      <rect x="0" y="0" width="50" height="200"/>
+      <rect x="50" y="0" width="50" height="200"/>
+      <rect x="100" y="0" width="50" height="200"/>
+      <rect x="150" y="0" width="50" height="200"/>
+      <rect x="200" y="0" width="50" height="200"/>
+      <rect x="250" y="0" width="50" height="200"/>
+      <rect x="300" y="0" width="50" height="200"/>
+    </g>
+
+    <!-- Black keys (5 keys) -->
+    <g fill="black">
+      <!-- Group of 2 -->
+      <rect x="35" y="0" width="30" height="120"/>
+      <rect x="85" y="0" width="30" height="120"/>
+      <!-- Group of 3 -->
+      <rect x="185" y="0" width="30" height="120"/>
+      <rect x="235" y="0" width="30" height="120"/>
+      <rect x="285" y="0" width="30" height="120"/>
+    </g>
+
+    <!-- Arrowhead marker -->
+    <defs>
+      <marker id="arrowhead" markerWidth="4" markerHeight="4" refX="2" refY="2" orient="auto">
+        <polygon points="0 0, 4 2, 0 4" fill="#2ecc71"/>
+      </marker>
+    </defs>
+
+    <!-- Arrow pointing to C -->
+    <line x1="25" y1="235" x2="25" y2="210" stroke="#2ecc71" stroke-width="4" marker-end="url(#arrowhead)"/>
+
+    <!-- Label C -->
+    <text x="25" y="260" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2ecc71" text-anchor="middle">C</text>
+  </g>
+
+</svg>

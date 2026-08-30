@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prov: Flera oktaver - Musikteori.com</title>
+    <meta name="description" content="Testa din notläsning över flera oktaver. Välj vilka oktaver du vill öva på och gör provet.">
+    <link rel="canonical" href="https://musikteori.com/ovningar/piano-flera-oktaver.html">
+    <meta property="og:title" content="Prov: Flera oktaver">
+    <meta property="og:description" content="Testa din notläsning över flera oktaver. Välj vilka oktaver du vill öva på och gör provet.">
+    <meta property="og:image" content="https://musikteori.com/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://musikteori.com/ovningar/piano-flera-oktaver.html">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:site_name" content="Musikteori.com">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .piano-exercise {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .exercise-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .exercise-header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+            margin: 0.25rem 0;
+            font-style: italic;
+        }
+
+        .level-info {
+            background: var(--background-alt);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .question {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 0 1.5rem 0;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .note-image {
+            width: 160px;
+            height: 95px;
+            object-fit: contain;
+            background: white;
+            padding: 0.3rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            flex-shrink: 0;
+        }
+
+        .feedback-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            z-index: 1000;
+            pointer-events: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .feedback-message.show-correct,
+        .feedback-message.show-incorrect {
+            padding: 1.5rem 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        .feedback-message.show-correct {
+            background: #27ae60;
+            animation: feedbackPop 0.6s ease-out;
+        }
+
+        .feedback-message.show-incorrect {
+            background: #e74c3c;
+            animation: feedbackShake 0.6s ease-out;
+        }
+
+        .piano {
+            position: relative;
+            height: 200px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .piano-keys {
+            position: relative;
+            display: flex;
+            gap: 2px;
+        }
+
+        .piano-keys.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .white-key {
+            width: 50px;
+            height: 180px;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 0 0 5px 5px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.1s;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+            color: #666;
+        }
+
+        .white-key:hover {
+            background: #f0f0f0;
+        }
+
+        .white-key:active {
+            background: #e0e0e0;
+            transform: translateY(2px);
+        }
+
+        .white-key.correct {
+            background: #a8e6cf;
+            animation: correctPulse 0.5s;
+        }
+
+        .white-key.incorrect {
+            background: #ffb3ba;
+            animation: shake 0.3s;
+        }
+
+        .black-key {
+            width: 35px;
+            height: 110px;
+            background: #333;
+            border: 2px solid #000;
+            border-radius: 0 0 3px 3px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+            transition: all 0.1s;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 5px;
+            font-weight: bold;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        .black-key:hover {
+            background: #444;
+        }
+
+        .black-key:active {
+            background: #555;
+            transform: translateY(2px);
+        }
+
+        .black-key.correct {
+            background: #70d69f;
+        }
+
+        .black-key.incorrect {
+            background: #ff8a8a;
+        }
+
+        .hide-labels .key-label {
+            display: none;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            gap: 1rem;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            flex: 1;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .level-complete .btn {
+            margin: 0.5rem;
+        }
+
+        @keyframes correctPulse {
+            0% { transform: scale(1); }
+            30% { transform: scale(1.1); }
+            60% { transform: scale(0.95); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-8px); }
+            20%, 40%, 60%, 80% { transform: translateX(8px); }
+        }
+
+        @keyframes feedbackPop {
+            0% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes feedbackShake {
+            0% {
+                transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+                opacity: 0;
+            }
+            25% {
+                transform: translate(-50%, -50%) scale(1.1) rotate(-5deg);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1) rotate(5deg);
+                opacity: 1;
+            }
+            75% {
+                transform: translate(-50%, -50%) scale(1.05) rotate(-3deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .level-complete {
+            background: var(--primary-light);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .level-complete h2 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
+        .landscape-tip {
+            display: none;
+            background: #fff3cd;
+            color: #856404;
+            padding: 0.75rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            border: 1px solid #ffeaa7;
+        }
+
+        /* Responsiv design för mobil */
+        @media (max-width: 768px) {
+            .landscape-tip {
+                display: block;
+            }
+
+            .piano-exercise {
+                padding: 1rem;
+            }
+
+            .question {
+                font-size: 1.5rem;
+                flex-direction: column;
+                gap: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .note-image {
+                width: 140px;
+                height: 85px;
+            }
+
+            .piano {
+                padding: 15px 10px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .white-key {
+                width: 42px;
+                height: 160px;
+                font-size: 0.8rem;
+            }
+
+            .black-key {
+                width: 30px;
+                height: 100px;
+                font-size: 0.7rem;
+            }
+
+            .stats {
+                gap: 0.5rem;
+            }
+
+            .stat-box {
+                padding: 0.75rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
+            }
+
+            .stat-value {
+                font-size: 1.2rem;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .controls .btn {
+                width: 100%;
+            }
+        }
+
+        /* Dölj landscape-tips när enheten är i landscape */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .landscape-tip {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .piano-exercise {
+                padding: 0.5rem;
+            }
+
+            .question {
+                font-size: 1.25rem;
+            }
+
+            .note-image {
+                width: 120px;
+                height: 70px;
+            }
+
+            .piano {
+                padding: 10px 5px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .white-key {
+                width: 34px;
+                height: 140px;
+                font-size: 0.7rem;
+                padding-bottom: 8px;
+            }
+
+            .black-key {
+                width: 24px;
+                height: 85px;
+                font-size: 0.65rem;
+                padding-bottom: 4px;
+            }
+
+            .level-info {
+                padding: 0.75rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .stat-box {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Musikteori.com</a>
+            <button class="menu-toggle" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="../kurser.html">Kurser</a></li>
+                <li><a href="../ovningar.html" class="active">Övningar</a></li>
+                <li><a href="../quiz.html">Quiz</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="piano-exercise">
+            <div class="exercise-header">
+                <h1>Lär dig tangenterna - Test</h1>
+                <p class="subtitle">Flera oktaver (lilla - tvåstrukna) - G-klav</p>
+                <p>Klicka på rätt tangent på pianot - endast notbild visas</p>
+            </div>
+
+            <div class="level-info">
+                <div class="stat-label">Fråga <span id="current-level">0/30</span></div>
+                <div id="level-description">Laddar...</div>
+            </div>
+
+            <div class="question" id="question">
+                <span id="question-text" style="display: none;">Var är <span id="note-to-find">C</span>?</span>
+                <img src="" alt="Not att hitta" class="note-image" id="note-image">
+            </div>
+
+            <div class="feedback-message" id="feedback-message"></div>
+
+            <div class="landscape-tip">
+                💡 Tips: Vänd enheten till liggande läge för bästa upplevelse
+            </div>
+
+            <div class="piano">
+                <div class="piano-keys" id="piano-keys">
+                    <!-- Piano keys will be generated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn" id="back-to-hub-btn">← Tillbaka</button>
+                <button class="btn" id="restart-btn">Börja om</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Musikteori.com</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ads.js"></script>
+    <script src="../js/piano-flera-oktaver.js"></script>
+</body>
+</html>

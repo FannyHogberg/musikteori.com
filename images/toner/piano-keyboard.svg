@@ -1,0 +1,55 @@
+<svg width="1050" height="200" viewBox="0 0 1050 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- White keys (21 keys = 3 octaves) -->
+  <g fill="white" stroke="black" stroke-width="2">
+    <!-- Octave 1 -->
+    <rect x="0" y="0" width="50" height="200"/>
+    <rect x="50" y="0" width="50" height="200"/>
+    <rect x="100" y="0" width="50" height="200"/>
+    <rect x="150" y="0" width="50" height="200"/>
+    <rect x="200" y="0" width="50" height="200"/>
+    <rect x="250" y="0" width="50" height="200"/>
+    <rect x="300" y="0" width="50" height="200"/>
+    <!-- Octave 2 -->
+    <rect x="350" y="0" width="50" height="200"/>
+    <rect x="400" y="0" width="50" height="200"/>
+    <rect x="450" y="0" width="50" height="200"/>
+    <rect x="500" y="0" width="50" height="200"/>
+    <rect x="550" y="0" width="50" height="200"/>
+    <rect x="600" y="0" width="50" height="200"/>
+    <rect x="650" y="0" width="50" height="200"/>
+    <!-- Octave 3 -->
+    <rect x="700" y="0" width="50" height="200"/>
+    <rect x="750" y="0" width="50" height="200"/>
+    <rect x="800" y="0" width="50" height="200"/>
+    <rect x="850" y="0" width="50" height="200"/>
+    <rect x="900" y="0" width="50" height="200"/>
+    <rect x="950" y="0" width="50" height="200"/>
+    <rect x="1000" y="0" width="50" height="200"/>
+  </g>
+
+  <!-- Black keys (15 keys) -->
+  <g fill="black">
+    <!-- Octave 1: Group of 2, then 3 -->
+    <rect x="35" y="0" width="30" height="120"/>
+    <rect x="85" y="0" width="30" height="120"/>
+    <rect x="185" y="0" width="30" height="120"/>
+    <rect x="235" y="0" width="30" height="120"/>
+    <rect x="285" y="0" width="30" height="120"/>
+
+    <!-- Octave 2: Group of 2, then 3 -->
+    <rect x="385" y="0" width="30" height="120"/>
+    <rect x="435" y="0" width="30" height="120"/>
+    <rect x="535" y="0" width="30" height="120"/>
+    <rect x="585" y="0" width="30" height="120"/>
+    <rect x="635" y="0" width="30" height="120"/>
+
+    <!-- Octave 3: Group of 2, then 3 -->
+    <rect x="735" y="0" width="30" height="120"/>
+    <rect x="785" y="0" width="30" height="120"/>
+    <rect x="885" y="0" width="30" height="120"/>
+    <rect x="935" y="0" width="30" height="120"/>
+    <rect x="985" y="0" width="30" height="120"/>
+  </g>
+
+</svg>

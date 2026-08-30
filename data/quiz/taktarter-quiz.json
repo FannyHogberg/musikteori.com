@@ -1,0 +1,250 @@
+{
+  "title": "Quiz: Taktarter",
+  "description": "Testa dina kunskaper om taktarter",
+  "passingScore": 60,
+  "randomQuestions": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "Hur många taktslag finns det i varje takt i denna taktart?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        { "text": "1 slag", "correct": false },
+        { "text": "2 slag", "correct": true },
+        { "text": "3 slag", "correct": false },
+        { "text": "4 slag", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "Hur många taktslag finns det i varje takt i denna taktart?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        { "text": "2 slag", "correct": false },
+        { "text": "3 slag", "correct": true },
+        { "text": "4 slag", "correct": false },
+        { "text": "6 slag", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "Hur många taktslag finns det i varje takt i denna taktart?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "2 slag", "correct": false },
+        { "text": "3 slag", "correct": false },
+        { "text": "4 slag", "correct": true },
+        { "text": "8 slag", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "Vilken taktart är detta?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        { "text": "2/4-takt (två fjärdedelstakt)", "correct": true },
+        { "text": "3/4-takt (tre fjärdedelstakt)", "correct": false },
+        { "text": "4/4-takt (fyra fjärdedelstakt)", "correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "Vilken taktart är detta?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        { "text": "2/4-takt (två fjärdedelstakt)", "correct": false },
+        { "text": "3/4-takt (tre fjärdedelstakt)", "correct": true },
+        { "text": "4/4-takt (fyra fjärdedelstakt)", "correct": false }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single-choice",
+      "question": "Vilken taktart är detta?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "2/4-takt (två fjärdedelstakt)", "correct": false },
+        { "text": "3/4-takt (tre fjärdedelstakt)", "correct": false },
+        { "text": "4/4-takt (fyra fjärdedelstakt)", "correct": true }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Vilken är den vanligaste taktarten i västerländsk musik?",
+      "options": [
+        { "text": "2/4-takt (två fjärdedelstakt)", "correct": false },
+        { "text": "3/4-takt (tre fjärdedelstakt)", "correct": false },
+        { "text": "4/4-takt (fyra fjärdedelstakt)", "correct": true },
+        { "text": "6/8-takt (sex åttondelstakt)", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Vad betyder den övre siffran i en taktart?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "Vilket notvärde som räknas per slag", "correct": false },
+        { "text": "Hur många slag som ska räknas i varje takt", "correct": true },
+        { "text": "Hur snabbt musiken ska spelas", "correct": false },
+        { "text": "Hur lång varje takt är i sekunder", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Vad betyder den undre siffran i en taktart?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "Hur många slag per takt", "correct": false },
+        { "text": "Vilket notvärde som ska räknas på varje slag", "correct": true },
+        { "text": "Hur många takter i stycket", "correct": false },
+        { "text": "Tempot på musiken", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Vad används ett taktstreck till?",
+      "image": "/images/takt/taktstreck.png",
+      "options": [
+        { "text": "För att visa när en takt slutar och nästa börjar", "correct": true },
+        { "text": "För att visa att ett stycke är slut", "correct": false },
+        { "text": "För att visa att man ska pausa", "correct": false },
+        { "text": "För att visa tempot", "correct": false }
+      ]
+    },
+{
+      "id": 12,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter får plats i en 4/4-takt?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "3 stycken", "correct": false },
+        { "text": "4 stycken", "correct": true },
+        { "text": "8 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter får plats i en 2/4-takt?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "3 stycken", "correct": false },
+        { "text": "4 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "Hur många fjärdedelsnoter får plats i en 3/4-takt?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "2 stycken", "correct": false },
+        { "text": "3 stycken", "correct": true },
+        { "text": "4 stycken", "correct": false },
+        { "text": "6 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Hur många åttondelsnoter får plats i en 4/4-takt?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        { "text": "4 stycken", "correct": false },
+        { "text": "6 stycken", "correct": false },
+        { "text": "8 stycken", "correct": true },
+        { "text": "16 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "Hur många halvnoter får plats i en 4/4-takt?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        { "text": "1 stycken", "correct": false },
+        { "text": "2 stycken", "correct": true },
+        { "text": "3 stycken", "correct": false },
+        { "text": "4 stycken", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (4/4-takt)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-1-halvnot.png",
+      "options": [
+        { "image": "/images/quiz/helnot.png", "alt": "helnot", "correct": false },
+        { "image": "/images/quiz/3-fjardedelar", "alt": "3 fjärdedelar", "correct": false },
+        { "image": "/images/quiz/halvnot.png", "alt": "1 halvnot", "correct": true }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (4/4-takt)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-3-fjardedelar.png",
+      "options": [
+        { "image": "/images/quiz/fjardedel.png", "alt": "En fjärdedelsnot", "correct": true },
+        { "image": "/images/quiz/2-halvnoter.png", "alt": "Två halvnoter", "correct": false },
+        { "image": "/images/quiz/helnot.png", "alt": "En helnot", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (3/4-takt)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-2-attondelar-1-fjardedel.png",
+      "options": [
+        { "image": "/images/quiz/halvnot.png", "alt": "En halvnot", "correct": false },
+        { "image": "/images/quiz/fjardedel.png", "alt": "En fjädedelsnot", "correct": true },
+        { "image": "/images/quiz/attondel.png", "alt": "En åttondelsnot", "correct": true }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "Vilka noter kan komplettera denna takt (3/4-takt)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-1-halvnot.png",
+      "options": [
+        { "image": "/images/quiz/attondel.png", "alt": "En åttondelsnot", "correct": false },
+        { "image": "/images/quiz/fjardedel.png", "alt": "En fjädedelsnot", "correct": true },
+        { "image": "/images/quiz/halvnot.png", "alt": "En halvnot", "correct": true }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Kan en 4/4-takt fyllas med bara en helnot?",
+      "options": [
+        { "text": "Ja, en helnot är värd 4/4", "correct": true },
+        { "text": "Nej, man behöver minst två noter", "correct": false },
+        { "text": "Nej, en helnot är för lång", "correct": false },
+        { "text": "Ja, men bara om det är sista takten", "correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "I en 4/4-takt, hur många olika sätt kan man fylla takten?",
+      "options": [
+        { "text": "Bara ett sätt", "correct": false },
+        { "text": "Bara med fjärdedelsnoter", "correct": false },
+        { "text": "Många olika sätt, så länge det blir 4/4 totalt", "correct": true },
+        { "text": "Fyra olika sätt", "correct": false }
+      ]
+    }
+  ]
+}

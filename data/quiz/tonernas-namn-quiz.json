@@ -1,0 +1,261 @@
+{
+  "title": "Quiz: Tonernas namn",
+  "description": "Testa dina kunskaper om tonernas namn och förtecken",
+  "passingScore": 60,
+  "randomQuestions": 6,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Vilka av dessa toner hör till de vita tangenterna på ett piano?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        { "text": "C", "correct": true },
+        { "text": "D", "correct": true },
+        { "text": "Ciss", "correct": false },
+        { "text": "E", "correct": true }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "Vad används ett korsförtecken till?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        { "text": "Att höja tonen ett halvt tonsteg", "correct": true },
+        { "text": "Att sänka tonen ett halvt tonsteg", "correct": false },
+        { "text": "Att återställa tonen", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "Vad blir ändelsen när man höjer en ton med korsförtecken?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        { "text": "-ess", "correct": false },
+        { "text": "-iss", "correct": true },
+        { "text": "-ississ", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "Vad används ett b-förtecken till?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        { "text": "Att höja tonen ett halvt tonsteg", "correct": false },
+        { "text": "Att sänka tonen ett halvt tonsteg", "correct": true },
+        { "text": "Att återställa tonen", "correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Mellan vilka vita tangenter finns det INTE ett helt tonsteg?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        { "text": "C och D", "correct": false },
+        { "text": "E och F", "correct": true },
+        { "text": "G och A", "correct": false },
+        { "text": "B (H) och C", "correct": true }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single-choice",
+      "question": "Vad kallas ett höjt C?",
+      "options": [
+        { "text": "Cess", "correct": false },
+        { "text": "Ciss", "correct": true },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Vad används ett återställningstecken till?",
+      "image": "/images/toner/aterstallningstecken.png",
+      "options": [
+        { "text": "Att höja tonen", "correct": false },
+        { "text": "Att sänka tonen", "correct": false },
+        { "text": "Att ta bort förtecken från en not", "correct": true }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Ciss är samma ton som:",
+      "options": [
+        { "text": "C", "correct": false },
+        { "text": "Dess", "correct": true },
+        { "text": "D", "correct": false },
+        { "text": "B", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Vad kallas ett sänkt D?",
+      "options": [
+        { "text": "Diss", "correct": false },
+        { "text": "Dess", "correct": true },
+        { "text": "C", "correct": false },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Vad blir ändelsen när man sänker en ton med b-förtecken?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        { "text": "-iss", "correct": false },
+        { "text": "-ess", "correct": true },
+        { "text": "-ississ", "correct": false },
+        { "text": "-essess", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: C D E ?",
+      "options": [
+        { "text": "E", "correct": false },
+        { "text": "F", "correct": true },
+        { "text": "G", "correct": false },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: F G A ?",
+      "options": [
+        { "text": "G", "correct": false },
+        { "text": "C", "correct": false },
+        { "text": "B (H)", "correct": true },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: E ? G",
+      "options": [
+        { "text": "D", "correct": false },
+        { "text": "F", "correct": true },
+        { "text": "A", "correct": false },
+        { "text": "B (H)", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: ? D E",
+      "options": [
+        { "text": "C", "correct": true },
+        { "text": "F", "correct": false },
+        { "text": "B (H)", "correct": false },
+        { "text": "A", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: A B (H) ?",
+      "options": [
+        { "text": "D", "correct": false },
+        { "text": "G", "correct": false },
+        { "text": "C", "correct": true },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Vilken ton saknas i följden: G A ? C",
+      "options": [
+        { "text": "F", "correct": false },
+        { "text": "B (H)", "correct": true },
+        { "text": "E", "correct": false },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Vad kallas ett sänkt A?",
+      "options": [
+        { "text": "Aiss", "correct": false },
+        { "text": "Ass", "correct": true },
+        { "text": "Giss", "correct": false },
+        { "text": "Bess", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Vilket förtecken höjer en ton?",
+      "options": [
+        { "text": "Korsförtecken (#)", "correct": true },
+        { "text": "B-förtecken (♭)", "correct": false },
+        { "text": "Återställningstecken (♮)", "correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan C och D?",
+      "options": [
+        { "text": "Ett helt tonsteg", "correct": true },
+        { "text": "Ett halvt tonsteg", "correct": false }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan E och F?",
+      "options": [
+        { "text": "Ett helt tonsteg", "correct": false },
+        { "text": "Ett halvt tonsteg", "correct": true }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan B (H) och C?",
+      "options": [
+        { "text": "Ett helt tonsteg", "correct": false },
+        { "text": "Ett halvt tonsteg", "correct": true }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan F och G?",
+      "options": [
+        { "text": "Ett helt tonsteg", "correct": true },
+        { "text": "Ett halvt tonsteg", "correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan D och E?",
+      "options": [
+        { "text": "Ett helt tonsteg", "correct": true },
+        { "text": "Ett halvt tonsteg", "correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "single-choice",
+      "question": "Är det ett helt tonsteg eller ett halvt tonsteg mellan A och B (H)?",
+      "options": [
+        { "text": "Ett helt tonsteg", "correct": true },
+        { "text": "Ett halvt tonsteg", "correct": false }
+      ]
+    }
+  ]
+}

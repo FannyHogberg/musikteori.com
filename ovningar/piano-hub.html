@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lär dig tonerna på pianot - Musikteori.com</title>
+    <meta name="description" content="Öva på pianots tangenter med interaktiva övningar. Lär dig stamtoner, korsförtecken och b-förtecken steg för steg.">
+    <link rel="canonical" href="https://musikteori.com/ovningar/piano-hub.html">
+    <meta property="og:title" content="Lär dig tonerna på pianot">
+    <meta property="og:description" content="Öva på pianots tangenter med interaktiva övningar. Lär dig stamtoner, korsförtecken och b-förtecken steg för steg.">
+    <meta property="og:image" content="https://musikteori.com/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://musikteori.com/ovningar/piano-hub.html">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:site_name" content="Musikteori.com">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .hub-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            padding: 0;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border: 2px solid #e5e7eb;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .section h2 {
+            color: var(--text-color);
+            margin-bottom: 0;
+            text-align: left;
+            min-height: auto;
+            line-height: 1.3;
+            padding: 1.5rem 2rem;
+            background: #f9fafb;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .level-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 0.5px;
+            transform: rotate(1deg);
+        }
+
+        .level-badge.popular {
+            background: #ffd700;
+            color: #333;
+            transform: rotate(-2deg);
+        }
+
+        .level-badge.start {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .level-badge.challenge {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .section-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .level-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 1rem 0;
+        }
+
+        .level-item {
+            padding: 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .level-item:last-child {
+            border-bottom: none;
+        }
+
+        .level-item a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 2rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: background 0.2s;
+            border-radius: 0;
+            background: white;
+            border: none;
+        }
+
+        .level-item a:hover {
+            background: #f9fafb;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .level-info {
+            flex: 1;
+        }
+
+        .level-title {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .level-desc {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .level-arrow {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .section.collapsed {
+            cursor: pointer;
+        }
+
+        .section h2 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .section-header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding-right: 2rem;
+        }
+
+        .section-subtitle {
+            font-size: 0.9rem;
+            font-weight: normal;
+            color: #666;
+        }
+
+        .section-header-content::after {
+            content: '▼';
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .section.collapsed .section-header-content::after {
+            transform: rotate(-90deg);
+        }
+
+        .section.collapsed > *:not(h2) {
+            display: none;
+        }
+
+        .section:not(.collapsed) > *:not(h2) {
+            display: block;
+        }
+
+        .test-section {
+            background: var(--primary-light);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: left;
+            border: 2px solid var(--primary-color);
+        }
+
+        .test-section h2 {
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .test-section p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-header {
+            position: relative;
+        }
+
+        .hub-back-btn {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-size: 1.5rem;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+            padding: 0.5rem;
+            line-height: 1;
+        }
+
+        .hub-back-btn:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hub-container {
+                padding: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1rem;
+                padding: 1rem 1.5rem;
+            }
+
+            .section-header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .section-header-content > div {
+                display: flex;
+                gap: 0.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.85rem;
+            }
+
+            .level-badge {
+                font-size: 0.65rem;
+                padding: 0.2rem 0.5rem;
+                margin-left: 0;
+            }
+
+            .level-item a {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+
+            .level-arrow {
+                align-self: flex-end;
+                font-size: 1.25rem;
+            }
+
+            .level-title {
+                font-size: 0.95rem;
+            }
+
+            .level-desc {
+                font-size: 0.8rem;
+            }
+
+            .hub-back-btn {
+                font-size: 1.3rem;
+                top: 1.5rem;
+                left: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hub-container {
+                padding: 0.5rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.8rem;
+            }
+
+            .level-badge {
+                font-size: 0.6rem;
+                padding: 0.15rem 0.4rem;
+            }
+
+            .level-item .btn {
+                font-size: 0.9rem;
+                padding: 0.75rem;
+            }
+
+            .level-item p {
+                font-size: 0.75rem;
+            }
+
+            .hub-back-btn {
+                font-size: 1.2rem;
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Musikteori.com</a>
+            <button class="menu-toggle" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="../kurser.html">Kurser</a></li>
+                <li><a href="../ovningar.html" class="active">Övningar</a></li>
+                <li><a href="../quiz.html">Quiz</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <a href="../ovningar.html" class="hub-back-btn">←</a>
+            <h1>Lär dig tonerna på pianot</h1>
+            <p>Välj nivå och börja öva!</p>
+        </section>
+
+        <div class="hub-container">
+            <!-- Sektion 1: Stamtoner (vita tangenter) -->
+            <div class="section collapsed">
+                <h2>
+                    <div class="section-header-content">
+                        <span>🎹 Del 1 - Stamtoner (vita tangenterna)</span>
+                        <div>
+                            <span class="level-badge start">Börja här</span>
+                            <span class="level-badge popular">Populär</span>
+                        </div>
+                    </div>
+                    <span class="section-subtitle">Börja med grunderna - lär dig var de vita tangenterna är på pianot</span>
+                </h2>
+
+                <div class="level-grid">
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=1">
+                            <div class="level-info">
+                                <div class="level-title">Övning 1</div>
+                                <div class="level-desc">Börja med de tre första tonerna (C, D, E). Hjälptext visas på tangenterna.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=2">
+                            <div class="level-info">
+                                <div class="level-title">Övning 2</div>
+                                <div class="level-desc">Fortsätt med C, D, E - nu utan hjälptext.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=3">
+                            <div class="level-info">
+                                <div class="level-title">Övning 3</div>
+                                <div class="level-desc">Lär dig de fyra sista vita tangenterna (F, G, A, B). Hjälptext visas.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=4">
+                            <div class="level-info">
+                                <div class="level-title">Övning 4</div>
+                                <div class="level-desc">Fortsätt med F, G, A, B - nu utan hjälptext.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=5">
+                            <div class="level-info">
+                                <div class="level-title">Övning 5</div>
+                                <div class="level-desc">Alla stamtoner utan hjälptext.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Prov för Del 1 -->
+                <div style="margin: 1rem; padding: 1.5rem; background: #fef3c7; border-radius: 8px; border: 2px solid #fbbf24;">
+                    <h3 style="margin-bottom: 0.5rem; color: #92400e; font-size: 1.1rem;">🏆 Prov - Stamtoner</h3>
+                    <p style="color: #78350f; font-size: 0.875rem; margin-bottom: 1rem;">
+                        Testa dina kunskaper! 30 frågor på alla vita tangenter, minst 20 rätt för godkänt.
+                    </p>
+                    <a href="piano-stamtoner-prov.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: #f59e0b; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='#d97706'" onmouseout="this.style.background='#f59e0b'">
+                        Starta prov →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sektion 2: Korsförtecken -->
+            <div class="section collapsed">
+                <h2>
+                    <div class="section-header-content">
+                        <span>🎼 Del 2 - Korsförtecken (svarta tangenterna)</span>
+                    </div>
+                    <span class="section-subtitle">Lär dig de svarta tangenterna med korsförtecken (#)</span>
+                </h2>
+
+                <div class="level-grid">
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=6">
+                            <div class="level-info">
+                                <div class="level-title">Övning 1</div>
+                                <div class="level-desc">Lär dig de svarta tangenterna med korsförtecken (C# D# F# G# A#). Hjälptext visas.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=7">
+                            <div class="level-info">
+                                <div class="level-title">Övning 2</div>
+                                <div class="level-desc">Fortsätt med korsförtecken - nu utan hjälptext.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Prov för Del 2 -->
+                <div style="margin: 1rem; padding: 1.5rem; background: #fef3c7; border-radius: 8px; border: 2px solid #fbbf24;">
+                    <h3 style="margin-bottom: 0.5rem; color: #92400e; font-size: 1.1rem;">🏆 Prov - Korsförtecken</h3>
+                    <p style="color: #78350f; font-size: 0.875rem; margin-bottom: 1rem;">
+                        Testa dina kunskaper! 20 frågor på alla korsförtecken, minst 14 rätt för godkänt.
+                    </p>
+                    <a href="piano-kors-prov.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: #f59e0b; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='#d97706'" onmouseout="this.style.background='#f59e0b'">
+                        Starta prov →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sektion 3: B-förtecken -->
+            <div class="section collapsed">
+                <h2>
+                    <div class="section-header-content">
+                        <span>♭ Del 3 - B-förtecken (svarta tangenterna)</span>
+                    </div>
+                    <span class="section-subtitle">Lär dig de svarta tangenterna med b-förtecken (♭)</span>
+                </h2>
+
+                <div class="level-grid">
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=8">
+                            <div class="level-info">
+                                <div class="level-title">Övning 1</div>
+                                <div class="level-desc">Lär dig de svarta tangenterna med b-förtecken (Db Eb Gb Ab Bb). Hjälptext visas.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=9">
+                            <div class="level-info">
+                                <div class="level-title">Övning 2</div>
+                                <div class="level-desc">Fortsätt med b-förtecken - nu utan hjälptext.</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Prov för Del 3 -->
+                <div style="margin: 1rem; padding: 1.5rem; background: #fef3c7; border-radius: 8px; border: 2px solid #fbbf24;">
+                    <h3 style="margin-bottom: 0.5rem; color: #92400e; font-size: 1.1rem;">🏆 Prov - B-förtecken</h3>
+                    <p style="color: #78350f; font-size: 0.875rem; margin-bottom: 1rem;">
+                        Testa dina kunskaper! 20 frågor på alla b-förtecken, minst 14 rätt för godkänt.
+                    </p>
+                    <a href="piano-b-prov.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: #f59e0b; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='#d97706'" onmouseout="this.style.background='#f59e0b'">
+                        Starta prov →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sektion 4: Alla toner -->
+            <div class="section collapsed">
+                <h2>
+                    <div class="section-header-content">
+                        <span>🎵 Del 4 - Alla toner (kombinationer)</span>
+                        <span class="level-badge challenge">Utmaning</span>
+                    </div>
+                    <span class="section-subtitle">Kombinera allt du har lärt dig - vita och svarta tangenter tillsammans</span>
+                </h2>
+
+                <div class="level-grid">
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=10">
+                            <div class="level-info">
+                                <div class="level-title">Övning 1</div>
+                                <div class="level-desc">Blanda vita tangenter (C-B) med svarta tangenter med korsförtecken (C# D# F# G# A#).</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=11">
+                            <div class="level-info">
+                                <div class="level-title">Övning 2</div>
+                                <div class="level-desc">Blanda vita tangenter (C-B) med svarta tangenter i b-förtecken (Db Eb Gb Ab Bb).</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+
+                    <div class="level-item">
+                        <a href="piano-tangenter-ova.html?level=12">
+                            <div class="level-info">
+                                <div class="level-title">Övning 3</div>
+                                <div class="level-desc">Ultimata utmaningen - alla 12 toner med både kors och b-förtecken!</div>
+                            </div>
+                            <div class="level-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Prov för Del 4 -->
+                <div style="margin: 1rem; padding: 1.5rem; background: #fef3c7; border-radius: 8px; border: 2px solid #fbbf24;">
+                    <h3 style="margin-bottom: 0.5rem; color: #92400e; font-size: 1.1rem;">🏆 Prov - Alla toner</h3>
+                    <p style="color: #78350f; font-size: 0.875rem; margin-bottom: 1rem;">
+                        Slutprovet! 30 frågor på alla toner (stamtoner + kors + b), minst 20 rätt för godkänt.
+                    </p>
+                    <a href="piano-alla-toner-prov.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: #f59e0b; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='#d97706'" onmouseout="this.style.background='#f59e0b'">
+                        Starta prov →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Musikteori.com</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ads.js"></script>
+    <script>
+        // Collapsible sections
+        document.querySelectorAll('.section').forEach(section => {
+            const h2 = section.querySelector('h2');
+
+            // Click on h2 always toggles
+            h2.addEventListener('click', (e) => {
+                section.classList.toggle('collapsed');
+            });
+
+            // Click on section only toggles if collapsed (whole box clickable when closed)
+            section.addEventListener('click', (e) => {
+                if (!section.classList.contains('collapsed')) return;
+                if (e.target.closest('h2')) return; // h2 already handles it
+
+                section.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+</html>
