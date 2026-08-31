@@ -34,10 +34,14 @@ const AD_CONFIG = {
     function createAdUnit() {
         var wrapper = document.createElement('div');
         wrapper.className = 'ad-container';
+        wrapper.style.width = '100%';
+        wrapper.style.maxWidth = '900px';
+        wrapper.style.margin = '1rem auto';
 
         var ins = document.createElement('ins');
         ins.className = 'adsbygoogle';
         ins.style.display = 'block';
+        ins.style.width = '100%';
         ins.setAttribute('data-ad-client', AD_CONFIG.publisherId);
         ins.setAttribute('data-ad-slot', AD_CONFIG.slotId);
         ins.setAttribute('data-ad-format', 'auto');
@@ -55,18 +59,23 @@ const AD_CONFIG = {
         var header = document.querySelector('header');
         var footer = document.querySelector('footer');
 
-        // Annons under headern
-        if (header && header.nextSibling) {
+        // Annons under headern (inte på startsidan)
+        var isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('/index.html');
+        var isContactPage = window.location.pathname.endsWith('/kontakt.html');
+        if (!isHomePage && !isContactPage && header && header.nextSibling) {
             var topAd = createAdUnit();
             header.parentNode.insertBefore(topAd, header.nextSibling);
-            pushAd();
         }
 
         // Annons före footern
-        if (footer) {
+        if (!isContactPage && footer) {
             var bottomAd = createAdUnit();
             footer.parentNode.insertBefore(bottomAd, footer);
-            pushAd();
         }
+
+        script.addEventListener('load', function () {
+            var ads = document.querySelectorAll('.adsbygoogle');
+            ads.forEach(function () { pushAd(); });
+        });
     });
 })();

@@ -127,6 +127,16 @@ class PianoMultipleOctavesExercise {
         });
     }
 
+    getOctaveLabel(octaveId) {
+        const labels = {
+            'stora': 'C',
+            'lilla': 'c',
+            'ettstrukna': 'c\u00B9',
+            'tvastrukna': 'c\u00B2'
+        };
+        return labels[octaveId] || '';
+    }
+
     generatePiano(callback) {
         const pianoKeys = document.getElementById('piano-keys');
         pianoKeys.innerHTML = '';
@@ -141,6 +151,14 @@ class PianoMultipleOctavesExercise {
             label.className = 'key-label';
             label.textContent = keyData.note;
             key.appendChild(label);
+
+            // Add octave marker on C keys
+            if (keyData.note === 'C') {
+                const marker = document.createElement('span');
+                marker.className = 'octave-marker';
+                marker.textContent = this.getOctaveLabel(keyData.octave);
+                key.appendChild(marker);
+            }
 
             key.addEventListener('click', () => this.handleKeyPress(`${keyData.note}-${keyData.octave}`));
             pianoKeys.appendChild(key);

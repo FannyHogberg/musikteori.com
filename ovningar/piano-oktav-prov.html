@@ -83,16 +83,14 @@
 
         .piano {
             position: relative;
-            height: 200px;
             background: #f5f5f5;
             border-radius: 10px;
-            padding: 20px;
+            padding: 20px 20px 40px 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 0;
             overflow-x: auto;
-            overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
         }
 
@@ -143,6 +141,17 @@
             transform: translateY(2px);
         }
 
+        .octave-marker {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: #666;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
         .test-body {
             background: white;
             border-radius: 16px;
@@ -173,7 +182,7 @@
             }
 
             .piano {
-                padding: 15px 10px;
+                padding: 15px 10px 35px 10px;
                 overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
             }
@@ -204,7 +213,7 @@
             }
 
             .piano {
-                padding: 10px 5px;
+                padding: 10px 5px 30px 5px;
             }
 
             .white-key {

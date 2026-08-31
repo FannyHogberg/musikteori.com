@@ -131,8 +131,20 @@ class PianoKeysExercise {
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(() => {
-                this.generatePiano();
-                this.loadLevel();
+                this.generatePiano(() => {
+                    this.loadLevel();
+                    // Re-apply highlight if current question is nameKey
+                    if (this.currentQuestionType === 'nameKey' && this.currentNote) {
+                        const allKeys = document.querySelectorAll('.white-key, .black-key');
+                        allKeys.forEach(key => {
+                            const keyNote = key.getAttribute('data-note');
+                            const keyNoteAlt = key.getAttribute('data-note-alt');
+                            if (keyNote === this.currentNote || keyNoteAlt === this.currentNote || this.noteMatches(keyNote, this.currentNote)) {
+                                key.classList.add('highlighted');
+                            }
+                        });
+                    }
+                });
             }, 150);
         });
     }

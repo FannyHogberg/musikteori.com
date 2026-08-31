@@ -88,9 +88,11 @@
             transition: all 0.2s;
         }
 
-        .note-button:hover {
-            background: var(--primary-light);
-            border-color: var(--primary-color);
+        @media (hover: hover) {
+            .note-button:hover {
+                background: var(--primary-light);
+                border-color: var(--primary-color);
+            }
         }
 
         .note-button.correct {
