@@ -59,12 +59,17 @@ const AD_CONFIG = {
         var header = document.querySelector('header');
         var footer = document.querySelector('footer');
 
-        // Annons under headern (inte på startsidan)
+        // Annons under page-header (den gröna sektionen), eller under navbaren om ingen finns
         var isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('/index.html');
         var isContactPage = window.location.pathname.endsWith('/kontakt.html');
-        if (!isHomePage && !isContactPage && header && header.nextSibling) {
+        if (!isHomePage && !isContactPage) {
+            var pageHeader = document.querySelector('.page-header');
             var topAd = createAdUnit();
-            header.parentNode.insertBefore(topAd, header.nextSibling);
+            if (pageHeader) {
+                pageHeader.parentNode.insertBefore(topAd, pageHeader.nextSibling);
+            } else if (header && header.nextSibling) {
+                header.parentNode.insertBefore(topAd, header.nextSibling);
+            }
         }
 
         // Annons före footern
