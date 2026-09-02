@@ -24,6 +24,18 @@ const AD_CONFIG = {
         return;
     }
 
+    // Ladda Google Analytics
+    var gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-WSGNXEB4WC';
+    document.head.appendChild(gaScript);
+    gaScript.addEventListener('load', function () {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WSGNXEB4WC');
+    });
+
     // Ladda AdSense-skriptet
     var script = document.createElement('script');
     script.async = true;
