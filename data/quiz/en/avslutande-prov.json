@@ -1,0 +1,1010 @@
+{
+  "title": "Final Exam: Basic Music Theory",
+  "description": "Test your knowledge from the entire course",
+  "passingScore": 80,
+  "randomQuestions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/helnot.svg",
+      "options": [
+        { "text": "Whole note", "correct": true },
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        { "text": "Whole note", "correct": false },
+        { "text": "Half note", "correct": true },
+        { "text": "Quarter note", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": true },
+        { "text": "Eighth note", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        { "text": "Quarter note", "correct": false },
+        { "text": "Sixteenth note", "correct": false },
+        { "text": "Eighth note", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/sextondelsnot.svg",
+      "options": [
+        { "text": "Sixteenth note", "correct": true },
+        { "text": "Thirty-second note", "correct": false },
+        { "text": "Eighth note", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Which image shows a whole note?",
+      "options": [
+        { "image": "/images/noter/helnot.svg", "alt": "Note 1", "correct": true },
+        { "image": "/images/noter/halvnot.svg", "alt": "Note 2", "correct": false },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Which image shows a half note?",
+      "options": [
+        { "image": "/images/noter/helnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/halvnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Which image shows a quarter note?",
+      "options": [
+        { "image": "/images/noter/halvnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Which image shows an eighth note?",
+      "options": [
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/sextondelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Which image shows a sixteenth note?",
+      "options": [
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/sextondelsnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/trettiotvaondelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a whole note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a half note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a quarter note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "How many sixteenth notes equal a quarter note?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "How many half notes equal a whole note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a whole note?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a whole note?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": true },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a half note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a quarter note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Which note head is filled in (not hollow)?",
+      "options": [
+        { "text": "Whole note", "correct": false },
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": true },
+        { "text": "All of the above", "correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "Which note has only one flag on its stem?",
+      "options": [
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": false },
+        { "text": "Eighth note", "correct": true },
+        { "text": "Sixteenth note", "correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "single-choice",
+      "question": "How many flags does a sixteenth note have?",
+      "options": [
+        { "text": "One flag", "correct": false },
+        { "text": "Two flags", "correct": true },
+        { "text": "Three flags", "correct": false },
+        { "text": "No flags", "correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "single-choice",
+      "question": "What type of rest is this?",
+      "image": "/images/noter/helpaus.png",
+      "options": [
+        { "text": "Whole rest", "correct": true },
+        { "text": "Half rest", "correct": false },
+        { "text": "Quarter rest", "correct": false }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "single-choice",
+      "question": "What type of rest is this?",
+      "image": "/images/noter/halvpaus.png",
+      "options": [
+        { "text": "Whole rest", "correct": false },
+        { "text": "Half rest", "correct": true },
+        { "text": "Quarter rest", "correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "single-choice",
+      "question": "What type of rest is this?",
+      "image": "/images/noter/fjardedelsPause.png",
+      "options": [
+        { "text": "Half rest", "correct": false },
+        { "text": "Quarter rest", "correct": true },
+        { "text": "Eighth rest", "correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "single-choice",
+      "question": "What type of rest is this?",
+      "image": "/images/noter/attondelspause.png",
+      "options": [
+        { "text": "Quarter rest", "correct": false },
+        { "text": "Eighth rest", "correct": true },
+        { "text": "Sixteenth rest", "correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "type": "single-choice",
+      "question": "What type of rest is this?",
+      "image": "/images/noter/sextondelsPause.png",
+      "options": [
+        { "text": "Eighth rest", "correct": false },
+        { "text": "Sixteenth rest", "correct": true },
+        { "text": "Quarter rest", "correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "single-choice",
+      "question": "Which image shows a whole rest?",
+      "options": [
+        { "image": "/images/noter/helpaus.png", "alt": "Rest 1", "correct": true },
+        { "image": "/images/noter/halvpaus.png", "alt": "Rest 2", "correct": false },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Rest 3", "correct": false }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "single-choice",
+      "question": "Which image shows a half rest?",
+      "options": [
+        { "image": "/images/noter/helpaus.png", "alt": "Rest 1", "correct": false },
+        { "image": "/images/noter/halvpaus.png", "alt": "Rest 2", "correct": true },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Rest 3", "correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "type": "single-choice",
+      "question": "Which image shows a quarter rest?",
+      "options": [
+        { "image": "/images/noter/halvpaus.png", "alt": "Rest 1", "correct": false },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Rest 2", "correct": true },
+        { "image": "/images/noter/attondelspause.png", "alt": "Rest 3", "correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "type": "single-choice",
+      "question": "Which image shows an eighth rest?",
+      "options": [
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Rest 1", "correct": false },
+        { "image": "/images/noter/attondelspause.png", "alt": "Rest 2", "correct": true },
+        { "image": "/images/noter/sextondelsPause.png", "alt": "Rest 3", "correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "type": "single-choice",
+      "question": "Which image shows a sixteenth rest?",
+      "options": [
+        { "image": "/images/noter/attondelspause.png", "alt": "Rest 1", "correct": false },
+        { "image": "/images/noter/sextondelsPause.png", "alt": "Rest 2", "correct": true },
+        { "image": "/images/noter/fjardedelsPause.png", "alt": "Rest 3", "correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a whole rest?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 36,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a half rest?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a quarter rest?",
+      "options": [
+        { "text": "1/8 (an eighth)", "correct": false },
+        { "text": "1/4 (a quarter)", "correct": false },
+        { "text": "1/2 (a half)", "correct": false },
+        { "text": "1", "correct": true }
+      ]
+    },
+    {
+      "id": 38,
+      "type": "single-choice",
+      "question": "How many quarter notes equal an eighth rest?",
+      "options": [
+        { "text": "1/8 (an eighth)", "correct": false },
+        { "text": "1/4 (a quarter)", "correct": false },
+        { "text": "1/2 (half a quarter note)", "correct": true },
+        { "text": "1", "correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "single-choice",
+      "question": "How many eighth rests equal a quarter rest?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "type": "single-choice",
+      "question": "How many sixteenth rests equal a quarter rest?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 41,
+      "type": "single-choice",
+      "question": "How many half rests equal a whole rest?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "type": "single-choice",
+      "question": "How many quarter rests equal a whole rest?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "type": "single-choice",
+      "question": "How many eighth rests equal a whole rest?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": true },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "type": "single-choice",
+      "question": "Which rest hangs down from the staff line?",
+      "options": [
+        { "text": "Whole rest", "correct": true },
+        { "text": "Half rest", "correct": false },
+        { "text": "Quarter rest", "correct": false },
+        { "text": "Eighth rest", "correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "type": "single-choice",
+      "question": "Which rest sits on top of the staff line?",
+      "options": [
+        { "text": "Whole rest", "correct": false },
+        { "text": "Half rest", "correct": true },
+        { "text": "Quarter rest", "correct": false },
+        { "text": "Eighth rest", "correct": false }
+      ]
+    },
+    {
+      "id": 46,
+      "type": "single-choice",
+      "question": "Which rest corresponds to a whole note?",
+      "options": [
+        { "text": "Whole rest", "correct": true },
+        { "text": "Half rest", "correct": false },
+        { "text": "Quarter rest", "correct": false },
+        { "text": "Eighth rest", "correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "type": "single-choice",
+      "question": "Which rest corresponds to a half note?",
+      "options": [
+        { "text": "Whole rest", "correct": false },
+        { "text": "Half rest", "correct": true },
+        { "text": "Quarter rest", "correct": false },
+        { "text": "Eighth rest", "correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "single-choice",
+      "question": "Which rest corresponds to a quarter note?",
+      "options": [
+        { "text": "Half rest", "correct": false },
+        { "text": "Quarter rest", "correct": true },
+        { "text": "Eighth rest", "correct": false },
+        { "text": "Sixteenth rest", "correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "type": "single-choice",
+      "question": "In a 4/4 time signature, how long should the silence last for a quarter rest?",
+      "options": [
+        { "text": "Half a beat", "correct": false },
+        { "text": "One beat", "correct": true },
+        { "text": "Two beats", "correct": false },
+        { "text": "Four beats", "correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "type": "single-choice",
+      "question": "How many beats are in each measure of this time signature?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        { "text": "1 beat", "correct": false },
+        { "text": "2 beats", "correct": true },
+        { "text": "3 beats", "correct": false },
+        { "text": "4 beats", "correct": false }
+      ]
+    },
+    {
+      "id": 51,
+      "type": "single-choice",
+      "question": "How many beats are in each measure of this time signature?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        { "text": "2 beats", "correct": false },
+        { "text": "3 beats", "correct": true },
+        { "text": "4 beats", "correct": false },
+        { "text": "6 beats", "correct": false }
+      ]
+    },
+    {
+      "id": 52,
+      "type": "single-choice",
+      "question": "How many beats are in each measure of this time signature?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "2 beats", "correct": false },
+        { "text": "3 beats", "correct": false },
+        { "text": "4 beats", "correct": true },
+        { "text": "8 beats", "correct": false }
+      ]
+    },
+    {
+      "id": 53,
+      "type": "single-choice",
+      "question": "What time signature is this?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        { "text": "2/4 time", "correct": true },
+        { "text": "3/4 time", "correct": false },
+        { "text": "4/4 time", "correct": false }
+      ]
+    },
+    {
+      "id": 54,
+      "type": "single-choice",
+      "question": "What time signature is this?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        { "text": "2/4 time", "correct": false },
+        { "text": "3/4 time", "correct": true },
+        { "text": "4/4 time", "correct": false }
+      ]
+    },
+    {
+      "id": 55,
+      "type": "single-choice",
+      "question": "What time signature is this?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "2/4 time", "correct": false },
+        { "text": "3/4 time", "correct": false },
+        { "text": "4/4 time", "correct": true }
+      ]
+    },
+    {
+      "id": 56,
+      "type": "single-choice",
+      "question": "What is the most common time signature in Western music?",
+      "options": [
+        { "text": "2/4 time", "correct": false },
+        { "text": "3/4 time", "correct": false },
+        { "text": "4/4 time", "correct": true },
+        { "text": "6/8 time", "correct": false }
+      ]
+    },
+    {
+      "id": 57,
+      "type": "single-choice",
+      "question": "What does the top number in a time signature mean?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "Which note value gets one beat", "correct": false },
+        { "text": "How many beats are counted in each measure", "correct": true },
+        { "text": "How fast the music should be played", "correct": false },
+        { "text": "How long each measure is in seconds", "correct": false }
+      ]
+    },
+    {
+      "id": 58,
+      "type": "single-choice",
+      "question": "What does the bottom number in a time signature mean?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "How many beats per measure", "correct": false },
+        { "text": "Which note value gets one beat", "correct": true },
+        { "text": "How many measures in the piece", "correct": false },
+        { "text": "The tempo of the music", "correct": false }
+      ]
+    },
+    {
+      "id": 59,
+      "type": "single-choice",
+      "question": "What is a bar line used for?",
+      "image": "/images/takt/taktstreck.png",
+      "options": [
+        { "text": "To show where one measure ends and the next begins", "correct": true },
+        { "text": "To show that a piece is finished", "correct": false },
+        { "text": "To show that you should pause", "correct": false },
+        { "text": "To show the tempo", "correct": false }
+      ]
+    },
+    {
+      "id": 61,
+      "type": "single-choice",
+      "question": "How many quarter notes fit in a 4/4 measure?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "3", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 62,
+      "type": "single-choice",
+      "question": "How many quarter notes fit in a 2/4 measure?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "3", "correct": false },
+        { "text": "4", "correct": false }
+      ]
+    },
+    {
+      "id": 63,
+      "type": "single-choice",
+      "question": "How many quarter notes fit in a 3/4 measure?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "3", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "6", "correct": false }
+      ]
+    },
+    {
+      "id": 64,
+      "type": "single-choice",
+      "question": "How many eighth notes fit in a 4/4 measure?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        { "text": "4", "correct": false },
+        { "text": "6", "correct": false },
+        { "text": "8", "correct": true },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 65,
+      "type": "single-choice",
+      "question": "How many half notes fit in a 4/4 measure?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "3", "correct": false },
+        { "text": "4", "correct": false }
+      ]
+    },
+    {
+      "id": 66,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (4/4 time)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-1-halvnot.png",
+      "options": [
+        { "image": "/images/quiz/helnot.png", "alt": "whole note", "correct": false },
+        { "image": "/images/quiz/3-fjardedelar", "alt": "3 quarter notes", "correct": false },
+        { "image": "/images/quiz/halvnot.png", "alt": "1 half note", "correct": true }
+      ]
+    },
+    {
+      "id": 67,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (4/4 time)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-3-fjardedelar.png",
+      "options": [
+        { "image": "/images/quiz/fjardedel.png", "alt": "A quarter note", "correct": true },
+        { "image": "/images/quiz/2-halvnoter.png", "alt": "Two half notes", "correct": false },
+        { "image": "/images/quiz/helnot.png", "alt": "A whole note", "correct": false }
+      ]
+    },
+    {
+      "id": 68,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (3/4 time)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-2-attondelar-1-fjardedel.png",
+      "options": [
+        { "image": "/images/quiz/halvnot.png", "alt": "A half note", "correct": false },
+        { "image": "/images/quiz/fjardedel.png", "alt": "A quarter note", "correct": true },
+        { "image": "/images/quiz/attondel.png", "alt": "An eighth note", "correct": true }
+      ]
+    },
+    {
+      "id": 69,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (3/4 time)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-1-halvnot.png",
+      "options": [
+        { "image": "/images/quiz/attondel.png", "alt": "An eighth note", "correct": false },
+        { "image": "/images/quiz/fjardedel.png", "alt": "A quarter note", "correct": true },
+        { "image": "/images/quiz/halvnot.png", "alt": "A half note", "correct": true }
+      ]
+    },
+    {
+      "id": 70,
+      "type": "single-choice",
+      "question": "Can a 4/4 measure be filled with just one whole note?",
+      "options": [
+        { "text": "Yes, a whole note is worth 4/4", "correct": true },
+        { "text": "No, you need at least two notes", "correct": false },
+        { "text": "No, a whole note is too long", "correct": false },
+        { "text": "Yes, but only if it's the last measure", "correct": false }
+      ]
+    },
+    {
+      "id": 71,
+      "type": "single-choice",
+      "question": "In a 4/4 measure, how many different ways can you fill the measure?",
+      "options": [
+        { "text": "Only one way", "correct": false },
+        { "text": "Only with quarter notes", "correct": false },
+        { "text": "Many different ways, as long as the total equals 4/4", "correct": true },
+        { "text": "Four different ways", "correct": false }
+      ]
+    },
+    {
+      "id": 72,
+      "type": "multiple-choice",
+      "question": "Which of these notes belong to the white keys on a piano?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        { "text": "C", "correct": true },
+        { "text": "D", "correct": true },
+        { "text": "C#", "correct": false },
+        { "text": "E", "correct": true }
+      ]
+    },
+    {
+      "id": 73,
+      "type": "single-choice",
+      "question": "What is a sharp used for?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        { "text": "To raise a note by a half step", "correct": true },
+        { "text": "To lower a note by a half step", "correct": false },
+        { "text": "To restore the note to its natural pitch", "correct": false }
+      ]
+    },
+    {
+      "id": 74,
+      "type": "single-choice",
+      "question": "What symbol is used to raise a note by a half step?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        { "text": "Flat (♭)", "correct": false },
+        { "text": "Sharp (#)", "correct": true },
+        { "text": "Natural (♮)", "correct": false }
+      ]
+    },
+    {
+      "id": 75,
+      "type": "single-choice",
+      "question": "What is a flat used for?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        { "text": "To raise a note by a half step", "correct": false },
+        { "text": "To lower a note by a half step", "correct": true },
+        { "text": "To restore the note to its natural pitch", "correct": false }
+      ]
+    },
+    {
+      "id": 76,
+      "type": "multiple-choice",
+      "question": "Between which white keys is there NOT a whole step?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        { "text": "C and D", "correct": false },
+        { "text": "E and F", "correct": true },
+        { "text": "G and A", "correct": false },
+        { "text": "B and C", "correct": true }
+      ]
+    },
+    {
+      "id": 77,
+      "type": "single-choice",
+      "question": "What is a raised C called?",
+      "options": [
+        { "text": "Cb", "correct": false },
+        { "text": "C#", "correct": true },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 78,
+      "type": "single-choice",
+      "question": "What is a natural sign used for?",
+      "image": "/images/toner/aterstallningstecken.png",
+      "options": [
+        { "text": "To raise a note", "correct": false },
+        { "text": "To lower a note", "correct": false },
+        { "text": "To cancel a sharp or flat from a note", "correct": true }
+      ]
+    },
+    {
+      "id": 79,
+      "type": "single-choice",
+      "question": "C# is the same note as:",
+      "options": [
+        { "text": "C", "correct": false },
+        { "text": "Db", "correct": true },
+        { "text": "D", "correct": false },
+        { "text": "B", "correct": false }
+      ]
+    },
+    {
+      "id": 80,
+      "type": "single-choice",
+      "question": "What is a lowered D called?",
+      "options": [
+        { "text": "D#", "correct": false },
+        { "text": "Db", "correct": true },
+        { "text": "C", "correct": false },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 81,
+      "type": "single-choice",
+      "question": "What symbol is used to lower a note by a half step?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        { "text": "Sharp (#)", "correct": false },
+        { "text": "Flat (♭)", "correct": true },
+        { "text": "Natural (♮)", "correct": false },
+        { "text": "Double flat (♭♭)", "correct": false }
+      ]
+    },
+    {
+      "id": 82,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: C D E ?",
+      "options": [
+        { "text": "E", "correct": false },
+        { "text": "F", "correct": true },
+        { "text": "G", "correct": false },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 83,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: F G A ?",
+      "options": [
+        { "text": "G", "correct": false },
+        { "text": "C", "correct": false },
+        { "text": "B", "correct": true },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 84,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: E ? G",
+      "options": [
+        { "text": "D", "correct": false },
+        { "text": "F", "correct": true },
+        { "text": "A", "correct": false },
+        { "text": "B", "correct": false }
+      ]
+    },
+    {
+      "id": 85,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: ? D E",
+      "options": [
+        { "text": "C", "correct": true },
+        { "text": "F", "correct": false },
+        { "text": "B", "correct": false },
+        { "text": "A", "correct": false }
+      ]
+    },
+    {
+      "id": 86,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: A B ?",
+      "options": [
+        { "text": "D", "correct": false },
+        { "text": "G", "correct": false },
+        { "text": "C", "correct": true },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 87,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: G A ? C",
+      "options": [
+        { "text": "F", "correct": false },
+        { "text": "B", "correct": true },
+        { "text": "E", "correct": false },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 88,
+      "type": "single-choice",
+      "question": "What is a lowered A called?",
+      "options": [
+        { "text": "A#", "correct": false },
+        { "text": "Ab", "correct": true },
+        { "text": "G#", "correct": false },
+        { "text": "Bb", "correct": false }
+      ]
+    },
+    {
+      "id": 89,
+      "type": "single-choice",
+      "question": "Which accidental raises a note?",
+      "options": [
+        { "text": "Sharp (#)", "correct": true },
+        { "text": "Flat (♭)", "correct": false },
+        { "text": "Natural (♮)", "correct": false }
+      ]
+    },
+    {
+      "id": 90,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between C and D?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    },
+    {
+      "id": 91,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between E and F?",
+      "options": [
+        { "text": "A whole step", "correct": false },
+        { "text": "A half step", "correct": true }
+      ]
+    },
+    {
+      "id": 92,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between B and C?",
+      "options": [
+        { "text": "A whole step", "correct": false },
+        { "text": "A half step", "correct": true }
+      ]
+    },
+    {
+      "id": 93,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between F and G?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    },
+    {
+      "id": 94,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between D and E?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    },
+    {
+      "id": 95,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between A and B?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    }
+  ]
+}

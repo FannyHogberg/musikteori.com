@@ -1,100 +1,490 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Startsida -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Startsida / Homepage -->
     <url>
         <loc>https://musikteori.com/</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/"/>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/"/>
         <priority>1.0</priority>
     </url>
 
-    <!-- Huvudsidor -->
+    <!-- Huvudsidor / Main pages -->
     <url>
         <loc>https://musikteori.com/kurser.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser.html"/>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/courses.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser.html"/>
+        <priority>0.9</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/ovningar.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar.html"/>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar.html"/>
+        <priority>0.9</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz.html"/>
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://musikteori.com/en/quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz.html"/>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>https://musikteori.com/kontakt.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kontakt.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kontakt.html"/>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/contact.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kontakt.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kontakt.html"/>
         <priority>0.5</priority>
     </url>
 
-    <!-- Kurs: Grundläggande Musikteori -->
+    <!-- Kurs: Grundlaggande Musikteori / Course: Basic Music Theory -->
     <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/index.html"/>
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/index.html"/>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-1-tonernas-namn.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-1-tonernas-namn.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-1-note-names.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-1-tonernas-namn.html"/>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-1-note-names.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-1-tonernas-namn.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-1-note-names.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-1-tonernas-namn.html"/>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-2-notsystemet.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-2-notsystemet.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-2-the-staff.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-2-notsystemet.html"/>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-2-the-staff.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-2-notsystemet.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-2-the-staff.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-2-notsystemet.html"/>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-3-klavar-och-oktaver.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-3-klavar-och-oktaver.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-3-clefs-and-octaves.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-3-klavar-och-oktaver.html"/>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-3-clefs-and-octaves.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-3-klavar-och-oktaver.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-3-clefs-and-octaves.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-3-klavar-och-oktaver.html"/>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-4-oktaver.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-4-oktaver.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-4-octaves.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-4-oktaver.html"/>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-4-octaves.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-4-oktaver.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-4-octaves.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-4-oktaver.html"/>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-5-kors-och-b-fortecken.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-5-kors-och-b-fortecken.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-5-sharps-and-flats.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-5-kors-och-b-fortecken.html"/>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-5-sharps-and-flats.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-5-kors-och-b-fortecken.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-5-sharps-and-flats.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-5-kors-och-b-fortecken.html"/>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-6-notvarden.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-6-notvarden.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-6-note-values.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-6-notvarden.html"/>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-6-note-values.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-6-notvarden.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-6-note-values.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-6-notvarden.html"/>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-7-pauser.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-7-pauser.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-7-rests.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-7-pauser.html"/>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-7-rests.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-7-pauser.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-7-rests.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-7-pauser.html"/>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-8-taktarter.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-8-taktarter.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-8-time-signatures.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-8-taktarter.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/basic-music-theory/part-8-time-signatures.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-8-taktarter.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/basic-music-theory/part-8-time-signatures.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/grundlaggande-musikteori-videoserie/del-8-taktarter.html"/>
         <priority>0.8</priority>
     </url>
 
     <!-- Quiz -->
     <url>
         <loc>https://musikteori.com/quiz/tonernas-namn-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/tonernas-namn-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/quiz/noterna-quiz.html</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/quiz/pauser-quiz.html</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/quiz/taktarter-quiz.html</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/quiz/avslutande-prov.html</loc>
+        <loc>https://musikteori.com/en/quiz/tonernas-namn-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/tonernas-namn-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
         <priority>0.7</priority>
     </url>
 
-    <!-- Övningshubbar -->
+    <url>
+        <loc>https://musikteori.com/quiz/noterna-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/noterna-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/noterna-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/noterna-quiz.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/quiz/noterna-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/noterna-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/noterna-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/noterna-quiz.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/quiz/pauser-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/pauser-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/pauser-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/pauser-quiz.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/quiz/pauser-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/pauser-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/pauser-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/pauser-quiz.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/quiz/taktarter-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/taktarter-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/quiz/taktarter-quiz.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/taktarter-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/quiz/avslutande-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/avslutande-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/avslutande-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/avslutande-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/quiz/avslutande-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/avslutande-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/avslutande-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/avslutande-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Ovningshubbar / Exercise hubs -->
     <url>
         <loc>https://musikteori.com/ovningar/piano-hub.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-hub.html"/>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-hub.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-hub.html"/>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>https://musikteori.com/ovningar/noter-g-klav-hub.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/noter-g-klav-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/notes-treble-clef-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/noter-g-klav-hub.html"/>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/ovningar/noter-f-klav-hub.html</loc>
+        <loc>https://musikteori.com/en/exercises/notes-treble-clef-hub.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/noter-g-klav-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/notes-treble-clef-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/noter-g-klav-hub.html"/>
         <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/noter-f-klav-hub.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/noter-f-klav-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/notes-bass-clef-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/noter-f-klav-hub.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/notes-bass-clef-hub.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/noter-f-klav-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/notes-bass-clef-hub.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/noter-f-klav-hub.html"/>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Ovningar / Exercises -->
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-tangenter-ova.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-tangenter-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-keys-exercise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-tangenter-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-keys-exercise.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-tangenter-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-keys-exercise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-tangenter-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-tangenter-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-tangenter-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-keys-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-tangenter-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-keys-test.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-tangenter-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-keys-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-tangenter-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-stamtoner-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-stamtoner-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-natural-notes-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-stamtoner-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-natural-notes-test.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-stamtoner-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-natural-notes-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-stamtoner-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-kors-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-kors-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-sharps-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-kors-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-sharps-test.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-kors-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-sharps-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-kors-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-b-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-b-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-flats-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-b-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-flats-test.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-b-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-flats-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-b-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-alla-toner-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-alla-toner-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-all-notes-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-alla-toner-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-all-notes-test.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-alla-toner-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-all-notes-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-alla-toner-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-oktav.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-oktav.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-octave.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-oktav.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-octave.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-oktav.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-octave.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-oktav.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-oktav-prov.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-oktav-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-octave-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-oktav-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-octave-test.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-oktav-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-octave-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-oktav-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/piano-flera-oktaver.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-flera-oktaver.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-multiple-octaves.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-flera-oktaver.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/piano-multiple-octaves.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/piano-flera-oktaver.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/piano-multiple-octaves.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/piano-flera-oktaver.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/notlasning.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/notlasning.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/note-reading.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/notlasning.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/note-reading.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/notlasning.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/note-reading.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/notlasning.html"/>
+        <priority>0.7</priority>
     </url>
 </urlset>

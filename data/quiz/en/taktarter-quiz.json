@@ -1,0 +1,250 @@
+{
+  "title": "Quiz: Time Signatures",
+  "description": "Test your knowledge of time signatures",
+  "passingScore": 60,
+  "randomQuestions": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "How many beats are in each measure of this time signature?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        { "text": "1 beat", "correct": false },
+        { "text": "2 beats", "correct": true },
+        { "text": "3 beats", "correct": false },
+        { "text": "4 beats", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "How many beats are in each measure of this time signature?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        { "text": "2 beats", "correct": false },
+        { "text": "3 beats", "correct": true },
+        { "text": "4 beats", "correct": false },
+        { "text": "6 beats", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "How many beats are in each measure of this time signature?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "2 beats", "correct": false },
+        { "text": "3 beats", "correct": false },
+        { "text": "4 beats", "correct": true },
+        { "text": "8 beats", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "What time signature is this?",
+      "image": "/images/takt/2_4takt.png",
+      "options": [
+        { "text": "2/4 time", "correct": true },
+        { "text": "3/4 time", "correct": false },
+        { "text": "4/4 time", "correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "What time signature is this?",
+      "image": "/images/takt/3_4takt.png",
+      "options": [
+        { "text": "2/4 time", "correct": false },
+        { "text": "3/4 time", "correct": true },
+        { "text": "4/4 time", "correct": false }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single-choice",
+      "question": "What time signature is this?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "2/4 time", "correct": false },
+        { "text": "3/4 time", "correct": false },
+        { "text": "4/4 time", "correct": true }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "What is the most common time signature in Western music?",
+      "options": [
+        { "text": "2/4 time", "correct": false },
+        { "text": "3/4 time", "correct": false },
+        { "text": "4/4 time", "correct": true },
+        { "text": "6/8 time", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "What does the top number in a time signature mean?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "Which note value gets one beat", "correct": false },
+        { "text": "How many beats are counted in each measure", "correct": true },
+        { "text": "How fast the music should be played", "correct": false },
+        { "text": "How long each measure is in seconds", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "What does the bottom number in a time signature mean?",
+      "image": "/images/takt/4_4takt.png",
+      "options": [
+        { "text": "How many beats per measure", "correct": false },
+        { "text": "Which note value gets one beat", "correct": true },
+        { "text": "How many measures in the piece", "correct": false },
+        { "text": "The tempo of the music", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "What is a bar line used for?",
+      "image": "/images/takt/taktstreck.png",
+      "options": [
+        { "text": "To show where one measure ends and the next begins", "correct": true },
+        { "text": "To show that a piece is finished", "correct": false },
+        { "text": "To show that you should pause", "correct": false },
+        { "text": "To show the tempo", "correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "How many quarter notes fit in a 4/4 measure?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "3", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "How many quarter notes fit in a 2/4 measure?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "3", "correct": false },
+        { "text": "4", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "How many quarter notes fit in a 3/4 measure?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "3", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "6", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "How many eighth notes fit in a 4/4 measure?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        { "text": "4", "correct": false },
+        { "text": "6", "correct": false },
+        { "text": "8", "correct": true },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "How many half notes fit in a 4/4 measure?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "3", "correct": false },
+        { "text": "4", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (4/4 time)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-1-halvnot.png",
+      "options": [
+        { "image": "/images/quiz/helnot.png", "alt": "whole note", "correct": false },
+        { "image": "/images/quiz/3-fjardedelar", "alt": "3 quarter notes", "correct": false },
+        { "image": "/images/quiz/halvnot.png", "alt": "1 half note", "correct": true }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (4/4 time)?",
+      "image": "/images/quiz/ofullstandig-4-4-takt-3-fjardedelar.png",
+      "options": [
+        { "image": "/images/quiz/fjardedel.png", "alt": "A quarter note", "correct": true },
+        { "image": "/images/quiz/2-halvnoter.png", "alt": "Two half notes", "correct": false },
+        { "image": "/images/quiz/helnot.png", "alt": "A whole note", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (3/4 time)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-2-attondelar-1-fjardedel.png",
+      "options": [
+        { "image": "/images/quiz/halvnot.png", "alt": "A half note", "correct": false },
+        { "image": "/images/quiz/fjardedel.png", "alt": "A quarter note", "correct": true },
+        { "image": "/images/quiz/attondel.png", "alt": "An eighth note", "correct": true }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "Which notes can complete this measure (3/4 time)?",
+      "image": "/images/quiz/ofullstandig-3-4-takt-1-halvnot.png",
+      "options": [
+        { "image": "/images/quiz/attondel.png", "alt": "An eighth note", "correct": false },
+        { "image": "/images/quiz/fjardedel.png", "alt": "A quarter note", "correct": true },
+        { "image": "/images/quiz/halvnot.png", "alt": "A half note", "correct": true }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Can a 4/4 measure be filled with just one whole note?",
+      "options": [
+        { "text": "Yes, a whole note is worth 4/4", "correct": true },
+        { "text": "No, you need at least two notes", "correct": false },
+        { "text": "No, a whole note is too long", "correct": false },
+        { "text": "Yes, but only if it's the last measure", "correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "In a 4/4 measure, how many different ways can you fill the measure?",
+      "options": [
+        { "text": "Only one way", "correct": false },
+        { "text": "Only with quarter notes", "correct": false },
+        { "text": "Many different ways, as long as the total equals 4/4", "correct": true },
+        { "text": "Four different ways", "correct": false }
+      ]
+    }
+  ]
+}

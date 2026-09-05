@@ -39,7 +39,7 @@ class NotvardenAudio {
             this.activePlayerEl.querySelectorAll('.beat').forEach(b => b.classList.remove('beat-active'));
             const btn = this.activePlayerEl.querySelector('.notvarden-play-btn');
             if (btn) {
-                btn.textContent = btn.dataset.label || 'Lyssna';
+                btn.textContent = btn.dataset.label || T('audio.listen');
                 btn.classList.remove('playing');
             }
             this.activePlayerEl = null;
@@ -116,7 +116,7 @@ class NotvardenAudio {
 
         const btn = playerEl.querySelector('.notvarden-play-btn');
         if (btn) {
-            btn.textContent = 'Stopp';
+            btn.textContent = T('audio.stop');
             btn.classList.add('playing');
         }
 
@@ -180,7 +180,7 @@ class NotvardenAudio {
         const rows = containerEl.querySelectorAll('.comparison-measure');
         const playBtn = containerEl.querySelector('.notvarden-play-btn');
         if (playBtn) {
-            playBtn.textContent = 'Stopp';
+            playBtn.textContent = T('audio.stop');
             playBtn.classList.add('playing');
         }
         this.activePlayerEl = containerEl;

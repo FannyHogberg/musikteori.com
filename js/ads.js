@@ -18,6 +18,11 @@ const AD_CONFIG = {
 (function () {
     'use strict';
 
+    // Ladda inte annonser eller analytics lokalt
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        return;
+    }
+
     // Ladda inte annonser om slot-ID inte är konfigurerat
     if (AD_CONFIG.slotId === 'XXXXXXX') {
         console.warn('Ads: Slot-ID är inte konfigurerat. Uppdatera AD_CONFIG.slotId i js/ads.js');

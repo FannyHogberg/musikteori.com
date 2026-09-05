@@ -95,13 +95,13 @@ class PianoMultipleOctavesExercise {
     init() {
         // Update header
         const octaveNames = this.selectedOctaves.map(o => {
-            if (o === 'lilla') return 'Lilla';
-            if (o === 'ettstrukna') return 'Ettstrukna';
-            if (o === 'tvastrukna') return 'Tvåstrukna';
+            if (o === 'lilla') return T('octave.lillaShort');
+            if (o === 'ettstrukna') return T('octave.ettstruknaShort');
+            if (o === 'tvastrukna') return T('octave.tvastruknaShort');
         }).join(', ');
 
         document.getElementById('level-description').textContent =
-            `Test: ${octaveNames} - ${this.totalQuestions} frågor, minst ${this.requiredCorrect} rätt för godkänt`;
+            T('multiOctave.description', {names: octaveNames, total: this.totalQuestions, required: this.requiredCorrect});
 
         this.generatePiano(() => {
             // Ask first question only AFTER piano is fully generated
@@ -209,7 +209,7 @@ class PianoMultipleOctavesExercise {
         const noteImage = document.getElementById('note-image');
         if (noteImage) {
             noteImage.src = this.getImagePath(this.currentNote);
-            noteImage.alt = 'Not att hitta';
+            noteImage.alt = T('exercise.noteAltGeneric');
         }
     }
 
@@ -252,7 +252,7 @@ class PianoMultipleOctavesExercise {
         const question = document.getElementById('question');
         question.innerHTML = `
             <div class="quiz-results">
-                <h2>Provet slutfört!</h2>
+                <h2>${T('test.completed')}</h2>
 
                 <div class="score-display ${passed ? 'passed' : 'failed'}">
                     <div class="score-number">${correctCount}/${this.totalQuestions}</div>
@@ -261,18 +261,18 @@ class PianoMultipleOctavesExercise {
 
                 <div class="result-message">
                     ${passed
-                        ? '🎉 Grattis! Du är godkänd!'
-                        : `Tyvärr blev du inte godkänd. Du behöver minst ${this.requiredCorrect} rätt av ${this.totalQuestions}.`
+                        ? T('test.passed')
+                        : T('test.failed', {required: this.requiredCorrect, total: this.totalQuestions})
                     }
                 </div>
 
                 <div class="quiz-actions" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
                     ${passed
-                        ? '<button class="btn btn-primary" id="continue-btn">Fortsätt öva →</button>'
+                        ? `<button class="btn btn-primary" id="continue-btn">${T('test.continueBtn')}</button>`
                         : ''
                     }
-                    <button class="btn ${passed ? '' : 'btn-primary'}" id="retry-btn">Gör om provet</button>
-                    <button class="btn" id="back-btn">Byt övning</button>
+                    <button class="btn ${passed ? '' : 'btn-primary'}" id="retry-btn">${T('test.retakeBtn')}</button>
+                    <button class="btn" id="back-btn">${T('test.changeBtn')}</button>
                 </div>
             </div>
         `;
@@ -285,27 +285,27 @@ class PianoMultipleOctavesExercise {
         document.getElementById('back-btn').addEventListener('click', () => {
             // Navigate to the appropriate hub based on clef
             if (this.clef === 'f-klav') {
-                window.location.href = 'noter-f-klav-hub.html';
+                window.location.href = localUrl('noter-f-klav-hub.html');
             } else {
-                window.location.href = 'noter-g-klav-hub.html';
+                window.location.href = localUrl('noter-g-klav-hub.html');
             }
         });
     }
 
     attachEventListeners() {
         document.getElementById('restart-btn').addEventListener('click', () => {
-            if (confirm('Är du säker på att du vill börja om från början?')) {
+            if (confirm(T('test.confirmRestart'))) {
                 window.location.reload();
             }
         });
 
         document.getElementById('back-to-hub-btn').addEventListener('click', () => {
-            if (confirm('Är du säker på att du vill avbryta provet?')) {
+            if (confirm(T('test.confirmAbort'))) {
                 // Navigate to the appropriate hub based on clef
                 if (this.clef === 'f-klav') {
-                    window.location.href = 'noter-f-klav-hub.html';
+                    window.location.href = localUrl('noter-f-klav-hub.html');
                 } else {
-                    window.location.href = 'noter-g-klav-hub.html';
+                    window.location.href = localUrl('noter-g-klav-hub.html');
                 }
             }
         });

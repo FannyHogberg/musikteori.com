@@ -1,0 +1,289 @@
+{
+  "title": "Quiz: Notes and Their Values",
+  "description": "Test your knowledge of notes",
+  "passingScore": 60,
+  "randomQuestions": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/helnot.svg",
+      "options": [
+        { "text": "Whole note", "correct": true },
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/halvnot.svg",
+      "options": [
+        { "text": "Whole note", "correct": false },
+        { "text": "Half note", "correct": true },
+        { "text": "Quarter note", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/fjardedelsnot.svg",
+      "options": [
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": true },
+        { "text": "Eighth note", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/attondelsnot.svg",
+      "options": [
+        { "text": "Quarter note", "correct": false },
+        { "text": "Sixteenth note", "correct": false },
+        { "text": "Eighth note", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "What type of note is this?",
+      "image": "/images/noter/sextondelsnot.svg",
+      "options": [
+        { "text": "Sixteenth note", "correct": true },
+        { "text": "Quarter note", "correct": false },
+        { "text": "Eighth note", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Which image shows a whole note?",
+      "options": [
+        { "image": "/images/noter/helnot.svg", "alt": "Note 1", "correct": true },
+        { "image": "/images/noter/halvnot.svg", "alt": "Note 2", "correct": false },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Which image shows a half note?",
+      "options": [
+        { "image": "/images/noter/helnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/halvnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Which image shows a quarter note?",
+      "options": [
+        { "image": "/images/noter/halvnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Which image shows an eighth note?",
+      "options": [
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/sextondelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Which image shows a sixteenth note?",
+      "options": [
+        { "image": "/images/noter/attondelsnot.svg", "alt": "Note 1", "correct": false },
+        { "image": "/images/noter/sextondelsnot.svg", "alt": "Note 2", "correct": true },
+        { "image": "/images/noter/fjardedelsnot.svg", "alt": "Note 3", "correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a whole note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a half note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a quarter note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "How many sixteenth notes equal a quarter note?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "How many half notes equal a whole note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "How many quarter notes equal a whole note?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a whole note?",
+      "options": [
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": true },
+        { "text": "16", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a half note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": false },
+        { "text": "4", "correct": true },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "How many eighth notes equal a quarter note?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "8", "correct": false }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Which note head is filled in (not hollow)?",
+      "options": [
+        { "text": "Whole note", "correct": false },
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": true },
+        { "text": "All of the above", "correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "Which note has only one flag on its stem?",
+      "options": [
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": false },
+        { "text": "Eighth note", "correct": true },
+        { "text": "Sixteenth note", "correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "single-choice",
+      "question": "How many flags does a sixteenth note have?",
+      "options": [
+        { "text": "One flag", "correct": false },
+        { "text": "Two flags", "correct": true },
+        { "text": "Three flags", "correct": false },
+        { "text": "No flags", "correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "single-choice",
+      "question": "Listen and answer: which note value do you hear?",
+      "audio": "helnot",
+      "options": [
+        { "text": "Whole note", "correct": true },
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": false }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "single-choice",
+      "question": "Listen and answer: which note value do you hear?",
+      "audio": "halvnot",
+      "options": [
+        { "text": "Whole note", "correct": false },
+        { "text": "Half note", "correct": true },
+        { "text": "Quarter note", "correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "single-choice",
+      "question": "Listen and answer: which note value do you hear?",
+      "audio": "fjardedelsnot",
+      "options": [
+        { "text": "Half note", "correct": false },
+        { "text": "Quarter note", "correct": true },
+        { "text": "Eighth note", "correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "single-choice",
+      "question": "Listen and answer: which note value do you hear?",
+      "audio": "attondelsnot",
+      "options": [
+        { "text": "Quarter note", "correct": false },
+        { "text": "Eighth note", "correct": true },
+        { "text": "Sixteenth note", "correct": false }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@ class PianoOctaveTest {
         // Octave configuration
         this.octaveConfig = {
             'lilla': {
-                name: 'Lilla oktaven',
+                name: T('octave.lilla'),
                 notation: 'c - b',
                 folder: 'lillaOktaven',
                 // Show two octaves for context: lilla + ettstrukna
@@ -20,7 +20,7 @@ class PianoOctaveTest {
                 testNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'ettstrukna': {
-                name: 'Ettstrukna oktaven',
+                name: T('octave.ettstrukna'),
                 notation: "c' - b'",
                 folder: 'ettstruknaOktaven',
                 pianoOctaves: [
@@ -30,7 +30,7 @@ class PianoOctaveTest {
                 testNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'tvastrukna': {
-                name: 'Tvåstrukna oktaven',
+                name: T('octave.tvastrukna'),
                 notation: "c'' - b''",
                 folder: 'tvastruknaOktaven',
                 // Show two octaves for context: ettstrukna + tvåstrukna
@@ -42,7 +42,7 @@ class PianoOctaveTest {
                 testNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'stora': {
-                name: 'Stora oktaven',
+                name: T('octave.stora'),
                 notation: 'C - B',
                 folder: 'storaOktaven',
                 pianoOctaves: [
@@ -52,7 +52,7 @@ class PianoOctaveTest {
                 testNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'ettstrukna-fg': {
-                name: 'Ettstrukna oktaven',
+                name: T('octave.ettstrukna'),
                 notation: "c' - g'",
                 folder: 'ettstruknaOktaven',
                 // Show two octaves for context: lilla + ettstrukna
@@ -96,8 +96,8 @@ class PianoOctaveTest {
 
     init() {
         // Update page title and header
-        document.title = `Prov - ${this.config.name} - Musikteori.com`;
-        document.getElementById('test-title').textContent = `Prov - ${this.config.name}`;
+        document.title = T('test.pageTitle', {name: this.config.name});
+        document.getElementById('test-title').textContent = T('test.title', {name: this.config.name});
 
         // Update total questions counter
         const totalQuestionsEl = document.getElementById('total-questions');
@@ -114,11 +114,11 @@ class PianoOctaveTest {
         const backBtn = document.getElementById('back-to-hub-btn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                if (confirm('Är du säker på att du vill avbryta provet?')) {
+                if (confirm(T('test.confirmAbort'))) {
                     if (this.clef === 'f-klav') {
-                        window.location.href = 'noter-f-klav-hub.html';
+                        window.location.href = localUrl('noter-f-klav-hub.html');
                     } else {
-                        window.location.href = 'noter-g-klav-hub.html';
+                        window.location.href = localUrl('noter-g-klav-hub.html');
                     }
                 }
             });
@@ -225,7 +225,7 @@ class PianoOctaveTest {
         const noteImage = document.getElementById('note-image');
         if (noteImage) {
             noteImage.src = this.getImagePath(noteOnly);
-            noteImage.alt = `Noten ${noteOnly}`;
+            noteImage.alt = T('exercise.noteAlt', {note: noteOnly});
         }
     }
 
@@ -268,7 +268,7 @@ class PianoOctaveTest {
 
         resultsContainer.innerHTML = `
             <div class="quiz-results">
-                <h2>Provet slutfört!</h2>
+                <h2>${T('test.completed')}</h2>
 
                 <div class="score-display ${passed ? 'passed' : 'failed'}">
                     <div class="score-number">${correctCount}/${this.totalQuestions}</div>
@@ -277,18 +277,18 @@ class PianoOctaveTest {
 
                 <div class="result-message">
                     ${passed
-                        ? '🎉 Grattis! Du är godkänd!'
-                        : `Tyvärr blev du inte godkänd. Du behöver minst ${this.passingScore} rätt av ${this.totalQuestions}.`
+                        ? T('test.passed')
+                        : T('test.failed', {required: this.passingScore, total: this.totalQuestions})
                     }
                 </div>
 
                 <div class="quiz-actions" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
                     ${passed
-                        ? '<button class="btn btn-primary" id="continue-btn">Fortsätt öva →</button>'
+                        ? '<button class="btn btn-primary" id="continue-btn">' + T('test.continueBtn') + '</button>'
                         : ''
                     }
-                    <button class="btn ${passed ? '' : 'btn-primary'}" id="retry-btn">Gör om provet</button>
-                    <button class="btn" id="back-btn">Byt övning</button>
+                    <button class="btn ${passed ? '' : 'btn-primary'}" id="retry-btn">${T('test.retakeBtn')}</button>
+                    <button class="btn" id="back-btn">${T('test.changeBtn')}</button>
                 </div>
             </div>
         `;
@@ -298,9 +298,9 @@ class PianoOctaveTest {
             document.getElementById('continue-btn').addEventListener('click', () => {
                 // Navigate to the appropriate hub to choose next exercise
                 if (this.clef === 'f-klav') {
-                    window.location.href = 'noter-f-klav-hub.html';
+                    window.location.href = localUrl('noter-f-klav-hub.html');
                 } else {
-                    window.location.href = 'noter-g-klav-hub.html';
+                    window.location.href = localUrl('noter-g-klav-hub.html');
                 }
             });
         }
@@ -312,9 +312,9 @@ class PianoOctaveTest {
         document.getElementById('back-btn').addEventListener('click', () => {
             // Navigate to the appropriate hub based on clef
             if (this.clef === 'f-klav') {
-                window.location.href = 'noter-f-klav-hub.html';
+                window.location.href = localUrl('noter-f-klav-hub.html');
             } else {
-                window.location.href = 'noter-g-klav-hub.html';
+                window.location.href = localUrl('noter-g-klav-hub.html');
             }
         });
     }

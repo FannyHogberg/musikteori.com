@@ -7,42 +7,42 @@ class PianoKeysExercise {
         // 12 progressive levels with both question types
         this.levels = [
             // STAMTONER (1-5) - white keys
-            { notes: ['C', 'D', 'E'], description: 'C, D och E',
+            { notes: ['C', 'D', 'E'], description: T('desc.cde'),
               showLabels: true, requiredCorrect: 10, questionTypes: ['findKey'] },
-            { notes: ['C', 'D', 'E'], description: 'C, D och E',
+            { notes: ['C', 'D', 'E'], description: T('desc.cde'),
               showLabels: false, requiredCorrect: 10, questionTypes: ['findKey', 'nameKey'] },
 
-            { notes: ['F', 'G', 'A', 'B'], description: 'F, G, A och B',
+            { notes: ['F', 'G', 'A', 'B'], description: T('desc.fgab'),
               showLabels: true, requiredCorrect: 10, questionTypes: ['findKey'] },
-            { notes: ['F', 'G', 'A', 'B'], description: 'F, G, A och B',
+            { notes: ['F', 'G', 'A', 'B'], description: T('desc.fgab'),
               showLabels: false, requiredCorrect: 10, questionTypes: ['findKey', 'nameKey'] },
 
-            { notes: ['C', 'D', 'E', 'F', 'G', 'A', 'B'], description: 'Alla stamtoner',
+            { notes: ['C', 'D', 'E', 'F', 'G', 'A', 'B'], description: T('desc.allNatural'),
               showLabels: false, requiredCorrect: 15, questionTypes: ['findKey', 'nameKey'] },
 
             // KORSFÖRTECKEN (7-8) - sharps
-            { notes: ['C#', 'D#', 'F#', 'G#', 'A#'], description: 'Korsförtecken',
+            { notes: ['C#', 'D#', 'F#', 'G#', 'A#'], description: T('desc.sharps'),
               showLabels: true, requiredCorrect: 10, questionTypes: ['findKey'] },
-            { notes: ['C#', 'D#', 'F#', 'G#', 'A#'], description: 'Korsförtecken',
+            { notes: ['C#', 'D#', 'F#', 'G#', 'A#'], description: T('desc.sharps'),
               showLabels: false, requiredCorrect: 10, questionTypes: ['findKey', 'nameKey'] },
 
             // B-FÖRTECKEN (9-10) - flats
-            { notes: ['Db', 'Eb', 'Gb', 'Ab', 'Bb'], description: 'B-förtecken',
+            { notes: ['Db', 'Eb', 'Gb', 'Ab', 'Bb'], description: T('desc.flats'),
               showLabels: true, requiredCorrect: 10, questionTypes: ['findKey'] },
-            { notes: ['Db', 'Eb', 'Gb', 'Ab', 'Bb'], description: 'B-förtecken',
+            { notes: ['Db', 'Eb', 'Gb', 'Ab', 'Bb'], description: T('desc.flats'),
               showLabels: false, requiredCorrect: 10, questionTypes: ['findKey', 'nameKey'] },
 
             // KOMBINATIONER (11-13) - all mixed
             { notes: ['C','D','E','F','G','A','B','C#','D#','F#','G#','A#'],
-              description: 'Stamtoner och korsförtecken',
+              description: T('desc.naturalAndSharps'),
               showLabels: false, requiredCorrect: 20, questionTypes: ['findKey', 'nameKey'] },
 
             { notes: ['C','D','E','F','G','A','B','Db','Eb','Gb','Ab','Bb'],
-              description: 'Stamtoner och b-förtecken',
+              description: T('desc.naturalAndFlats'),
               showLabels: false, requiredCorrect: 20, questionTypes: ['findKey', 'nameKey'] },
 
             { notes: ['C','D','E','F','G','A','B','C#','D#','F#','G#','A#','Db','Eb','Gb','Ab','Bb'],
-              description: 'Alla toner',
+              description: T('desc.allNotes'),
               showLabels: false, requiredCorrect: 30, questionTypes: ['findKey', 'nameKey'] }
         ];
 
@@ -73,23 +73,19 @@ class PianoKeysExercise {
         let totalLevelsInSection = 0;
 
         if (this.level >= 1 && this.level <= 5) {
-            // Del 1: Stamtoner
-            sectionName = 'Del 1: Stamtoner';
+            sectionName = T('section.1');
             sectionLevel = this.level;
             totalLevelsInSection = 5;
         } else if (this.level >= 6 && this.level <= 7) {
-            // Del 2: Korsförtecken
-            sectionName = 'Del 2: Korsförtecken';
+            sectionName = T('section.2');
             sectionLevel = this.level - 5;
             totalLevelsInSection = 2;
         } else if (this.level >= 8 && this.level <= 9) {
-            // Del 3: B-förtecken
-            sectionName = 'Del 3: B-förtecken';
+            sectionName = T('section.3');
             sectionLevel = this.level - 7;
             totalLevelsInSection = 2;
         } else if (this.level >= 10 && this.level <= 12) {
-            // Del 4: Alla toner
-            sectionName = 'Del 4: Alla toner';
+            sectionName = T('section.4');
             sectionLevel = this.level - 9;
             totalLevelsInSection = 3;
         }
@@ -103,7 +99,7 @@ class PianoKeysExercise {
         // Update subtitle to show section and level
         const subtitleEl = document.querySelector('.subtitle');
         if (subtitleEl) {
-            subtitleEl.innerHTML = `${sectionName} – Nivå <span id="level-number">${sectionLevel}</span> av ${totalLevelsInSection}`;
+            subtitleEl.innerHTML = `${sectionName} – ${T('level.n', {n: sectionLevel})} / ${totalLevelsInSection}`;
         }
 
         // Update level description
@@ -112,9 +108,9 @@ class PianoKeysExercise {
         if (descriptionEl && currentLevelConfig.description) {
             let descText = currentLevelConfig.description;
             if (currentLevelConfig.showLabels) {
-                descText += ' (med hjälptext)';
+                descText += ' ' + T('level.withHelp');
             } else {
-                descText += ' (utan hjälptext)';
+                descText += ' ' + T('level.withoutHelp');
             }
             descriptionEl.textContent = descText;
         }
@@ -272,11 +268,11 @@ class PianoKeysExercise {
     }
 
     askFindKeyQuestion() {
-        // Show note name with Swedish pronunciation if it's a sharp/flat
-        const swedishName = this.getSwedishNoteName(this.currentNote);
-        const questionText = swedishName
-            ? `Var är ${this.currentNote} (${swedishName})?`
-            : `Var är ${this.currentNote}?`;
+        // Show note name with pronunciation guide if applicable
+        const pronunciation = getNotePronunciation(this.currentNote);
+        const questionText = pronunciation
+            ? T('piano.findKeyPronunciation', {note: this.currentNote, pronunciation: pronunciation})
+            : T('piano.findKey', {note: this.currentNote});
 
         document.getElementById('question').textContent = questionText;
         document.getElementById('question').style.display = 'block';
@@ -293,7 +289,7 @@ class PianoKeysExercise {
 
     askNameKeyQuestion() {
         // Highlight ONE RANDOM key from ANY octave, user clicks note name button
-        document.getElementById('question').textContent = 'Vilken ton är markerad på pianot?';
+        document.getElementById('question').textContent = T('piano.nameKey');
         document.getElementById('question').style.display = 'block';
 
         // Find ALL keys with this note name (both octaves)
@@ -447,7 +443,7 @@ class PianoKeysExercise {
         // Show feedback
         feedbackMessage.classList.remove('show-correct', 'show-incorrect');
         if (isCorrect) {
-            feedbackMessage.textContent = '✓ Rätt!';
+            feedbackMessage.textContent = T('feedback.correct');
             feedbackMessage.classList.add('show-correct');
             if (clickedButton) clickedButton.classList.add('correct');
 
@@ -477,7 +473,7 @@ class PianoKeysExercise {
             }, 1000);
 
         } else {
-            feedbackMessage.textContent = '✗ Fel!';
+            feedbackMessage.textContent = T('feedback.incorrect');
             feedbackMessage.classList.add('show-incorrect');
             if (clickedButton) clickedButton.classList.add('incorrect');
 
@@ -533,10 +529,10 @@ class PianoKeysExercise {
 
         feedbackMessage.classList.remove('show-correct', 'show-incorrect');
         if (isCorrect) {
-            feedbackMessage.textContent = '✓ Rätt!';
+            feedbackMessage.textContent = T('feedback.correct');
             feedbackMessage.classList.add('show-correct');
         } else {
-            feedbackMessage.textContent = '✗ Fel!';
+            feedbackMessage.textContent = T('feedback.incorrect');
             feedbackMessage.classList.add('show-incorrect');
         }
 
@@ -660,23 +656,6 @@ class PianoKeysExercise {
         return mapping[flatNote];
     }
 
-    // Get Swedish name for a note
-    getSwedishNoteName(note) {
-        const mapping = {
-            'C#': 'Ciss',
-            'D#': 'Diss',
-            'F#': 'Fiss',
-            'G#': 'Giss',
-            'A#': 'Aiss',
-            'Db': 'Dess',
-            'Eb': 'Ess',
-            'Gb': 'Gess',
-            'Ab': 'Ass',
-            'Bb': 'Bess'
-        };
-        return mapping[note];
-    }
-
     updateStats() {
         document.getElementById('correct-count').textContent = this.correctCount;
         document.getElementById('incorrect-count').textContent = this.incorrectCount;
@@ -700,85 +679,86 @@ class PianoKeysExercise {
                 // End of Del 1
                 question.innerHTML = `
                     <div class="level-complete">
-                        <h2>🎉 Bra jobbat!</h2>
-                        <p>Du har klarat alla nivåer i Del 1!</p>
-                        <p>Redo för provet?</p>
+                        <h2>${T('level.wellDone')}</h2>
+                        <p>${T('level.completedSection', {section: T('section.1')})}</p>
+                        <p>${T('level.readyForTest')}</p>
                         <button class="btn btn-primary" id="test-btn">
-                            Gå till provet - Alla stamtoner →
+                            ${T('level.goToTestNatural')}
                         </button>
                     </div>
                 `;
 
                 document.getElementById('test-btn').addEventListener('click', () => {
-                    window.location.href = 'piano-stamtoner-prov.html';
+                    window.location.href = localUrl('piano-stamtoner-prov.html');
                 });
 
             } else if (this.level === 7) {
                 // End of Del 2
                 question.innerHTML = `
                     <div class="level-complete">
-                        <h2>🎉 Bra jobbat!</h2>
-                        <p>Du har klarat alla nivåer i Del 2!</p>
-                        <p>Redo för provet?</p>
+                        <h2>${T('level.wellDone')}</h2>
+                        <p>${T('level.completedSection', {section: T('section.2')})}</p>
+                        <p>${T('level.readyForTest')}</p>
                         <button class="btn btn-primary" id="test-btn">
-                            Gå till provet - Korsförtecken →
+                            ${T('level.goToTestSharps')}
                         </button>
                     </div>
                 `;
 
                 document.getElementById('test-btn').addEventListener('click', () => {
-                    window.location.href = 'piano-kors-prov.html';
+                    window.location.href = localUrl('piano-kors-prov.html');
                 });
 
             } else if (this.level === 9) {
                 // End of Del 3
                 question.innerHTML = `
                     <div class="level-complete">
-                        <h2>🎉 Bra jobbat!</h2>
-                        <p>Du har klarat alla nivåer i Del 3!</p>
-                        <p>Redo för provet?</p>
+                        <h2>${T('level.wellDone')}</h2>
+                        <p>${T('level.completedSection', {section: T('section.3')})}</p>
+                        <p>${T('level.readyForTest')}</p>
                         <button class="btn btn-primary" id="test-btn">
-                            Gå till provet - B-förtecken →
+                            ${T('level.goToTestFlats')}
                         </button>
                     </div>
                 `;
 
                 document.getElementById('test-btn').addEventListener('click', () => {
-                    window.location.href = 'piano-b-prov.html';
+                    window.location.href = localUrl('piano-b-prov.html');
                 });
 
             } else {
                 // Calculate display text for next level
                 let nextLevelText = '';
+                const partWord = LANG === 'sv' ? 'Del' : 'Part';
                 if (nextLevelNumber === 6) {
-                    nextLevelText = 'Del 2, Nivå 1';
+                    nextLevelText = `${partWord} 2, ${T('level.n', {n: 1})}`;
                 } else if (nextLevelNumber === 8) {
-                    nextLevelText = 'Del 3, Nivå 1';
+                    nextLevelText = `${partWord} 3, ${T('level.n', {n: 1})}`;
                 } else if (nextLevelNumber === 10) {
-                    nextLevelText = 'Del 4, Nivå 1';
+                    nextLevelText = `${partWord} 4, ${T('level.n', {n: 1})}`;
                 } else if (nextLevelNumber >= 1 && nextLevelNumber <= 5) {
-                    nextLevelText = `Nivå ${nextLevelNumber}`;
+                    nextLevelText = T('level.n', {n: nextLevelNumber});
                 } else if (nextLevelNumber >= 6 && nextLevelNumber <= 7) {
-                    nextLevelText = `Nivå ${nextLevelNumber - 5}`;
+                    nextLevelText = T('level.n', {n: nextLevelNumber - 5});
                 } else if (nextLevelNumber >= 8 && nextLevelNumber <= 9) {
-                    nextLevelText = `Nivå ${nextLevelNumber - 7}`;
+                    nextLevelText = T('level.n', {n: nextLevelNumber - 7});
                 } else if (nextLevelNumber >= 10 && nextLevelNumber <= 12) {
-                    nextLevelText = `Nivå ${nextLevelNumber - 9}`;
+                    nextLevelText = T('level.n', {n: nextLevelNumber - 9});
                 }
 
                 question.innerHTML = `
                     <div class="level-complete">
-                        <h2>🎉 Bra jobbat!</h2>
-                        <p>Du har klarat denna nivå!</p>
-                        <p>Redo för nästa steg?</p>
+                        <h2>${T('level.wellDone')}</h2>
+                        <p>${T('level.completedThis')}</p>
+                        <p>${T('level.readyForNext')}</p>
                         <button class="btn btn-primary" id="next-level-btn">
-                            Fortsätt till ${nextLevelText}
+                            ${T('level.continueTo', {level: nextLevelText})}
                         </button>
                     </div>
                 `;
 
                 document.getElementById('next-level-btn').addEventListener('click', () => {
-                    window.location.href = `piano-tangenter-ova.html?level=${nextLevelNumber}`;
+                    window.location.href = localUrl(`piano-tangenter-ova.html?level=${nextLevelNumber}`);
                 });
             }
 
@@ -786,15 +766,15 @@ class PianoKeysExercise {
             // Last level - show congratulations
             question.innerHTML = `
                 <div class="level-complete">
-                    <h2>🎊 Grattis!</h2>
-                    <p>Du har klarat alla nivåer!</p>
-                    <p>Nu kan du alla toner på pianot!</p>
-                    <button class="btn btn-primary" id="test-btn">Gå till provet</button>
+                    <h2>${T('level.congrats')}</h2>
+                    <p>${T('level.completedAll')}</p>
+                    <p>${T('level.knowAllNotes')}</p>
+                    <button class="btn btn-primary" id="test-btn">${T('level.goToTest')}</button>
                 </div>
             `;
 
             document.getElementById('test-btn').addEventListener('click', () => {
-                window.location.href = 'piano-tangenter-prov.html';
+                window.location.href = localUrl('piano-tangenter-prov.html');
             });
         }
     }
@@ -803,7 +783,7 @@ class PianoKeysExercise {
         const backBtn = document.getElementById('back-to-hub-btn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                window.location.href = 'piano-hub.html';
+                window.location.href = localUrl('piano-hub.html');
             });
         }
     }

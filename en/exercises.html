@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music theory exercises - Musikteori.com</title>
+    <meta name="description" content="Interactive music theory exercises. Practice piano keys, note reading in treble clef and bass clef with exercises and tests.">
+    <link rel="canonical" href="https://musikteori.com/en/exercises.html">
+    <meta property="og:title" content="Music theory exercises">
+    <meta property="og:description" content="Interactive music theory exercises. Practice piano keys, note reading in treble clef and bass clef with exercises and tests.">
+    <meta property="og:image" content="https://musikteori.com/images/en/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://musikteori.com/en/exercises.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Musikteori.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar.html">
+    <link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises.html">
+    <link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar.html">
+    <link rel="stylesheet" href="../css/style.css?v=5">
+    <style>
+        @media (max-width: 768px) {
+            .exercise-box {
+                padding: 1.5rem !important;
+            }
+
+            .exercise-box h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .exercise-box h3 {
+                font-size: 1.1rem !important;
+            }
+
+            /* Stack buttons vertically on mobile */
+            .exercise-box .btn {
+                font-size: 1rem !important;
+                padding: 0.875rem !important;
+            }
+
+            /* Make level buttons stack on mobile */
+            div[style*="display: flex; gap: 1rem"] {
+                flex-direction: column !important;
+            }
+
+            /* Checkboxes on mobile */
+            div[style*="display: flex; gap: 1.5rem"] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                padding-left: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .exercise-box {
+                padding: 1rem !important;
+            }
+
+            .exercise-box h2 {
+                font-size: 1.3rem !important;
+            }
+
+            .exercise-box h3 {
+                font-size: 1rem !important;
+            }
+
+            .exercise-box p {
+                font-size: 0.875rem !important;
+            }
+        }
+
+        /* Piano card hover effect */
+        .piano-card-link:hover .piano-card {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(46, 204, 113, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .piano-card-link:hover .arrow-icon {
+            transform: translateX(5px);
+        }
+
+        .piano-card-link:active .piano-card {
+            transform: translateY(-2px);
+        }
+
+        /* Notes card hover effect */
+        .notes-card-link:hover .notes-card {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(46, 204, 113, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .notes-card-link:hover .arrow-icon {
+            transform: translateX(5px);
+        }
+
+        .notes-card-link:active .notes-card {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 968px) {
+            /* Stack layout on tablets and mobile */
+            .piano-card div[style*="display: flex; align-items: center; gap: 2.5rem"],
+            .notes-card div[style*="display: flex; align-items: center; gap: 2.5rem"] {
+                flex-direction: column !important;
+                text-align: center;
+                gap: 1.5rem !important;
+            }
+
+            /* Scale down piano on mobile */
+            .piano-card > div > div[style*="padding: 15px"] {
+                transform: scale(0.85);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .piano-card,
+            .notes-card {
+                padding: 2rem 1.5rem !important;
+            }
+
+            .piano-card h2,
+            .notes-card h2 {
+                font-size: 1.6rem !important;
+            }
+
+            .piano-card p,
+            .notes-card p {
+                font-size: 0.95rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Musikteori.com</a>
+            <a href="../ovningar.html" class="lang-switch" title="Svenska">SV</a>
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="exercises.html" class="active">Exercises</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Exercises</h1>
+            <p>Practice your skills with interactive exercises</p>
+        </section>
+
+        <div class="container exercises-container">
+            <a href="exercises/piano-hub.html" class="piano-card-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 3rem;">
+                <div class="piano-card" style="background: #fafbfc; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid #d1d5db; position: relative; overflow: hidden;">
+                    <div style="display: flex; align-items: center; gap: 2.5rem; position: relative; z-index: 1;">
+                        <!-- Piano keyboard -->
+                        <div style="flex-shrink: 0; position: relative; width: 180px; display: flex; justify-content: center;">
+                            <div style="display: flex; gap: 2px; position: relative;">
+                                <!-- White keys -->
+                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+
+                                <!-- Black keys -->
+                                <div style="position: absolute; left: 17px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
+                                <div style="position: absolute; left: 43px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
+                                <div style="position: absolute; left: 95px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
+                                <div style="position: absolute; left: 121px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
+                                <div style="position: absolute; left: 147px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
+                            </div>
+                        </div>
+
+                        <!-- Content section -->
+                        <div style="flex: 1; position: relative; padding-top: 0; margin-top: -1rem; padding-bottom: 1rem;">
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
+                                <span style="display: inline-block; background: #ffd700; color: #333; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(-2deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
+                                    RECOMMENDED
+                                </span>
+                                <span style="display: inline-block; background: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(1deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
+                                    BEGINNER
+                                </span>
+                            </div>
+                            <h2 style="margin-bottom: 0; font-size: 2rem; color: #2c3e50; font-weight: 700;">
+                                Learn the notes on the piano
+                            </h2>
+                            <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--primary-color); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem;">
+                                <span>Start practicing</span>
+                                <span style="font-size: 1.3rem; transition: transform 0.3s ease;" class="arrow-icon">&rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="exercises/notes-treble-clef-hub.html" class="notes-card-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 3rem;">
+                <div class="notes-card" style="background: #fafbfc; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid #d1d5db; position: relative; overflow: hidden;">
+                    <div style="display: flex; align-items: center; gap: 2.5rem; position: relative; z-index: 1;">
+                        <!-- G-clef illustration -->
+                        <div style="flex-shrink: 0; position: relative; width: 180px; display: flex; justify-content: center; align-items: center; font-size: 90px; line-height: 1;">
+                            🎼
+                        </div>
+
+                        <!-- Content section -->
+                        <div style="flex: 1; position: relative; padding-top: 0; margin-top: -1rem; padding-bottom: 1rem;">
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
+                                <span style="display: inline-block; background: #3498db; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(1deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
+                                    NEXT STEP
+                                </span>
+                            </div>
+                            <h2 style="margin-bottom: 0; font-size: 2rem; color: #2c3e50; font-weight: 700;">
+                                Learn to read notes - Treble Clef
+                            </h2>
+                            <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--primary-color); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem;">
+                                <span>Start practicing</span>
+                                <span style="font-size: 1.3rem; transition: transform 0.3s ease;" class="arrow-icon">&rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="exercises/notes-bass-clef-hub.html" class="notes-card-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 3rem;">
+                <div class="notes-card" style="background: #fafbfc; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid #d1d5db; position: relative; overflow: hidden;">
+                    <div style="display: flex; align-items: center; gap: 2.5rem; position: relative; z-index: 1;">
+                        <!-- F-clef illustration -->
+                        <div style="flex-shrink: 0; position: relative; width: 180px; display: flex; justify-content: center; align-items: center; font-size: 90px; line-height: 1;">
+                            𝄢
+                        </div>
+
+                        <!-- Content section -->
+                        <div style="flex: 1; position: relative; padding-top: 0; margin-top: -1rem; padding-bottom: 1rem;">
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
+                                <span style="display: inline-block; background: #9b59b6; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(1deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
+                                    ADVANCED
+                                </span>
+                            </div>
+                            <h2 style="margin-bottom: 0; font-size: 2rem; color: #2c3e50; font-weight: 700;">
+                                Learn to read notes - Bass Clef
+                            </h2>
+                            <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--primary-color); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem;">
+                                <span>Start practicing</span>
+                                <span style="font-size: 1.3rem; transition: transform 0.3s ease;" class="arrow-icon">&rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="exercise-box" style="background: var(--background-alt); padding: 2rem; border-radius: 15px; border: 2px solid var(--border-color); display: none;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">🎼 Learn to read notes - Treble Clef (OLD)</h2>
+
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <!-- One-line octave -->
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 0.75rem; color: var(--primary-color);">One-line octave</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <a href="ovningar/piano-oktav.html?octave=ettstrukna&level=1" class="btn btn-primary" style="flex: 1;">
+                                Level 1
+                            </a>
+                            <a href="ovningar/piano-oktav.html?octave=ettstrukna&level=2" class="btn" style="flex: 1;">
+                                Level 2 (notation only)
+                            </a>
+                        </div>
+                        <div>
+                            <a href="ovningar/piano-oktav-prov.html?octave=ettstrukna" class="btn" style="width: 100%; display: block; padding: 1rem; font-size: 1.1rem;">
+                                Test - One-line octave &rarr;
+                            </a>
+                            <p style="text-align: center; color: #666; font-size: 0.8rem; margin: 0.75rem 0 0 0;">
+                                30 questions, at least 20 correct to pass
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="height: 1px; background: #ddd; margin: 2rem 0;"></div>
+
+                    <!-- Small octave -->
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 0.75rem; color: var(--primary-color);">Small octave (g - b)</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <a href="ovningar/piano-oktav.html?octave=lilla&level=1" class="btn btn-primary" style="flex: 1;">
+                                Level 1
+                            </a>
+                            <a href="ovningar/piano-oktav.html?octave=lilla&level=2" class="btn" style="flex: 1;">
+                                Level 2 (notation only)
+                            </a>
+                        </div>
+                        <div>
+                            <a href="ovningar/piano-oktav-prov.html?octave=lilla" class="btn" style="width: 100%; display: block; padding: 1rem; font-size: 1.1rem;">
+                                Test - Small octave &rarr;
+                            </a>
+                            <p style="text-align: center; color: #666; font-size: 0.8rem; margin: 0.75rem 0 0 0;">
+                                30 questions, at least 20 correct to pass
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="height: 1px; background: #ddd; margin: 2rem 0;"></div>
+
+                    <!-- Two-line octave -->
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 0.75rem; color: var(--primary-color);">Two-line octave</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <a href="ovningar/piano-oktav.html?octave=tvastrukna&level=1" class="btn btn-primary" style="flex: 1;">
+                                Level 1
+                            </a>
+                            <a href="ovningar/piano-oktav.html?octave=tvastrukna&level=2" class="btn" style="flex: 1;">
+                                Level 2 (notation only)
+                            </a>
+                        </div>
+                        <div>
+                            <a href="ovningar/piano-oktav-prov.html?octave=tvastrukna" class="btn" style="width: 100%; display: block; padding: 1rem; font-size: 1.1rem;">
+                                Test - Two-line octave &rarr;
+                            </a>
+                            <p style="text-align: center; color: #666; font-size: 0.8rem; margin: 0.75rem 0 0 0;">
+                                30 questions, at least 20 correct to pass
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="height: 1px; background: #ddd; margin: 2rem 0;"></div>
+
+                    <!-- Test -->
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: var(--primary-color); text-align: center; font-size: 1.3rem;">Test - Multiple octaves</h3>
+                        <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Choose which octaves you want to practice:
+                        </p>
+
+                        <div style="display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" id="check-lilla-noter" checked style="width: 18px; height: 18px; cursor: pointer; accent-color: #000;">
+                                <span>Small octave</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" id="check-ettstrukna-noter" checked style="width: 18px; height: 18px; cursor: pointer; accent-color: #000;">
+                                <span>One-line octave</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" id="check-tvastrukna-noter" checked style="width: 18px; height: 18px; cursor: pointer; accent-color: #000;">
+                                <span>Two-line octave</span>
+                            </label>
+                        </div>
+
+                        <button id="start-noter-prov-btn" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                            Start test &rarr;
+                        </button>
+                        <p style="text-align: center; color: #666; font-size: 0.8rem; margin: 0.75rem 0 0 0;">
+                            30 questions, at least 20 correct to pass
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Musikteori.com</p>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/ads.js"></script>
+    <script>
+        // Handle noter prov button
+        document.getElementById('start-noter-prov-btn').addEventListener('click', function() {
+            const lilla = document.getElementById('check-lilla-noter').checked;
+            const ettstrukna = document.getElementById('check-ettstrukna-noter').checked;
+            const tvastrukna = document.getElementById('check-tvastrukna-noter').checked;
+
+            // Check at least one is selected
+            if (!lilla && !ettstrukna && !tvastrukna) {
+                alert('Select at least one octave!');
+                return;
+            }
+
+            // Build URL with selected octaves
+            const octaves = [];
+            if (lilla) octaves.push('lilla');
+            if (ettstrukna) octaves.push('ettstrukna');
+            if (tvastrukna) octaves.push('tvastrukna');
+
+            window.location.href = `ovningar/piano-flera-oktaver.html?octaves=${octaves.join(',')}`;
+        });
+    </script>
+</body>
+</html>

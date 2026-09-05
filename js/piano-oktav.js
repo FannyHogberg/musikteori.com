@@ -9,7 +9,7 @@ class PianoOctaveExercise {
         // Octave configuration
         this.octaveConfig = {
             'lilla': {
-                name: 'Lilla oktaven',
+                name: T('octave.lilla'),
                 notation: 'c - b',
                 folder: 'lillaOktaven',
                 // Show two octaves for context: lilla + ettstrukna
@@ -22,7 +22,7 @@ class PianoOctaveExercise {
                 questionNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'ettstrukna': {
-                name: 'Ettstrukna oktaven',
+                name: T('octave.ettstrukna'),
                 notation: "c' - b'",
                 folder: 'ettstruknaOktaven',
                 pianoOctaves: [
@@ -32,7 +32,7 @@ class PianoOctaveExercise {
                 questionNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'tvastrukna': {
-                name: 'Tvåstrukna oktaven',
+                name: T('octave.tvastrukna'),
                 notation: "c'' - b''",
                 folder: 'tvastruknaOktaven',
                 // Show two octaves for context: ettstrukna + tvåstrukna
@@ -44,7 +44,7 @@ class PianoOctaveExercise {
                 questionNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'stora': {
-                name: 'Stora oktaven',
+                name: T('octave.stora'),
                 notation: 'C - B',
                 folder: 'storaOktaven',
                 pianoOctaves: [
@@ -54,7 +54,7 @@ class PianoOctaveExercise {
                 questionNotes: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
             },
             'ettstrukna-fg': {
-                name: 'Ettstrukna oktaven',
+                name: T('octave.ettstrukna'),
                 notation: "c' - g'",
                 folder: 'ettstruknaOktaven',
                 // Show two octaves for context: lilla + ettstrukna
@@ -75,45 +75,45 @@ class PianoOctaveExercise {
             // Lilla oktaven G-klav: only has G, A, B (2 levels only)
             if (this.level === 1) {
                 this.levels = [
-                    { notes: ['G', 'A', 'B'], description: 'G, A och B', showLabels: false, requiredCorrect: 10, showText: true }
+                    { notes: ['G', 'A', 'B'], description: T('desc.gab'), showLabels: false, requiredCorrect: 10, showText: true }
                 ];
             } else if (this.level === 2) {
                 this.levels = [
-                    { notes: ['G', 'A', 'B'], description: 'G, A och B', showLabels: false, requiredCorrect: 10, showText: false }
+                    { notes: ['G', 'A', 'B'], description: T('desc.gab'), showLabels: false, requiredCorrect: 10, showText: false }
                 ];
             }
         } else if (this.octave === 'ettstrukna-fg') {
             // Ettstrukna-fg (F-klav only): C-G (5 notes, 2 levels)
             if (this.level === 1) {
                 this.levels = [
-                    { notes: ['C', 'D', 'E', 'F', 'G'], description: 'C-G', showLabels: false, requiredCorrect: 13, showText: true }
+                    { notes: ['C', 'D', 'E', 'F', 'G'], description: T('desc.cg'), showLabels: false, requiredCorrect: 13, showText: true }
                 ];
             } else if (this.level === 2) {
                 this.levels = [
-                    { notes: ['C', 'D', 'E', 'F', 'G'], description: 'C-G', showLabels: false, requiredCorrect: 13, showText: false }
+                    { notes: ['C', 'D', 'E', 'F', 'G'], description: T('desc.cg'), showLabels: false, requiredCorrect: 13, showText: false }
                 ];
             }
         } else {
             // All other octaves (ettstrukna, tvastrukna, stora, lilla F-klav): 7 notes, 5 levels
             if (this.level === 1) {
                 this.levels = [
-                    { notes: ['C', 'D', 'E'], description: 'C, D och E', showLabels: false, requiredCorrect: 10, showText: true }
+                    { notes: ['C', 'D', 'E'], description: T('desc.cde'), showLabels: false, requiredCorrect: 10, showText: true }
                 ];
             } else if (this.level === 2) {
                 this.levels = [
-                    { notes: ['C', 'D', 'E'], description: 'C, D och E', showLabels: false, requiredCorrect: 10, showText: false }
+                    { notes: ['C', 'D', 'E'], description: T('desc.cde'), showLabels: false, requiredCorrect: 10, showText: false }
                 ];
             } else if (this.level === 3) {
                 this.levels = [
-                    { notes: ['F', 'G', 'A', 'B'], description: 'F, G, A och B', showLabels: false, requiredCorrect: 10, showText: true }
+                    { notes: ['F', 'G', 'A', 'B'], description: T('desc.fgab'), showLabels: false, requiredCorrect: 10, showText: true }
                 ];
             } else if (this.level === 4) {
                 this.levels = [
-                    { notes: ['F', 'G', 'A', 'B'], description: 'F, G, A och B', showLabels: false, requiredCorrect: 10, showText: false }
+                    { notes: ['F', 'G', 'A', 'B'], description: T('desc.fgab'), showLabels: false, requiredCorrect: 10, showText: false }
                 ];
             } else if (this.level === 5) {
                 this.levels = [
-                    { notes: ['C', 'D', 'E', 'F', 'G', 'A', 'B'], description: 'Alla toner C-B', showLabels: false, requiredCorrect: 15, showText: false }
+                    { notes: ['C', 'D', 'E', 'F', 'G', 'A', 'B'], description: T('desc.allNotesRange'), showLabels: false, requiredCorrect: 15, showText: false }
                 ];
             }
         }
@@ -135,7 +135,7 @@ class PianoOctaveExercise {
 
     init() {
         // Update page title and header
-        document.title = `${this.config.name} - Övning ${this.level} - Musikteori.com`;
+        document.title = T('exercise.pageTitle', {name: this.config.name, level: this.level});
         document.getElementById('octave-name').textContent = this.config.name;
 
         this.generatePiano(() => {
@@ -277,7 +277,7 @@ class PianoOctaveExercise {
         const noteImage = document.getElementById('note-image');
         if (noteImage) {
             noteImage.src = this.getImagePath(noteOnly);
-            noteImage.alt = `Noten ${noteOnly}`;
+            noteImage.alt = T('exercise.noteAlt', {note: noteOnly});
         }
     }
 
@@ -293,10 +293,10 @@ class PianoOctaveExercise {
 
         feedbackMessage.classList.remove('show-correct', 'show-incorrect');
         if (isCorrect) {
-            feedbackMessage.textContent = '✓ Rätt!';
+            feedbackMessage.textContent = T('feedback.correct');
             feedbackMessage.classList.add('show-correct');
         } else {
-            feedbackMessage.textContent = '✗ Fel!';
+            feedbackMessage.textContent = T('feedback.incorrect');
             feedbackMessage.classList.add('show-incorrect');
         }
 
@@ -407,29 +407,29 @@ class PianoOctaveExercise {
             const nextLevel = this.level + 1;
             question.innerHTML = `
                 <div class="level-complete">
-                    <h2>🎉 Bra jobbat!</h2>
-                    <p>Du har klarat övning ${this.level}!</p>
-                    <p>Redo för nästa steg?</p>
-                    <button class="btn btn-primary" id="next-level-btn">Fortsätt till övning ${nextLevel}</button>
+                    <h2>${T('level.wellDone')}</h2>
+                    <p>${T('exercise.completedN', {level: this.level})}</p>
+                    <p>${T('level.readyForNext')}</p>
+                    <button class="btn btn-primary" id="next-level-btn">${T('exercise.continueTo', {level: nextLevel})}</button>
                 </div>
             `;
 
             document.getElementById('next-level-btn').addEventListener('click', () => {
-                window.location.href = `piano-oktav.html?octave=${this.octave}&level=${nextLevel}&clef=${this.clef}`;
+                window.location.href = localUrl(`piano-oktav.html?octave=${this.octave}&level=${nextLevel}&clef=${this.clef}`);
             });
         } else {
             // Final level complete - suggest going to test
             question.innerHTML = `
                 <div class="level-complete">
-                    <h2>🎊 Grattis!</h2>
-                    <p>Du har klarat alla övningar för ${this.config.name}!</p>
-                    <p>Nu kan du läsa noter i ${this.config.name}!</p>
-                    <button class="btn btn-primary" id="test-btn">Gå till provet</button>
+                    <h2>${T('level.congrats')}</h2>
+                    <p>${T('exercise.completedAllFor', {name: this.config.name})}</p>
+                    <p>${T('exercise.canReadNotes', {name: this.config.name})}</p>
+                    <button class="btn btn-primary" id="test-btn">${T('level.goToTest')}</button>
                 </div>
             `;
 
             document.getElementById('test-btn').addEventListener('click', () => {
-                window.location.href = `piano-oktav-prov.html?octave=${this.octave}&clef=${this.clef}`;
+                window.location.href = localUrl(`piano-oktav-prov.html?octave=${this.octave}&clef=${this.clef}`);
             });
         }
     }
@@ -448,8 +448,8 @@ class PianoOctaveExercise {
         this.loadLevel();
         const question = document.getElementById('question');
         question.innerHTML = `
-            <span id="question-text">Var är <span id="note-to-find"></span>?</span>
-            <img src="" alt="Not att hitta" class="note-image" id="note-image">
+            <span id="question-text">${T('piano.findKey', {note: '<span id="note-to-find"></span>'})}</span>
+            <img src="" alt="${T('exercise.noteAltGeneric')}" class="note-image" id="note-image">
         `;
         this.askQuestion();
     }
@@ -458,9 +458,9 @@ class PianoOctaveExercise {
         document.getElementById('back-to-hub-btn').addEventListener('click', () => {
             // Navigate to the appropriate hub based on clef
             if (this.clef === 'f-klav') {
-                window.location.href = 'noter-f-klav-hub.html';
+                window.location.href = localUrl('noter-f-klav-hub.html');
             } else {
-                window.location.href = 'noter-g-klav-hub.html';
+                window.location.href = localUrl('noter-g-klav-hub.html');
             }
         });
     }

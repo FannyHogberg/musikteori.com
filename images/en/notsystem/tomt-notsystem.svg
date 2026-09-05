@@ -1,0 +1,33 @@
+<svg width="560" height="110" viewBox="0 48 560 110" xmlns="http://www.w3.org/2000/svg">
+  <!-- 5 staff lines -->
+  <g stroke="#555" stroke-width="2">
+    <line x1="60" y1="60" x2="440" y2="60"/>
+    <line x1="60" y1="75" x2="440" y2="75"/>
+    <line x1="60" y1="90" x2="440" y2="90"/>
+    <line x1="60" y1="105" x2="440" y2="105"/>
+    <line x1="60" y1="120" x2="440" y2="120"/>
+  </g>
+
+  <!-- Label "5 lines" (left) -->
+  <text x="50" y="94" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2ecc71" text-anchor="end">5 lines</text>
+
+  <!-- Label "4 spaces" (right) -->
+  <text x="450" y="94" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e67e22" text-anchor="start">4 spaces</text>
+
+  <!-- Green dots on the lines (left) -->
+  <g fill="#2ecc71">
+    <circle cx="70" cy="120" r="4"/>
+    <circle cx="70" cy="105" r="4"/>
+    <circle cx="70" cy="90" r="4"/>
+    <circle cx="70" cy="75" r="4"/>
+    <circle cx="70" cy="60" r="4"/>
+  </g>
+
+  <!-- Orange dots in the spaces (right) -->
+  <g fill="#e67e22">
+    <circle cx="430" cy="112.5" r="4"/>
+    <circle cx="430" cy="97.5" r="4"/>
+    <circle cx="430" cy="82.5" r="4"/>
+    <circle cx="430" cy="67.5" r="4"/>
+  </g>
+</svg>

@@ -39,8 +39,8 @@ class PianoAllaTonerTest {
         const backBtn = document.getElementById('back-to-hub-btn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                if (confirm('Är du säker på att du vill avbryta provet?')) {
-                    window.location.href = 'piano-hub.html';
+                if (confirm(T('test.confirmAbort'))) {
+                    window.location.href = localUrl('piano-hub.html');
                 }
             });
         }
@@ -146,10 +146,10 @@ class PianoAllaTonerTest {
     }
 
     askFindKeyQuestion() {
-        const swedishName = this.getSwedishNoteName(this.currentNote);
-        const questionText = swedishName
-            ? `Var är ${this.currentNote} (${swedishName})?`
-            : `Var är ${this.currentNote}?`;
+        const pronunciation = getNotePronunciation(this.currentNote);
+        const questionText = pronunciation
+            ? T('piano.findKeyPronunciation', {note: this.currentNote, pronunciation: pronunciation})
+            : T('piano.findKey', {note: this.currentNote});
 
         document.getElementById('question').textContent = questionText;
         document.getElementById('note-buttons').style.visibility = 'hidden';
@@ -158,24 +158,8 @@ class PianoAllaTonerTest {
         pianoKeys.classList.remove('no-interaction');
     }
 
-    getSwedishNoteName(note) {
-        const mapping = {
-            'C#': 'Ciss',
-            'D#': 'Diss',
-            'F#': 'Fiss',
-            'G#': 'Giss',
-            'A#': 'Aiss',
-            'Db': 'Dess',
-            'Eb': 'Ess',
-            'Gb': 'Gess',
-            'Ab': 'Ass',
-            'Bb': 'Bess'
-        };
-        return mapping[note];
-    }
-
     askNameKeyQuestion() {
-        document.getElementById('question').textContent = 'Vilken ton är markerad på pianot?';
+        document.getElementById('question').textContent = T('piano.nameKey');
 
         // Find and highlight ONE random key
         const allKeys = document.querySelectorAll('.white-key, .black-key');
@@ -375,7 +359,7 @@ class PianoAllaTonerTest {
         const question = document.getElementById('question');
         question.innerHTML = `
             <div class="quiz-results">
-                <h2>${passed ? '🎉 Grattis!' : 'Provet slutfört!'}</h2>
+                <h2>${passed ? T('level.congrats') : T('test.completed')}</h2>
 
                 <div class="score-display ${passed ? 'passed' : 'failed'}">
                     <div class="score-number">${correctCount}/${this.totalQuestions}</div>
@@ -384,19 +368,19 @@ class PianoAllaTonerTest {
 
                 <div class="result-message">
                     ${passed
-                        ? '<strong>Du har klarat alla piano-övningar!</strong><br>Nu kan du alla toner på pianot. Dags att lära dig läsa noter!'
-                        : `Tyvärr blev du inte godkänd. Du behöver minst ${this.requiredCorrect} rätt av ${this.totalQuestions}.`
+                        ? T('test.completedAllPiano')
+                        : T('test.failed', {required: this.requiredCorrect, total: this.totalQuestions})
                     }
                 </div>
 
                 <div class="quiz-actions" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
                     ${passed
-                        ? '<button class="btn btn-primary" id="continue-btn">Börja med noter i G-klav →</button>'
-                        : '<button class="btn btn-primary" id="retry-btn">Gör om provet</button>'
+                        ? `<button class="btn btn-primary" id="continue-btn">${T('test.startTrebleClef')}</button>`
+                        : `<button class="btn btn-primary" id="retry-btn">${T('test.retakeBtn')}</button>`
                     }
                     ${passed
-                        ? '<button class="btn" id="retry-btn">Gör om provet</button>'
-                        : '<button class="btn" id="back-btn">Byt övning</button>'
+                        ? `<button class="btn" id="retry-btn">${T('test.retakeBtn')}</button>`
+                        : `<button class="btn" id="back-btn">${T('test.changeBtn')}</button>`
                     }
                 </div>
             </div>
@@ -406,11 +390,11 @@ class PianoAllaTonerTest {
         if (passed) {
             document.getElementById('continue-btn').addEventListener('click', () => {
                 // After completing all piano exercises, go to note reading
-                window.location.href = 'noter-g-klav-hub.html';
+                window.location.href = localUrl('noter-g-klav-hub.html');
             });
         } else {
             document.getElementById('back-btn').addEventListener('click', () => {
-                window.location.href = 'piano-hub.html';
+                window.location.href = localUrl('piano-hub.html');
             });
         }
 

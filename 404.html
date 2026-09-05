@@ -6,7 +6,7 @@
     <title>Sidan hittades inte - Musikteori.com</title>
     <meta name="robots" content="noindex">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=5">
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="/">Hem</a></li>
                 <li><a href="/kurser.html">Kurser</a></li>
                 <li><a href="/ovningar.html">Övningar</a></li>
@@ -29,16 +29,36 @@
 
     <main>
         <div class="container" style="max-width: 600px; padding: 4rem 2rem; text-align: center;">
-            <h1>404 - Sidan hittades inte</h1>
-            <p style="margin: 1.5rem 0; color: #666;">Sidan du letar efter finns inte eller har flyttats.</p>
-            <a href="/" class="btn btn-primary">Till startsidan</a>
+            <h1 id="error-title">404 - Sidan hittades inte</h1>
+            <p id="error-message" style="margin: 1.5rem 0; color: #666;">Sidan du letar efter finns inte eller har flyttats.</p>
+            <a id="error-link" href="/" class="btn btn-primary">Till startsidan</a>
         </div>
     </main>
+
+    <script>
+    if (window.location.pathname.startsWith('/en/')) {
+        document.documentElement.lang = 'en';
+        document.title = 'Page not found - Musikteori.com';
+        document.getElementById('error-title').textContent = '404 - Page not found';
+        document.getElementById('error-message').textContent = 'The page you are looking for does not exist or has been moved.';
+        var link = document.getElementById('error-link');
+        link.textContent = 'Go to homepage';
+        link.href = '/en/';
+        var nav = document.getElementById('nav-links');
+        nav.innerHTML =
+            '<li><a href="/en/">Home</a></li>' +
+            '<li><a href="/en/courses.html">Courses</a></li>' +
+            '<li><a href="/en/exercises.html">Exercises</a></li>' +
+            '<li><a href="/en/quiz.html">Quiz</a></li>' +
+            '<li><a href="/en/contact.html">Contact</a></li>';
+    }
+    </script>
 
     <footer>
         <p>&copy; 2026 Musikteori.com</p>
     </footer>
 
+    <script src="/js/translations.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

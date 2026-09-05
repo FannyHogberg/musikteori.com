@@ -32,18 +32,18 @@ class NotlasningOvning {
         this.container.innerHTML = `
             <div class="notlasning-container">
                 <div class="notlasning-header">
-                    <h2>Notläsning</h2>
+                    <h2>${T('noteReading.title')}</h2>
                     <div class="notlasning-stats">
                         <div class="stat">
-                            <span class="stat-label">Rätt:</span>
+                            <span class="stat-label">${T('noteReading.correct')}</span>
                             <span class="stat-value score-display">${this.score}</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-label">Försök:</span>
+                            <span class="stat-label">${T('noteReading.attempts')}</span>
                             <span class="stat-value attempts-display">${this.attempts}</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-label">Rad:</span>
+                            <span class="stat-label">${T('noteReading.streak')}</span>
                             <span class="stat-value streak-display">${this.streak}</span>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ class NotlasningOvning {
 
                 <div class="notlasning-body">
                     <div class="note-display">
-                        <img src="" alt="Not att läsa" class="note-image">
+                        <img src="" alt="${T('noteReading.noteAlt')}" class="note-image">
                     </div>
 
                     <div class="note-options">
@@ -62,7 +62,7 @@ class NotlasningOvning {
                 </div>
 
                 <div class="notlasning-actions">
-                    <button class="btn btn-primary" onclick="location.reload()">Börja om</button>
+                    <button class="btn btn-primary" onclick="location.reload()">${T('noteReading.restart')}</button>
                 </div>
             </div>
         `;
@@ -129,7 +129,7 @@ class NotlasningOvning {
             this.score++;
             this.streak++;
             buttonElement.classList.add('correct');
-            feedbackEl.innerHTML = '<span class="feedback-correct">✓ Rätt!</span>';
+            feedbackEl.innerHTML = '<span class="feedback-correct">' + T('feedback.correct') + '</span>';
             feedbackEl.className = 'feedback-message correct';
 
             // Show next note after a short delay
@@ -147,7 +147,7 @@ class NotlasningOvning {
                 }
             });
 
-            feedbackEl.innerHTML = `<span class="feedback-incorrect">✗ Fel! Rätt svar är ${this.currentNote.display}</span>`;
+            feedbackEl.innerHTML = `<span class="feedback-incorrect">${T('feedback.incorrectAnswer', {note: this.currentNote.display})}</span>`;
             feedbackEl.className = 'feedback-message incorrect';
 
             // Show next note after a longer delay

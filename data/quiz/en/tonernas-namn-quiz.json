@@ -1,0 +1,261 @@
+{
+  "title": "Quiz: Note Names",
+  "description": "Test your knowledge of note names and accidentals",
+  "passingScore": 60,
+  "randomQuestions": 6,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which of these notes belong to the white keys on a piano?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        { "text": "C", "correct": true },
+        { "text": "D", "correct": true },
+        { "text": "C#", "correct": false },
+        { "text": "E", "correct": true }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "What is a sharp used for?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        { "text": "To raise a note by a half step", "correct": true },
+        { "text": "To lower a note by a half step", "correct": false },
+        { "text": "To restore the note to its natural pitch", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "What symbol is used to raise a note by a half step?",
+      "image": "/images/toner/kortfortecken.png",
+      "options": [
+        { "text": "Flat (♭)", "correct": false },
+        { "text": "Sharp (#)", "correct": true },
+        { "text": "Natural (♮)", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "What is a flat used for?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        { "text": "To raise a note by a half step", "correct": false },
+        { "text": "To lower a note by a half step", "correct": true },
+        { "text": "To restore the note to its natural pitch", "correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Between which white keys is there NOT a whole step?",
+      "image": "/images/toner/piano1.png",
+      "options": [
+        { "text": "C and D", "correct": false },
+        { "text": "E and F", "correct": true },
+        { "text": "G and A", "correct": false },
+        { "text": "B and C", "correct": true }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single-choice",
+      "question": "What is a raised C called?",
+      "options": [
+        { "text": "C flat (Cb)", "correct": false },
+        { "text": "C sharp (C#)", "correct": true },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "What is a natural sign used for?",
+      "image": "/images/toner/aterstallningstecken.png",
+      "options": [
+        { "text": "To raise a note", "correct": false },
+        { "text": "To lower a note", "correct": false },
+        { "text": "To cancel a sharp or flat from a note", "correct": true }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "C# is the same note as:",
+      "options": [
+        { "text": "C", "correct": false },
+        { "text": "Db", "correct": true },
+        { "text": "D", "correct": false },
+        { "text": "B", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "What is a lowered D called?",
+      "options": [
+        { "text": "D sharp (D#)", "correct": false },
+        { "text": "D flat (Db)", "correct": true },
+        { "text": "C", "correct": false },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "What symbol is used to lower a note by a half step?",
+      "image": "/images/toner/bfortecken.png",
+      "options": [
+        { "text": "Sharp (#)", "correct": false },
+        { "text": "Flat (♭)", "correct": true },
+        { "text": "Natural (♮)", "correct": false },
+        { "text": "Double flat (♭♭)", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: C D E ?",
+      "options": [
+        { "text": "E", "correct": false },
+        { "text": "F", "correct": true },
+        { "text": "G", "correct": false },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: F G A ?",
+      "options": [
+        { "text": "G", "correct": false },
+        { "text": "C", "correct": false },
+        { "text": "B", "correct": true },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: E ? G",
+      "options": [
+        { "text": "D", "correct": false },
+        { "text": "F", "correct": true },
+        { "text": "A", "correct": false },
+        { "text": "B", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: ? D E",
+      "options": [
+        { "text": "C", "correct": true },
+        { "text": "F", "correct": false },
+        { "text": "B", "correct": false },
+        { "text": "A", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: A B ?",
+      "options": [
+        { "text": "D", "correct": false },
+        { "text": "G", "correct": false },
+        { "text": "C", "correct": true },
+        { "text": "E", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Which note is missing in the sequence: G A ? C",
+      "options": [
+        { "text": "F", "correct": false },
+        { "text": "B", "correct": true },
+        { "text": "E", "correct": false },
+        { "text": "D", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "What is a lowered A called?",
+      "options": [
+        { "text": "A sharp (A#)", "correct": false },
+        { "text": "A flat (Ab)", "correct": true },
+        { "text": "G sharp (G#)", "correct": false },
+        { "text": "B flat (Bb)", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Which accidental raises a note?",
+      "options": [
+        { "text": "Sharp (#)", "correct": true },
+        { "text": "Flat (♭)", "correct": false },
+        { "text": "Natural (♮)", "correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between C and D?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between E and F?",
+      "options": [
+        { "text": "A whole step", "correct": false },
+        { "text": "A half step", "correct": true }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between B and C?",
+      "options": [
+        { "text": "A whole step", "correct": false },
+        { "text": "A half step", "correct": true }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between F and G?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between D and E?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "single-choice",
+      "question": "Is there a whole step or a half step between A and B?",
+      "options": [
+        { "text": "A whole step", "correct": true },
+        { "text": "A half step", "correct": false }
+      ]
+    }
+  ]
+}

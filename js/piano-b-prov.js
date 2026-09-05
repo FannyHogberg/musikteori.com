@@ -38,8 +38,8 @@ class PianoBTest {
         const backBtn = document.getElementById('back-to-hub-btn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                if (confirm('Är du säker på att du vill avbryta provet?')) {
-                    window.location.href = 'piano-hub.html';
+                if (confirm(T('test.confirmAbort'))) {
+                    window.location.href = localUrl('piano-hub.html');
                 }
             });
         }
@@ -141,10 +141,10 @@ class PianoBTest {
     }
 
     askFindKeyQuestion() {
-        const swedishName = this.getSwedishNoteName(this.currentNote);
-        const questionText = swedishName
-            ? `Var är ${this.currentNote} (${swedishName})?`
-            : `Var är ${this.currentNote}?`;
+        const pronunciation = getNotePronunciation(this.currentNote);
+        const questionText = pronunciation
+            ? T('piano.findKeyPronunciation', {note: this.currentNote, pronunciation: pronunciation})
+            : T('piano.findKey', {note: this.currentNote});
 
         document.getElementById('question').textContent = questionText;
 
@@ -156,24 +156,8 @@ class PianoBTest {
         pianoKeys.classList.remove('no-interaction');
     }
 
-    getSwedishNoteName(note) {
-        const mapping = {
-            'C#': 'Ciss',
-            'D#': 'Diss',
-            'F#': 'Fiss',
-            'G#': 'Giss',
-            'A#': 'Aiss',
-            'Db': 'Dess',
-            'Eb': 'Ess',
-            'Gb': 'Gess',
-            'Ab': 'Ass',
-            'Bb': 'Bess'
-        };
-        return mapping[note];
-    }
-
     askNameKeyQuestion() {
-        document.getElementById('question').textContent = 'Vilken ton är markerad på pianot?';
+        document.getElementById('question').textContent = T('piano.nameKey');
 
         // Find and highlight ONE random key
         const allKeys = document.querySelectorAll('.white-key, .black-key');
@@ -297,7 +281,7 @@ class PianoBTest {
         const question = document.getElementById('question');
         question.innerHTML = `
             <div class="quiz-results">
-                <h2>Provet slutfört!</h2>
+                <h2>${T('test.completed')}</h2>
 
                 <div class="score-display ${passed ? 'passed' : 'failed'}">
                     <div class="score-number">${correctCount}/${this.totalQuestions}</div>
@@ -306,18 +290,18 @@ class PianoBTest {
 
                 <div class="result-message">
                     ${passed
-                        ? '🎉 Grattis! Du är godkänd!'
-                        : `Tyvärr blev du inte godkänd. Du behöver minst ${this.requiredCorrect} rätt av ${this.totalQuestions}.`
+                        ? T('test.passed')
+                        : T('test.failed', {required: this.requiredCorrect, total: this.totalQuestions})
                     }
                 </div>
 
                 <div class="quiz-actions" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
                     ${passed
-                        ? '<button class="btn btn-primary" id="continue-btn">Fortsätt till Del 4: Alla toner →</button>'
+                        ? `<button class="btn btn-primary" id="continue-btn">${T('test.continueSection4')}</button>`
                         : ''
                     }
-                    <button class="btn ${passed ? '' : 'btn-primary'}" id="retry-btn">Gör om provet</button>
-                    <button class="btn" id="back-btn">Byt övning</button>
+                    <button class="btn ${passed ? '' : 'btn-primary'}" id="retry-btn">${T('test.retakeBtn')}</button>
+                    <button class="btn" id="back-btn">${T('test.changeBtn')}</button>
                 </div>
             </div>
         `;

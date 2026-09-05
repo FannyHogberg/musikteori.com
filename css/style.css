@@ -90,6 +90,32 @@ a:hover {
     color: white;
 }
 
+/* Language switcher */
+.lang-switch {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.3rem 0.6rem;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.2s;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.lang-switch:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+@media (max-width: 900px) {
+    .lang-switch {
+        margin-right: 0.75rem;
+    }
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -828,6 +854,12 @@ html {
     line-height: 1.8;
 }
 
+.lesson-content ul,
+.lesson-content ol {
+    text-align: left;
+    padding-left: 2rem;
+}
+
 .note-section {
     margin: 2.5rem 0 0.75rem;
 }
@@ -1083,13 +1115,16 @@ html {
     }
 
     .course-card {
-        flex-direction: row;
-        padding: 1.25rem 2rem;
-        gap: 2rem;
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1rem;
+        text-align: center;
     }
 
     .course-card-image {
-        width: 100px;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
     }
 
     .course-card-arrow {
@@ -1109,6 +1144,7 @@ html {
         padding: 0 1.5rem;
         text-align: center;
     }
+
 
     .lesson-intro {
         margin-top: 1.5rem;
@@ -1133,11 +1169,11 @@ html {
     }
 
     .course-card {
-        padding: 1rem 1.5rem;
+        padding: 1.25rem;
     }
 
     .course-card-image {
-        width: 80px;
+        max-width: 160px;
     }
 
     .course-card-content h2 {
@@ -1156,6 +1192,14 @@ html {
         margin: 1.25rem 0 0.5rem;
     }
 
+    .clef-label {
+        display: none;
+    }
+
+    .landscape-hint {
+        display: block !important;
+    }
+
     .note-section h2 {
         font-size: 1.2rem;
     }
@@ -1170,6 +1214,12 @@ html {
 
     .lesson-content .container {
         padding: 0 1.25rem;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .landscape-hint {
+        display: none !important;
     }
 }
 

@@ -24,7 +24,8 @@ class Quiz {
             const currentPath = window.location.pathname;
             const pathDepth = currentPath.split('/').filter(p => p).length - 1;
             const relativePath = '../'.repeat(pathDepth);
-            const url = `${relativePath}data/quiz/${this.quizName}.json`;
+            const langFolder = LANG === 'en' ? 'en/' : '';
+            const url = `${relativePath}data/quiz/${langFolder}${this.quizName}.json`;
 
             console.log('Current path:', currentPath);
             console.log('Loading quiz from:', url);
@@ -52,9 +53,9 @@ class Quiz {
             console.error('Failed to load quiz:', error);
             this.container.innerHTML = `
                 <div class="error" style="padding: 2rem; text-align: center;">
-                    <h3>Kunde inte ladda quiz</h3>
-                    <p>Fel: ${error.message}</p>
-                    <p style="font-size: 0.9rem; color: #666;">Försök att ladda om sidan eller kontrollera konsolen för mer information.</p>
+                    <h3>${T('quiz.loadError.title')}</h3>
+                    <p>${error.message}</p>
+                    <p style="font-size: 0.9rem; color: #666;">${T('quiz.loadError.detail')}</p>
                 </div>
             `;
         }
@@ -100,7 +101,7 @@ class Quiz {
                 <h2>${this.quizData.title}</h2>
                 <p class="quiz-description">${this.quizData.description || ''}</p>
                 <div class="quiz-progress">
-                    Fråga ${this.currentQuestionIndex + 1} av ${this.quizData.questions.length}
+                    ${T('quiz.progress', {current: this.currentQuestionIndex + 1, total: this.quizData.questions.length})}
                 </div>
             </div>
             <div class="quiz-body">
@@ -120,12 +121,12 @@ class Quiz {
             <div class="question-container">
                 <h3 class="question-text">
                     ${question.question}
-                    ${isMultipleChoice ? '<span style="font-weight: normal; font-size: 0.9em; color: #666;"> (du kan välja flera alternativ)</span>' : ''}
+                    ${isMultipleChoice ? '<span style="font-weight: normal; font-size: 0.9em; color: #666;"> ' + T('quiz.multipleChoice') + '</span>' : ''}
                 </h3>
-                ${question.image ? `<div class="question-image"><img src="${question.image}" alt="Frågebild"></div>` : ''}
+                ${question.image ? `<div class="question-image"><img src="${question.image}" alt="${T('quiz.questionImage')}"></div>` : ''}
                 ${question.audio ? `
                 <div class="quiz-audio-player notvarden-player" data-quiz-audio="${question.audio}">
-                    <button class="notvarden-play-btn" type="button" data-label="Lyssna">Lyssna</button>
+                    <button class="notvarden-play-btn" type="button" data-label="${T('quiz.listen')}">${T('quiz.listen')}</button>
                     <div class="pulse-counter">
                         <div class="beat">1</div>
                         <div class="beat">2</div>
@@ -140,10 +141,10 @@ class Quiz {
                 </div>
 
                 <div class="quiz-actions">
-                    ${this.currentQuestionIndex > 0 ? '<button class="btn quiz-btn-prev">Föregående</button>' : ''}
+                    ${this.currentQuestionIndex > 0 ? '<button class="btn quiz-btn-prev">' + T('quiz.previous') + '</button>' : ''}
                     ${this.currentQuestionIndex < this.quizData.questions.length - 1
-                        ? `<button class="btn btn-primary quiz-btn-next" ${!hasAnswer ? 'disabled' : ''}>Nästa</button>`
-                        : `<button class="btn btn-primary quiz-btn-finish" ${!hasAnswer ? 'disabled' : ''}>Avsluta</button>`}
+                        ? `<button class="btn btn-primary quiz-btn-next" ${!hasAnswer ? 'disabled' : ''}>${T('quiz.next')}</button>`
+                        : `<button class="btn btn-primary quiz-btn-finish" ${!hasAnswer ? 'disabled' : ''}>${T('quiz.finish')}</button>`}
                 </div>
             </div>
         `;
@@ -185,7 +186,7 @@ class Quiz {
                     ${isChecked ? 'checked' : ''}
                 >
                 <div class="option-content">
-                    ${option.image ? `<img src="${option.image}" alt="${option.alt || 'Alternativ ' + (index + 1)}">` : ''}
+                    ${option.image ? `<img src="${option.image}" alt="${option.alt || T('quiz.optionAlt', {n: index + 1})}">` : ''}
                     ${option.text ? `<span class="option-text">${option.text}</span>` : ''}
                 </div>
             </label>
@@ -321,21 +322,21 @@ class Quiz {
 
         this.container.innerHTML = `
             <div class="quiz-results">
-                <h2>Resultat</h2>
+                <h2>${T('quiz.results')}</h2>
                 <div class="score-display ${passed ? 'passed' : 'failed'}">
                     <div class="score-number">${this.score} / ${this.quizData.questions.length}</div>
                     <div class="score-percentage">${percentage}%</div>
                 </div>
                 <p class="result-message">
                     ${passed
-                        ? '🎉 Grattis! Du klarade provet!'
-                        : `Du behöver minst ${this.quizData.passingScore}% för att klara provet. Försök igen!`}
+                        ? T('quiz.passed')
+                        : T('quiz.failed', {score: this.quizData.passingScore})}
                 </p>
                 <div class="quiz-actions">
-                    <button class="btn quiz-btn-review">Granska svar</button>
-                    <button class="btn quiz-btn-retry">Försök igen</button>
-                    ${this.nextUrl ? `<a href="${this.nextUrl}" class="btn btn-primary">Fortsätt till nästa avsnitt</a>` : ''}
-                    ${this.quizListUrl ? `<a href="${this.quizListUrl}" class="btn btn-primary">Prova ett annat quiz</a>` : ''}
+                    <button class="btn quiz-btn-review">${T('quiz.reviewBtn')}</button>
+                    <button class="btn quiz-btn-retry">${T('quiz.retryBtn')}</button>
+                    ${this.nextUrl ? `<a href="${this.nextUrl}" class="btn btn-primary">${T('quiz.continueNext')}</a>` : ''}
+                    ${this.quizListUrl ? `<a href="${this.quizListUrl}" class="btn btn-primary">${T('quiz.tryAnother')}</a>` : ''}
                 </div>
             </div>
         `;
@@ -373,8 +374,8 @@ class Quiz {
 
             return `
                 <div class="review-question ${isCorrect ? 'correct' : 'incorrect'}">
-                    <h3>Fråga ${qIndex + 1}: ${question.question}</h3>
-                    ${question.image ? `<img src="${question.image}" alt="Frågebild" class="review-image">` : ''}
+                    <h3>${T('quiz.questionN', {n: qIndex + 1})}: ${question.question}</h3>
+                    ${question.image ? `<img src="${question.image}" alt="${T('quiz.questionImage')}" class="review-image">` : ''}
                     <div class="review-options">
                         ${question.options.map((opt, optIndex) => {
                             const wasSelected = isMultipleChoice
@@ -397,10 +398,10 @@ class Quiz {
 
         this.container.innerHTML = `
             <div class="quiz-review">
-                <h2>Granska dina svar</h2>
+                <h2>${T('quiz.reviewTitle')}</h2>
                 ${reviewHTML}
                 <div class="quiz-actions">
-                    <button class="btn btn-primary quiz-btn-retry">Försök igen</button>
+                    <button class="btn btn-primary quiz-btn-retry">${T('quiz.retryBtn')}</button>
                 </div>
             </div>
         `;
