@@ -2095,7 +2095,7 @@ html {
    Selektorer använder "main" för att överskriva inline-stilar i HTML-filerna. */
 @media (max-height: 600px) and (orientation: landscape) {
     .navbar {
-        position: static;
+        position: relative;
         padding: 0.3rem 1rem;
     }
 
