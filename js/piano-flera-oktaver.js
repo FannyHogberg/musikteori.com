@@ -152,8 +152,9 @@ class PianoMultipleOctavesExercise {
             label.textContent = keyData.note;
             key.appendChild(label);
 
-            // Add octave marker on C keys
-            if (keyData.note === 'C') {
+            // Show only c¹ marker if ettstrukna is on the piano, otherwise show selected octaves' markers
+            const showOnlyEttstrukna = this.allWhiteKeys.some(k => k.octave === 'ettstrukna');
+            if (keyData.note === 'C' && (showOnlyEttstrukna ? keyData.octave === 'ettstrukna' : this.selectedOctaves.includes(keyData.octave))) {
                 const marker = document.createElement('span');
                 marker.className = 'octave-marker';
                 marker.textContent = this.getOctaveLabel(keyData.octave);

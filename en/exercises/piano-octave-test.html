@@ -28,7 +28,7 @@
         .question-counter.updated { animation: questionUpdate 0.4s ease-out; }
         .question { font-size: 2rem; font-weight: bold; text-align: center; margin: 0 0 1.5rem 0; color: var(--primary-color); display: flex; align-items: center; justify-content: center; gap: 2rem; }
         .note-image { width: 160px; height: 95px; object-fit: contain; background: white; padding: 0.3rem; border-radius: 10px; border: 2px solid var(--border-color); flex-shrink: 0; }
-        .piano { position: relative; background: #f5f5f5; border-radius: 10px; padding: 20px 20px 40px 20px; display: flex; justify-content: center; align-items: center; margin-top: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .piano { position: relative; background: #f5f5f5; border-radius: 10px; padding: 20px 20px 40px 20px; display: flex; justify-content: center; align-items: center; margin-top: 0; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
         .piano-keys { position: relative; display: flex; gap: 2px; }
         .white-key { width: 50px; height: 180px; background: white; border: 2px solid #333; border-radius: 0 0 5px 5px; cursor: pointer; position: relative; transition: all 0.1s; }
         @media (hover: hover) { .white-key:hover { background: #f0f0f0; } }
@@ -43,7 +43,7 @@
             .piano-test { padding: 1rem; }
             .question { font-size: 1.5rem; flex-direction: column; gap: 1rem; }
             .note-image { width: 140px; height: 85px; }
-            .piano { padding: 15px 10px 35px 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .piano { padding: 15px 10px 35px 10px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
             .white-key { width: 42px; height: 160px; }
             .black-key { width: 30px; height: 100px; }
         }

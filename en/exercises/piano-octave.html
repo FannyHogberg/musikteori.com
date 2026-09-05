@@ -32,7 +32,7 @@
         .feedback-message.show-correct { background: #27ae60; animation: feedbackPop 0.6s ease-out; }
         .feedback-message.show-incorrect { background: #e74c3c; animation: feedbackShake 0.6s ease-out; }
         .landscape-tip { display: none; background: #fff3cd; color: #856404; padding: 0.75rem; border-radius: 8px; text-align: center; margin-bottom: 1rem; font-size: 0.9rem; border: 1px solid #ffeaa7; }
-        .piano { position: relative; background: #f5f5f5; border-radius: 10px; padding: 20px 20px 40px 20px; display: flex; justify-content: center; align-items: center; margin-top: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .piano { position: relative; background: #f5f5f5; border-radius: 10px; padding: 20px 20px 40px 20px; display: flex; justify-content: center; align-items: center; margin-top: 0; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
         .piano-keys { position: relative; display: flex; gap: 2px; }
         .piano-keys.disabled { opacity: 0.6; pointer-events: none; }
         .white-key { width: 50px; height: 180px; background: white; border: 2px solid #333; border-radius: 0 0 5px 5px; cursor: pointer; position: relative; transition: all 0.1s; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px; font-weight: bold; color: #666; }
@@ -65,7 +65,7 @@
             .piano-exercise { padding: 1rem; }
             .question { font-size: 1.5rem; flex-direction: column; gap: 1rem; margin-bottom: 1rem; }
             .note-image { width: 140px; height: 85px; }
-            .piano { padding: 15px 10px 35px 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .piano { padding: 15px 10px 35px 10px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
             .white-key { width: 42px; height: 160px; font-size: 0.8rem; }
             .black-key { width: 30px; height: 100px; font-size: 0.7rem; }
             .stats { gap: 0.5rem; }
@@ -80,7 +80,7 @@
             .piano-exercise { padding: 0.5rem; }
             .question { font-size: 1.25rem; }
             .note-image { width: 120px; height: 70px; }
-            .piano { padding: 10px 5px 30px 5px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .piano { padding: 10px 5px 30px 5px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
             .white-key { width: 34px; height: 140px; font-size: 0.7rem; padding-bottom: 8px; }
             .black-key { width: 24px; height: 85px; font-size: 0.65rem; padding-bottom: 4px; }
             .level-info { padding: 0.75rem; margin-bottom: 0.75rem; }

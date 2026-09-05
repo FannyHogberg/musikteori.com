@@ -187,8 +187,9 @@ class PianoOctaveExercise {
                 label.textContent = note;
                 key.appendChild(label);
 
-                // Add octave marker on C keys
-                if (note === 'C') {
+                // Add octave marker only on c¹ if ettstrukna is on the piano, otherwise on the question octave's C
+                const showMarkerOctave = this.config.pianoOctaves.some(o => o.id === 'ettstrukna') ? 'ettstrukna' : this.config.questionOctave;
+                if (note === 'C' && octave.id === showMarkerOctave) {
                     const marker = document.createElement('span');
                     marker.className = 'octave-marker';
                     marker.textContent = this.getOctaveLabel(octave.id);
