@@ -18,7 +18,7 @@
     <link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar.html">
     <link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises.html">
     <link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar.html">
-    <link rel="stylesheet" href="../css/style.css?v=5">
+    <link rel="stylesheet" href="../css/style.css?v=8">
     <style>
         @media (max-width: 768px) {
             .exercise-box {
@@ -33,18 +33,15 @@
                 font-size: 1.1rem !important;
             }
 
-            /* Stack buttons vertically on mobile */
             .exercise-box .btn {
                 font-size: 1rem !important;
                 padding: 0.875rem !important;
             }
 
-            /* Make level buttons stack on mobile */
             div[style*="display: flex; gap: 1rem"] {
                 flex-direction: column !important;
             }
 
-            /* Checkboxes on mobile */
             div[style*="display: flex; gap: 1.5rem"] {
                 flex-direction: column !important;
                 align-items: flex-start !important;
@@ -67,68 +64,6 @@
 
             .exercise-box p {
                 font-size: 0.875rem !important;
-            }
-        }
-
-        /* Piano card hover effect */
-        .piano-card-link:hover .piano-card {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(46, 204, 113, 0.2);
-            border-color: var(--primary-color);
-        }
-
-        .piano-card-link:hover .arrow-icon {
-            transform: translateX(5px);
-        }
-
-        .piano-card-link:active .piano-card {
-            transform: translateY(-2px);
-        }
-
-        /* Notes card hover effect */
-        .notes-card-link:hover .notes-card {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(46, 204, 113, 0.2);
-            border-color: var(--primary-color);
-        }
-
-        .notes-card-link:hover .arrow-icon {
-            transform: translateX(5px);
-        }
-
-        .notes-card-link:active .notes-card {
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 968px) {
-            /* Stack layout on tablets and mobile */
-            .piano-card div[style*="display: flex; align-items: center; gap: 2.5rem"],
-            .notes-card div[style*="display: flex; align-items: center; gap: 2.5rem"] {
-                flex-direction: column !important;
-                text-align: center;
-                gap: 1.5rem !important;
-            }
-
-            /* Scale down piano on mobile */
-            .piano-card > div > div[style*="padding: 15px"] {
-                transform: scale(0.85);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .piano-card,
-            .notes-card {
-                padding: 2rem 1.5rem !important;
-            }
-
-            .piano-card h2,
-            .notes-card h2 {
-                font-size: 1.6rem !important;
-            }
-
-            .piano-card p,
-            .notes-card p {
-                font-size: 0.95rem !important;
             }
         }
     </style>
@@ -160,41 +95,32 @@
         </section>
 
         <div class="container exercises-container">
-            <a href="exercises/piano-hub.html" class="piano-card-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 3rem;">
-                <div class="piano-card" style="background: #fafbfc; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid #d1d5db; position: relative; overflow: hidden;">
-                    <div style="display: flex; align-items: center; gap: 2.5rem; position: relative; z-index: 1;">
-                        <!-- Piano keyboard -->
-                        <div style="flex-shrink: 0; position: relative; width: 180px; display: flex; justify-content: center;">
-                            <div style="display: flex; gap: 2px; position: relative;">
-                                <!-- White keys -->
-                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-                                <div style="width: 24px; height: 90px; background: white; border-radius: 0 0 4px 4px; border: 1px solid #999; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-
-                                <!-- Black keys -->
-                                <div style="position: absolute; left: 17px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
-                                <div style="position: absolute; left: 43px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
-                                <div style="position: absolute; left: 95px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
-                                <div style="position: absolute; left: 121px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
-                                <div style="position: absolute; left: 147px; top: 0; width: 16px; height: 55px; background: #222; border-radius: 0 0 3px 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>
+            <a href="exercises/piano-hub.html" class="exercise-card-link">
+                <div class="exercise-card">
+                    <div class="exercise-card-content">
+                        <div class="piano-illustration">
+                            <div class="piano-illustration-keys">
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="black" style="left: 17px;"></div>
+                                <div class="black" style="left: 43px;"></div>
+                                <div class="black" style="left: 95px;"></div>
+                                <div class="black" style="left: 121px;"></div>
+                                <div class="black" style="left: 147px;"></div>
                             </div>
                         </div>
 
-                        <!-- Content section -->
-                        <div style="flex: 1; position: relative; padding-top: 0; margin-top: -1rem; padding-bottom: 1rem;">
+                        <div style="flex: 1; position: relative; margin-top: -1rem; padding-bottom: 1rem;">
                             <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
-                                <span style="display: inline-block; background: #ffd700; color: #333; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(-2deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
-                                    RECOMMENDED
-                                </span>
-                                <span style="display: inline-block; background: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(1deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
-                                    BEGINNER
-                                </span>
+                                <span class="badge badge-gold">RECOMMENDED</span>
+                                <span class="badge badge-green">BEGINNER</span>
                             </div>
-                            <h2 style="margin-bottom: 0; font-size: 2rem; color: #2c3e50; font-weight: 700;">
+                            <h2 style="margin-bottom: 0; font-size: 2rem; font-weight: 700;">
                                 Learn the notes on the piano
                             </h2>
                             <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--primary-color); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem;">
@@ -206,22 +132,18 @@
                 </div>
             </a>
 
-            <a href="exercises/notes-treble-clef-hub.html" class="notes-card-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 3rem;">
-                <div class="notes-card" style="background: #fafbfc; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid #d1d5db; position: relative; overflow: hidden;">
-                    <div style="display: flex; align-items: center; gap: 2.5rem; position: relative; z-index: 1;">
-                        <!-- G-clef illustration -->
-                        <div style="flex-shrink: 0; position: relative; width: 180px; display: flex; justify-content: center; align-items: center; font-size: 90px; line-height: 1;">
+            <a href="exercises/notes-treble-clef-hub.html" class="exercise-card-link">
+                <div class="exercise-card">
+                    <div class="exercise-card-content">
+                        <div class="piano-illustration" style="align-items: center; font-size: 90px; line-height: 1;">
                             🎼
                         </div>
 
-                        <!-- Content section -->
-                        <div style="flex: 1; position: relative; padding-top: 0; margin-top: -1rem; padding-bottom: 1rem;">
+                        <div style="flex: 1; position: relative; margin-top: -1rem; padding-bottom: 1rem;">
                             <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
-                                <span style="display: inline-block; background: #3498db; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(1deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
-                                    NEXT STEP
-                                </span>
+                                <span class="badge badge-blue">NEXT STEP</span>
                             </div>
-                            <h2 style="margin-bottom: 0; font-size: 2rem; color: #2c3e50; font-weight: 700;">
+                            <h2 style="margin-bottom: 0; font-size: 2rem; font-weight: 700;">
                                 Learn to read notes - Treble Clef
                             </h2>
                             <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--primary-color); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem;">
@@ -233,22 +155,18 @@
                 </div>
             </a>
 
-            <a href="exercises/notes-bass-clef-hub.html" class="notes-card-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 3rem;">
-                <div class="notes-card" style="background: #fafbfc; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid #d1d5db; position: relative; overflow: hidden;">
-                    <div style="display: flex; align-items: center; gap: 2.5rem; position: relative; z-index: 1;">
-                        <!-- F-clef illustration -->
-                        <div style="flex-shrink: 0; position: relative; width: 180px; display: flex; justify-content: center; align-items: center; font-size: 90px; line-height: 1;">
+            <a href="exercises/notes-bass-clef-hub.html" class="exercise-card-link">
+                <div class="exercise-card">
+                    <div class="exercise-card-content">
+                        <div class="piano-illustration" style="align-items: center; font-size: 90px; line-height: 1;">
                             𝄢
                         </div>
 
-                        <!-- Content section -->
-                        <div style="flex: 1; position: relative; padding-top: 0; margin-top: -1rem; padding-bottom: 1rem;">
+                        <div style="flex: 1; position: relative; margin-top: -1rem; padding-bottom: 1rem;">
                             <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
-                                <span style="display: inline-block; background: #9b59b6; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; transform: rotate(1deg); box-shadow: 0 2px 4px rgba(0,0,0,0.1); letter-spacing: 0.5px;">
-                                    ADVANCED
-                                </span>
+                                <span class="badge badge-purple">ADVANCED</span>
                             </div>
-                            <h2 style="margin-bottom: 0; font-size: 2rem; color: #2c3e50; font-weight: 700;">
+                            <h2 style="margin-bottom: 0; font-size: 2rem; font-weight: 700;">
                                 Learn to read notes - Bass Clef
                             </h2>
                             <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--primary-color); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem;">
