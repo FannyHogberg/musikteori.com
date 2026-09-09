@@ -1,0 +1,37 @@
+<svg width="560" height="320" viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">En helton mellan Diss (D♯) och F</title>
+  <desc id="description">Piano med Diss (D♯) och F markerade i grönt, tillsammans med tangenten E mellan dem. Pilar pekar på starttonen och sluttonen. Avståndet är en helton.</desc>
+  <g transform="translate(1 10)">
+    <g stroke="black" stroke-width="2">
+      <rect x="0.0" y="0" width="69.75" height="220" fill="white"/>
+      <rect x="69.75" y="0" width="69.75" height="220" fill="white"/>
+      <rect x="139.5" y="0" width="69.75" height="220" fill="#d8f3e5"/>
+      <rect x="209.25" y="0" width="69.75" height="220" fill="#d8f3e5"/>
+      <rect x="279.0" y="0" width="69.75" height="220" fill="white"/>
+      <rect x="348.75" y="0" width="69.75" height="220" fill="white"/>
+      <rect x="418.5" y="0" width="69.75" height="220" fill="white"/>
+      <rect x="488.25" y="0" width="69.75" height="220" fill="white"/>
+    </g>
+    <g>
+      <rect x="48.75" y="0" width="42" height="132" fill="black"/>
+      <rect x="118.5" y="0" width="42" height="132" fill="#176b48"/>
+      <rect x="258.0" y="0" width="42" height="132" fill="black"/>
+      <rect x="327.75" y="0" width="42" height="132" fill="black"/>
+      <rect x="397.5" y="0" width="42" height="132" fill="black"/>
+    </g>
+    <g font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">
+      <text x="139.5" y="105" fill="white">D♯</text>
+      <text x="34.875" y="205" fill="#176b48">C</text>
+      <text x="104.625" y="205" fill="#176b48">D</text>
+      <text x="174.375" y="205" fill="#176b48">E</text>
+      <text x="244.125" y="205" fill="#176b48">F</text>
+      <text x="313.875" y="205" fill="#176b48">G</text>
+      <text x="383.625" y="205" fill="#176b48">A</text>
+      <text x="453.375" y="205" fill="#176b48">B</text>
+      <text x="523.125" y="205" fill="#176b48">C</text>
+    </g>
+    <g fill="none" stroke="#176b48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 139.5,139 L 191.8125,290 L 244.125,227 M 138.05,150.09 L 139.5,139 L 147.50,146.81 M 233.89,231.50 L 244.125,227 L 241.58,237.89"/>
+    </g>
+  </g>
+</svg>

@@ -99,7 +99,7 @@ class PianoKeysExercise {
         // Update subtitle to show section and level
         const subtitleEl = document.querySelector('.subtitle');
         if (subtitleEl) {
-            subtitleEl.innerHTML = `${sectionName} – ${T('level.n', {n: sectionLevel})} / ${totalLevelsInSection}`;
+            subtitleEl.innerHTML = `${sectionName} - ${T('level.n', {n: sectionLevel})} / ${totalLevelsInSection}`;
         }
 
         // Update level description

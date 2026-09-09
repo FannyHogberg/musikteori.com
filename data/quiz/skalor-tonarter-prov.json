@@ -1,0 +1,200 @@
+{
+  "title": "Avslutande prov: Skalor och tonarter",
+  "description": "Testa dina kunskaper från kursen Skalor och tonarter",
+  "passingScore": 80,
+  "randomQuestions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "Vad är en halvton på pianot?",
+      "options": [
+        { "text": "Avståndet till tangenten precis bredvid", "correct": true },
+        { "text": "Avståndet mellan två vita tangenter", "correct": false },
+        { "text": "Avståndet mellan C och E", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "Hur många halvtoner är en helton?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "3", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "Mellan vilka vita tangenter är det en halvton?",
+      "options": [
+        { "text": "C-D och G-A", "correct": false },
+        { "text": "E-F och B-C", "correct": true },
+        { "text": "D-E och A-B", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "Vilket mönster bygger en durskala?",
+      "options": [
+        { "text": "Hel, hel, halv, hel, hel, hel, halv", "correct": true },
+        { "text": "Hel, halv, hel, hel, halv, hel, hel", "correct": false },
+        { "text": "Halv, hel, hel, halv, hel, hel, hel", "correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "Vilka toner ingår i C-dur?",
+      "options": [
+        { "text": "C D E F G A B C", "correct": true },
+        { "text": "C D Ess F G Ass B C", "correct": false },
+        { "text": "C D E Fiss G A B C", "correct": false }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single-choice",
+      "question": "Varför behöver G-dur tonen Fiss?",
+      "options": [
+        { "text": "För att durskalans mönster ska stämma", "correct": true },
+        { "text": "För att alla durskalor måste ha minst ett kors", "correct": false },
+        { "text": "För att G-dur annars blir en mollskala", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Vilket mönster bygger naturlig moll?",
+      "options": [
+        { "text": "Hel, halv, hel, hel, halv, hel, hel", "correct": true },
+        { "text": "Hel, hel, halv, hel, hel, hel, halv", "correct": false },
+        { "text": "Halv, halv, hel, hel, hel, halv, hel", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Vilka toner ingår i A-moll?",
+      "options": [
+        { "text": "A B C D E F G A", "correct": true },
+        { "text": "A B Ciss D E Fiss Giss A", "correct": false },
+        { "text": "A Bess C D Ess F G A", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Vilken molltonart är parallelltonart till C-dur?",
+      "options": [
+        { "text": "C-moll", "correct": false },
+        { "text": "A-moll", "correct": true },
+        { "text": "E-moll", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "Vad visar fasta förtecken?",
+      "options": [
+        { "text": "Vilka toner som höjs eller sänks genom stycket", "correct": true },
+        { "text": "Hur snabbt musiken ska spelas", "correct": false },
+        { "text": "Hur många slag som finns i takten", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "Vilket fast förtecken har G-dur?",
+      "options": [
+        { "text": "Bess", "correct": false },
+        { "text": "Fiss", "correct": true },
+        { "text": "Ciss", "correct": false },
+        { "text": "Inget", "correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "Vilka fasta förtecken har D-dur?",
+      "options": [
+        { "text": "Fiss och Ciss", "correct": true },
+        { "text": "Bess och Ess", "correct": false },
+        { "text": "Fiss och Bess", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "I vilken ordning läggs korsförtecken till?",
+      "options": [
+        { "text": "Fiss, Ciss, Giss, Diss, Aiss, Eiss, Biss", "correct": true },
+        { "text": "Bess, Ess, Ass, Dess, Gess, Cess, Fess", "correct": false },
+        { "text": "Ciss, Fiss, Biss, Eiss, Aiss, Diss, Giss", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "Vilket fast förtecken har F-dur?",
+      "options": [
+        { "text": "Fiss", "correct": false },
+        { "text": "Bess", "correct": true },
+        { "text": "Ess", "correct": false },
+        { "text": "Inget", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Vilka tonarter är parallelltonarter?",
+      "options": [
+        { "text": "G-dur och E-moll", "correct": true },
+        { "text": "G-dur och G-moll", "correct": false },
+        { "text": "C-dur och E-moll", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "Vad är tonika?",
+      "options": [
+        { "text": "Den ton som fungerar som musikens centrum", "correct": true },
+        { "text": "Den högsta tonen i en skala", "correct": false },
+        { "text": "Den sista tonen i ett musikstycke", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "Vad är skillnaden mellan en skala och en tonart?",
+      "options": [
+        { "text": "En skala visar tonerna i en bestämd ordning. En tonart handlar om vilka toner musiken bygger på och vilken ton som är centrum.", "correct": true },
+        { "text": "En skala har fasta förtecken, en tonart har det inte", "correct": false },
+        { "text": "Det finns ingen skillnad - orden betyder samma sak", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Kan två olika tonarter innehålla exakt samma toner?",
+      "options": [
+        { "text": "Ja, de kan ha samma toner men olika tonika", "correct": true },
+        { "text": "Nej, varje tonart innehåller olika toner", "correct": false },
+        { "text": "Bara om båda är durtonarter", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Vilken molltonart är parallelltonart till F-dur?",
+      "options": [
+        { "text": "D-moll", "correct": true },
+        { "text": "A-moll", "correct": false },
+        { "text": "C-moll", "correct": false }
+      ]
+    }
+  ]
+}

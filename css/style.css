@@ -925,6 +925,32 @@ html {
     border: 2px solid var(--border-color);
 }
 
+.question-box {
+    background: var(--background-alt);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+}
+.question-box > *:last-child {
+    margin-bottom: 0;
+}
+.question-box details {
+    margin-top: 1rem;
+}
+.scale-answer summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-on-primary);
+    padding: 0.75rem 1rem;
+    background: var(--primary-color);
+    border-radius: 8px;
+    width: fit-content;
+}
+.scale-answer[open] > :not(summary):first-of-type {
+    margin-top: 1.5rem;
+}
+
 .note-image {
     flex-shrink: 0;
     width: 180px;
@@ -945,6 +971,87 @@ html {
 .note-image img {
     width: 100%;
     height: auto;
+}
+
+.np-table {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    row-gap: 1.25rem;
+    background: var(--background-alt);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+}
+
+.np-label {
+    font-weight: 700;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.np-label.np-note {
+    text-align: right;
+}
+
+.np-label.np-paus {
+    text-align: left;
+}
+
+.np-icon {
+    background: white;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    width: 130px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.np-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .np-table {
+        grid-template-columns: auto 1fr;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+        padding: 1.25rem;
+    }
+
+    .np-label.np-note {
+        grid-column: 1;
+    }
+
+    .np-icon.np-note {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .np-icon.np-paus {
+        grid-column: 1;
+        justify-self: start;
+    }
+
+    .np-label.np-paus {
+        grid-column: 2;
+    }
+
+    .np-icon {
+        width: 110px;
+        height: 54px;
+    }
+
+    .np-label.np-paus {
+        margin-bottom: 0.75rem;
+    }
 }
 
 .note-description p {
@@ -1056,6 +1163,195 @@ html {
     line-height: 1.6;
 }
 
+/* Fortsättningskurser */
+.theory-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--background-alt);
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+}
+
+.theory-strip span:not(.step) {
+    min-width: 74px;
+    padding: 0.7rem 0.9rem;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.theory-strip .step {
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.step-pattern {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(80px, 1fr));
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.step-pattern span {
+    padding: 0.9rem 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--text-on-primary);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.step-pattern.minor span {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    color: white;
+}
+
+.degree-row {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(64px, 1fr));
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.degree-row.compact {
+    grid-template-columns: repeat(5, minmax(64px, 1fr));
+    max-width: 520px;
+}
+
+.degree-row div,
+.chord-tones div,
+.function-flow div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 72px;
+    padding: 0.7rem;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.degree-row strong,
+.chord-tones strong,
+.function-flow strong {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+}
+
+.degree-row span,
+.chord-tones span,
+.function-flow span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.comparison-grid.three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.comparison-grid > div {
+    background: var(--background-alt);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.comparison-grid h3 {
+    margin: 0 0 0.5rem;
+    color: var(--primary-dark);
+}
+
+.comparison-grid p {
+    margin-bottom: 0.4rem;
+}
+
+.key-table {
+    display: grid;
+    gap: 0.35rem;
+    margin: 1.5rem 0;
+}
+
+.key-table > div {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 2fr;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.9rem 1rem;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.key-table.compact > div,
+.key-table.interval-table > div {
+    grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+.key-table > div:first-child {
+    background: var(--background-alt);
+}
+
+.circle-row {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(76px, 1fr));
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.circle-row span {
+    padding: 1rem 0.5rem;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: var(--text-on-primary);
+    text-align: center;
+    font-weight: 800;
+}
+
+.circle-row.flats span {
+    background: var(--accent-orange);
+    color: var(--text-on-primary);
+}
+
+.chord-tones {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.function-flow {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.flow-arrow {
+    color: var(--primary-dark);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
 /* Responsiv för kurser */
 @media (max-width: 768px) {
     .page-header {
@@ -1124,6 +1420,34 @@ html {
 
     .accidental-column {
         width: 100%;
+    }
+
+    .step-pattern,
+    .degree-row,
+    .degree-row.compact,
+    .circle-row,
+    .chord-tones {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .comparison-grid,
+    .comparison-grid.three {
+        grid-template-columns: 1fr;
+    }
+
+    .key-table > div,
+    .key-table.compact > div,
+    .key-table.interval-table > div {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .function-flow {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
     }
 
     .lesson-content .container {
@@ -1200,6 +1524,20 @@ html {
 
     .lesson-content .container {
         padding: 0 1.25rem;
+    }
+
+    .theory-strip {
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .theory-strip span:not(.step) {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .theory-strip .step {
+        width: 100%;
     }
 }
 
@@ -2398,14 +2736,17 @@ html {
 
 .black-key.correct {
     background: #70d69f;
+    color: #1a1a1a;
 }
 
 .black-key.incorrect {
     background: #ff8a8a;
+    color: #1a1a1a;
 }
 
 .black-key.highlighted {
     background: var(--primary-color) !important;
+    color: #1a1a1a;
     animation: pianoHighlight 1s infinite;
 }
 
@@ -3512,6 +3853,16 @@ html {
             background: var(--primary-light);
             color: var(--primary-color);
         }
+
+        .note-button.correct:hover,
+        .note-button.incorrect:hover {
+            color: #fff;
+        }
+    }
+
+    .note-button.correct,
+    .note-button.incorrect {
+        color: #1a1a1a;
     }
 
     .landscape-tip {
@@ -3533,20 +3884,21 @@ html {
         color: var(--text-color);
     }
 
-    /* Note images - keep white background so black notes stay visible */
+    /* Note images - keep a light background so black notes stay visible */
     .note-card .note-image img,
     .piano-exercise .note-image,
     .piano-test .note-image,
     .question-image img,
     .review-image {
-        background: white;
+        background: #e8e8e8;
         border-radius: 8px;
         padding: 4px;
     }
 
     .note-card.white-bg {
-        background: white;
+        background: #e8e8e8;
         border-color: var(--border-color);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         color: var(--text-on-primary);
     }
 
@@ -3611,6 +3963,26 @@ html {
         border-color: var(--border-color);
         background: white;
         color: var(--text-on-primary);
+    }
+
+    .theory-strip,
+    .comparison-grid > div {
+        background: var(--background-alt);
+        border-color: var(--border-color);
+    }
+
+    .theory-strip span:not(.step),
+    .degree-row div,
+    .chord-tones div,
+    .function-flow div,
+    .key-table > div {
+        background: var(--surface-elevated);
+        border-color: var(--border-color);
+        color: var(--text-color);
+    }
+
+    .key-table > div:first-child {
+        background: #1a2e1e;
     }
 
     /* Exercise Hub */
