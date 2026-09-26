@@ -285,6 +285,8 @@ class PianoOctaveExercise {
     handleKeyPress(note) {
         if (this.isDisabled) return;
 
+        PianoSound.play(note);
+
         const isCorrect = note === this.currentNote;
         const feedbackMessage = document.getElementById('feedback-message');
         const pianoKeys = document.getElementById('piano-keys');

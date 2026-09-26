@@ -170,7 +170,7 @@ class PianoKeysExercise {
                 label.textContent = note;
                 key.appendChild(label);
 
-                key.addEventListener('click', () => this.handleKeyPress(note));
+                key.addEventListener('click', () => this.handleKeyPress(note, octave.id));
                 pianoKeys.appendChild(key);
                 whiteKeys.push({ element: key, note: note, octaveId: octave.id, globalIndex: globalIndex });
                 globalIndex++;
@@ -216,7 +216,7 @@ class PianoKeysExercise {
                     // Click handler uses the primary notation
                     const primaryNote = useFlatNotation && flatNote ? flatNote : sharpNote;
                     blackKey.addEventListener('click', () => {
-                        this.handleKeyPress(primaryNote);
+                        this.handleKeyPress(primaryNote, keyData.octaveId);
                     });
 
                     pianoKeys.appendChild(blackKey);
@@ -510,10 +510,12 @@ class PianoKeysExercise {
         }
     }
 
-    handleKeyPress(note) {
+    handleKeyPress(note, octaveId) {
         // Ignore clicks in nameKey mode
         if (this.currentQuestionType === 'nameKey') return;
         if (this.isDisabled) return;
+
+        PianoSound.play(note, octaveId);
 
         // Check if answer is correct (accepts enharmonic equivalents)
         const isCorrect = this.noteMatches(note, this.currentNote);

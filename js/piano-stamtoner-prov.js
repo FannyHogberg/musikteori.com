@@ -66,7 +66,7 @@ class PianoStamtonerTest {
                 label.textContent = note;
                 key.appendChild(label);
 
-                key.addEventListener('click', () => this.handleKeyPress(note));
+                key.addEventListener('click', () => this.handleKeyPress(note, octave.id));
                 pianoKeys.appendChild(key);
                 whiteKeys.push({ element: key, note: note, octaveId: octave.id, globalIndex: globalIndex });
                 globalIndex++;
@@ -95,7 +95,7 @@ class PianoStamtonerTest {
                     const leftPosition = (keyData.globalIndex * (whiteKeyWidth + gap)) + (whiteKeyWidth * 0.74);
                     blackKey.style.left = `${leftPosition}px`;
 
-                    blackKey.addEventListener('click', () => this.handleKeyPress(sharpNote));
+                    blackKey.addEventListener('click', () => this.handleKeyPress(sharpNote, keyData.octaveId));
                     pianoKeys.appendChild(blackKey);
                 }
             });
@@ -218,9 +218,11 @@ class PianoStamtonerTest {
         }
     }
 
-    handleKeyPress(note) {
+    handleKeyPress(note, octaveId) {
         if (this.isDisabled) return;
         if (this.currentQuestionType === 'nameKey') return; // Ignore piano clicks in nameKey mode
+
+        PianoSound.play(note, octaveId);
 
         const isCorrect = note === this.currentNote;
 

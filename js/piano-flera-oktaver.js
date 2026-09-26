@@ -217,6 +217,8 @@ class PianoMultipleOctavesExercise {
     handleKeyPress(note) {
         if (this.isDisabled) return;
 
+        PianoSound.play(note);
+
         const isCorrect = note === this.currentNote;
 
         // Save answer (no feedback)
