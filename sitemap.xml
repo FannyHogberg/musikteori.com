@@ -247,53 +247,15 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/kurser/skalor-tonarter/del-5-kvintcirkeln.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-5-kvintcirkeln.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-5-kvintcirkeln.html"/>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Kurs: Intervall och ackord -->
-    <url>
-        <loc>https://musikteori.com/kurser/intervall-och-ackord/index.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/intervall-och-ackord/index.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/intervall-och-ackord/index.html"/>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/kurser/intervall-och-ackord/del-1-intervall.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/intervall-och-ackord/del-1-intervall.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/intervall-och-ackord/del-1-intervall.html"/>
+        <loc>https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html"/>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/kurser/intervall-och-ackord/del-2-stora-sma-rena-intervall.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/intervall-och-ackord/del-2-stora-sma-rena-intervall.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/intervall-och-ackord/del-2-stora-sma-rena-intervall.html"/>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/kurser/intervall-och-ackord/del-3-treklanger.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/intervall-och-ackord/del-3-treklanger.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/intervall-och-ackord/del-3-treklanger.html"/>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/kurser/intervall-och-ackord/del-4-durackord-och-mollackord.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/intervall-och-ackord/del-4-durackord-och-mollackord.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/intervall-och-ackord/del-4-durackord-och-mollackord.html"/>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/kurser/intervall-och-ackord/del-5-ackord-i-en-tonart.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/intervall-och-ackord/del-5-ackord-i-en-tonart.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/intervall-och-ackord/del-5-ackord-i-en-tonart.html"/>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/kurser/intervall-och-ackord/del-6-ackordfoljder.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/intervall-och-ackord/del-6-ackordfoljder.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/intervall-och-ackord/del-6-ackordfoljder.html"/>
+        <loc>https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html"/>
         <priority>0.8</priority>
     </url>
 
@@ -377,13 +339,6 @@
         <loc>https://musikteori.com/quiz/skalor-tonarter-prov.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/skalor-tonarter-prov.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/skalor-tonarter-prov.html"/>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://musikteori.com/quiz/intervall-och-ackord-prov.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/intervall-och-ackord-prov.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/intervall-och-ackord-prov.html"/>
         <priority>0.7</priority>
     </url>
 
@@ -581,6 +536,31 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/notlasning.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/note-reading.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/notlasning.html"/>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://musikteori.com/ovningar/heltoner-halvtoner-ova.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/heltoner-halvtoner-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/heltoner-halvtoner-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/ovningar/durskalan-ova.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/durskalan-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/durskalan-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/ovningar/mollskalan-ova.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/mollskalan-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/mollskalan-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/ovningar/kvintcirkeln-ova.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/kvintcirkeln-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/kvintcirkeln-ova.html"/>
         <priority>0.7</priority>
     </url>
 </urlset>
