@@ -1,0 +1,200 @@
+{
+  "title": "Final Test: Scales and Keys",
+  "description": "Test your knowledge from the Scales and Keys course",
+  "passingScore": 80,
+  "randomQuestions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single-choice",
+      "question": "What is a half step on the piano?",
+      "options": [
+        { "text": "The distance to the key right next to it", "correct": true },
+        { "text": "The distance between two white keys", "correct": false },
+        { "text": "The distance between C and E", "correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single-choice",
+      "question": "How many half steps make a whole step?",
+      "options": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": true },
+        { "text": "3", "correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single-choice",
+      "question": "Between which white keys is there a half step?",
+      "options": [
+        { "text": "C-D and G-A", "correct": false },
+        { "text": "E-F and B-C", "correct": true },
+        { "text": "D-E and A-B", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single-choice",
+      "question": "Which pattern makes up a major scale?",
+      "options": [
+        { "text": "Whole, whole, half, whole, whole, whole, half", "correct": true },
+        { "text": "Whole, half, whole, whole, half, whole, whole", "correct": false },
+        { "text": "Half, whole, whole, half, whole, whole, whole", "correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single-choice",
+      "question": "Which notes are in C major?",
+      "options": [
+        { "text": "C D E F G A B C", "correct": true },
+        { "text": "C D E♭ F G A♭ B C", "correct": false },
+        { "text": "C D E F# G A B C", "correct": false }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single-choice",
+      "question": "Why does G major need the note F#?",
+      "options": [
+        { "text": "So the major scale pattern is followed", "correct": true },
+        { "text": "Because every major scale must have at least one sharp", "correct": false },
+        { "text": "Otherwise G major would become a minor scale", "correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single-choice",
+      "question": "Which pattern makes up natural minor?",
+      "options": [
+        { "text": "Whole, half, whole, whole, half, whole, whole", "correct": true },
+        { "text": "Whole, whole, half, whole, whole, whole, half", "correct": false },
+        { "text": "Half, half, whole, whole, whole, half, whole", "correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single-choice",
+      "question": "Which notes are in A minor?",
+      "options": [
+        { "text": "A B C D E F G A", "correct": true },
+        { "text": "A B C# D E F# G# A", "correct": false },
+        { "text": "A B♭ C D E♭ F G A", "correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single-choice",
+      "question": "Which minor key is the relative minor of C major?",
+      "options": [
+        { "text": "C minor", "correct": false },
+        { "text": "A minor", "correct": true },
+        { "text": "E minor", "correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single-choice",
+      "question": "What does a key signature show?",
+      "options": [
+        { "text": "Which notes are raised or lowered throughout the piece", "correct": true },
+        { "text": "How fast the music should be played", "correct": false },
+        { "text": "How many beats are in the measure", "correct": false }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "single-choice",
+      "question": "What key signature does G major have?",
+      "options": [
+        { "text": "B♭", "correct": false },
+        { "text": "F#", "correct": true },
+        { "text": "C#", "correct": false },
+        { "text": "None", "correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "single-choice",
+      "question": "What key signature does D major have?",
+      "options": [
+        { "text": "F# and C#", "correct": true },
+        { "text": "B♭ and E♭", "correct": false },
+        { "text": "F# and B♭", "correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "single-choice",
+      "question": "In which order are sharps added to key signatures?",
+      "options": [
+        { "text": "F#, C#, G#, D#, A#, E#, B#", "correct": true },
+        { "text": "B♭, E♭, A♭, D♭, G♭, C♭, F♭", "correct": false },
+        { "text": "C#, F#, B#, E#, A#, D#, G#", "correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "single-choice",
+      "question": "What key signature does F major have?",
+      "options": [
+        { "text": "F#", "correct": false },
+        { "text": "B♭", "correct": true },
+        { "text": "E♭", "correct": false },
+        { "text": "None", "correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "single-choice",
+      "question": "Which keys are relative keys of each other?",
+      "options": [
+        { "text": "G major and E minor", "correct": true },
+        { "text": "G major and G minor", "correct": false },
+        { "text": "C major and E minor", "correct": false }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "single-choice",
+      "question": "What is the tonic?",
+      "options": [
+        { "text": "The note that acts as the center of the music", "correct": true },
+        { "text": "The highest note in a scale", "correct": false },
+        { "text": "The last note in a piece of music", "correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "single-choice",
+      "question": "What is the difference between a scale and a key?",
+      "options": [
+        { "text": "A scale shows the notes in a fixed order. A key is about which notes the music is built on and which note is the center.", "correct": true },
+        { "text": "A scale has a key signature, a key does not", "correct": false },
+        { "text": "There is no difference - the words mean the same thing", "correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "single-choice",
+      "question": "Can two different keys contain exactly the same notes?",
+      "options": [
+        { "text": "Yes, they can share the same notes but have different tonics", "correct": true },
+        { "text": "No, every key contains different notes", "correct": false },
+        { "text": "Only if both are major keys", "correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "single-choice",
+      "question": "Which minor key is the relative minor of F major?",
+      "options": [
+        { "text": "D minor", "correct": true },
+        { "text": "A minor", "correct": false },
+        { "text": "C minor", "correct": false }
+      ]
+    }
+  ]
+}
