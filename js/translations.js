@@ -166,6 +166,10 @@ const _translations = {
         sv: 'G, A och B',
         en: 'G, A and B'
     },
+    'desc.cg': {
+        sv: 'C, D, E, F och G',
+        en: 'C, D, E, F and G'
+    },
     'desc.allNatural': {
         sv: 'Alla stamtoner',
         en: 'All natural notes'
