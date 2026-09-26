@@ -425,6 +425,154 @@ const _translations = {
     'audio.stop': {
         sv: 'Stopp',
         en: 'Stop'
+    },
+
+    // =====================
+    // heltoner-halvtoner-ova.js
+    // =====================
+    'wholeHalf.question': {
+        sv: 'Är avståndet mellan de markerade tangenterna en halvton eller en helton?',
+        en: 'Is the distance between the highlighted keys a half step or a whole step?'
+    },
+    'wholeHalf.halvton': {
+        sv: 'Halvton',
+        en: 'Half step'
+    },
+    'wholeHalf.helton': {
+        sv: 'Helton',
+        en: 'Whole step'
+    },
+    'wholeHalf.correct': {
+        sv: 'Rätt!',
+        en: 'Correct!'
+    },
+    'wholeHalf.incorrect': {
+        sv: 'Fel.',
+        en: 'Wrong.'
+    },
+    'wholeHalf.finishTitle': {
+        sv: 'Bra jobbat!',
+        en: 'Well done!'
+    },
+    'wholeHalf.finishScore': {
+        sv: 'Du fick {correct} av {total} rätt.',
+        en: 'You got {correct} out of {total} correct.'
+    },
+    'wholeHalf.restart': {
+        sv: 'Gör om övningen',
+        en: 'Redo the exercise'
+    },
+
+    // =====================
+    // durskalan-ova.js / mollskalan-ova.js (scale builder exercises)
+    // =====================
+    'scaleBuilder.buildMajor': {
+        sv: 'Bygg {root}-dur',
+        en: 'Build {root} major'
+    },
+    'scaleBuilder.buildMinor': {
+        sv: 'Bygg {root}-moll',
+        en: 'Build {root} minor'
+    },
+    'scaleBuilder.question': {
+        sv: 'Vilken ton kommer härnäst?',
+        en: 'Which note comes next?'
+    },
+    'scaleBuilder.stepInfo': {
+        sv: 'Steg {step} av 7',
+        en: 'Step {step} of 7'
+    },
+    'scaleBuilder.correct': {
+        sv: '✓ Rätt!',
+        en: '✓ Correct!'
+    },
+    'scaleBuilder.incorrectSame': {
+        sv: 'Inte riktigt. {prev} → {option} är ingen skillnad alls. Försök igen.',
+        en: 'Not quite. {prev} → {option} is no distance at all. Try again.'
+    },
+    'scaleBuilder.incorrectDistance': {
+        sv: 'Inte riktigt. {prev} → {option} är {interval}. Försök igen.',
+        en: 'Not quite. {prev} → {option} is {interval}. Try again.'
+    },
+    'scaleBuilder.finishTitleMajor': {
+        sv: '✓ Du byggde {root}-durskalan!',
+        en: '✓ You built the {root} major scale!'
+    },
+    'scaleBuilder.finishTitleMinor': {
+        sv: '✓ Du byggde {root}-mollskalan!',
+        en: '✓ You built the {root} minor scale!'
+    },
+    'scaleBuilder.nextScale': {
+        sv: 'Nästa skala →',
+        en: 'Next scale →'
+    },
+    'scaleBuilder.hintCollapsed': {
+        sv: '💡 Behöver du hjälp? Visa tips',
+        en: '💡 Need help? Show tips'
+    },
+    'scaleBuilder.hintPatternMajor': {
+        sv: '<strong>Mönster:</strong> Hel - Hel - Halv - Hel - Hel - Hel - Halv',
+        en: '<strong>Pattern:</strong> Whole - Whole - Half - Whole - Whole - Whole - Half'
+    },
+    'scaleBuilder.hintPatternMinor': {
+        sv: '<strong>Mönster:</strong> Hel - Halv - Hel - Hel - Halv - Hel - Hel',
+        en: '<strong>Pattern:</strong> Whole - Half - Whole - Whole - Half - Whole - Whole'
+    },
+    'scaleBuilder.interval.none': {
+        sv: 'ingen skillnad alls',
+        en: 'no distance at all'
+    },
+    'scaleBuilder.interval.half': {
+        sv: 'en halvton',
+        en: 'a half step'
+    },
+    'scaleBuilder.interval.whole': {
+        sv: 'en helton',
+        en: 'a whole step'
+    },
+    'scaleBuilder.interval.wholeHalf': {
+        sv: 'en och en halv ton',
+        en: 'a step and a half'
+    },
+    'scaleBuilder.interval.n': {
+        sv: '{n} halvtoner',
+        en: '{n} half steps'
+    },
+
+    // =====================
+    // kvintcirkeln-ova.js (key signature exercise)
+    // =====================
+    'keySig.questionMajor': {
+        sv: 'Vilken durtonart har dessa fasta förtecken?',
+        en: 'Which major key has this key signature?'
+    },
+    'keySig.questionMinor': {
+        sv: 'Vilken molltonart har dessa fasta förtecken?',
+        en: 'Which minor key has this key signature?'
+    },
+    'keySig.majorSuffix': {
+        sv: '-dur',
+        en: ' major'
+    },
+    'keySig.minorSuffix': {
+        sv: '-moll',
+        en: ' minor'
+    },
+    'keySig.correct': {
+        sv: '✓ Rätt!',
+        en: '✓ Correct!'
+    },
+    'keySig.incorrect': {
+        sv: 'Inte riktigt. Försök igen.',
+        en: 'Not quite. Try again.'
+    },
+    'keySig.hintShow': {
+        sv: '💡 Visa kvintcirkeln',
+        en: '💡 Show the circle of fifths'
+    },
+    'keySig.hintHide': {
+        sv: '🙈 Dölj kvintcirkeln',
+        en: '🙈 Hide the circle of fifths'
     }
 };
 
@@ -483,7 +631,12 @@ function localUrl(path) {
         'piano-flera-oktaver.html': 'piano-multiple-octaves.html',
         'noter-g-klav-hub.html': 'notes-treble-clef-hub.html',
         'noter-f-klav-hub.html': 'notes-bass-clef-hub.html',
-        'notlasning.html': 'note-reading.html'
+        'notlasning.html': 'note-reading.html',
+        '../ovningar.html': '../exercises.html',
+        'heltoner-halvtoner-ova.html': 'whole-half-steps-exercise.html',
+        'durskalan-ova.html': 'major-scale-exercise.html',
+        'mollskalan-ova.html': 'minor-scale-exercise.html',
+        'kvintcirkeln-ova.html': 'key-signatures-exercise.html'
     };
 
     var mapped = mapping[filename] || filename;

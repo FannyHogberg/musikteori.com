@@ -73,14 +73,15 @@ class KvintcirkelnExercise {
 
         this.renderStaff(this.currentState);
 
-        const suffix = this.currentAskType === 'dur' ? 'durtonart' : 'molltonart';
-        document.getElementById('question').textContent = `Vilken ${suffix} har dessa fasta förtecken?`;
+        document.getElementById('question').textContent = this.currentAskType === 'dur'
+            ? T('keySig.questionMajor')
+            : T('keySig.questionMinor');
 
         const options = this.buildOptions(this.currentAskType);
         const buttonsContainer = document.getElementById('answer-buttons');
         buttonsContainer.innerHTML = '';
 
-        const optionSuffix = this.currentAskType === 'dur' ? '-dur' : '-moll';
+        const optionSuffix = this.currentAskType === 'dur' ? T('keySig.majorSuffix') : T('keySig.minorSuffix');
         options.forEach(name => {
             const button = document.createElement('button');
             button.type = 'button';
@@ -106,11 +107,11 @@ class KvintcirkelnExercise {
         void feedbackMessage.offsetWidth;
 
         if (isCorrect) {
-            feedbackMessage.textContent = '✓ Rätt!';
+            feedbackMessage.textContent = T('keySig.correct');
             feedbackMessage.classList.add('show-correct');
             guessedButton.classList.add('correct');
         } else {
-            feedbackMessage.textContent = 'Inte riktigt. Försök igen.';
+            feedbackMessage.textContent = T('keySig.incorrect');
             feedbackMessage.classList.add('show-incorrect');
             guessedButton.classList.add('incorrect');
         }
@@ -134,7 +135,7 @@ class KvintcirkelnExercise {
         const backBtn = document.getElementById('back-to-hub-btn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                window.location.href = '../ovningar.html';
+                window.location.href = localUrl('../ovningar.html');
             });
         }
 
@@ -145,7 +146,7 @@ class KvintcirkelnExercise {
             this.hintShown = !this.hintShown;
             hintBtn.setAttribute('aria-expanded', String(this.hintShown));
             hintCircle.classList.toggle('is-revealed', this.hintShown);
-            hintText.textContent = this.hintShown ? '🙈 Dölj kvintcirkeln' : '💡 Visa kvintcirkeln';
+            hintText.textContent = this.hintShown ? T('keySig.hintHide') : T('keySig.hintShow');
         });
     }
 }

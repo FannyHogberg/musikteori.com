@@ -114,8 +114,7 @@ class HalvtonHeltonExercise {
 
         this.currentPair = { type, from: this.chain[i], to: this.chain[j] };
 
-        document.getElementById('question').textContent =
-            'Är avståndet mellan de markerade tangenterna en halvton eller en helton?';
+        document.getElementById('question').textContent = T('wholeHalf.question');
 
         this.highlightPair();
     }
@@ -142,12 +141,12 @@ class HalvtonHeltonExercise {
         document.querySelectorAll('.highlighted').forEach(key => key.classList.add(isCorrect ? 'correct' : 'incorrect'));
 
         if (isCorrect) {
-            feedbackMessage.textContent = 'Rätt!';
+            feedbackMessage.textContent = T('wholeHalf.correct');
             feedbackMessage.classList.add('show-correct');
             guessedButton.classList.add('correct');
             this.correctCount++;
         } else {
-            feedbackMessage.textContent = 'Fel.';
+            feedbackMessage.textContent = T('wholeHalf.incorrect');
             feedbackMessage.classList.add('show-incorrect');
             guessedButton.classList.add('incorrect');
             if (correctButton) correctButton.classList.add('correct');
@@ -187,9 +186,9 @@ class HalvtonHeltonExercise {
         const question = document.getElementById('question');
         question.innerHTML = `
             <div class="level-complete">
-                <h2>Bra jobbat!</h2>
-                <p>Du fick ${this.correctCount} av ${this.totalRounds} rätt.</p>
-                <button class="btn btn-primary" id="restart-btn">Gör om övningen</button>
+                <h2>${T('wholeHalf.finishTitle')}</h2>
+                <p>${T('wholeHalf.finishScore', { correct: this.correctCount, total: this.totalRounds })}</p>
+                <button class="btn btn-primary" id="restart-btn">${T('wholeHalf.restart')}</button>
             </div>
         `;
 
@@ -205,7 +204,7 @@ class HalvtonHeltonExercise {
         const backBtn = document.getElementById('back-to-hub-btn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                window.location.href = '../ovningar.html';
+                window.location.href = localUrl('../ovningar.html');
             });
         }
     }

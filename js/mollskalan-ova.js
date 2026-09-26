@@ -75,11 +75,11 @@ class MollskalanBuilderExercise {
 
     intervalWord(semitones) {
         const d = ((semitones % 12) + 12) % 12;
-        if (d === 0) return 'ingen skillnad alls';
-        if (d === 1) return 'en halvton';
-        if (d === 2) return 'en helton';
-        if (d === 3) return 'en och en halv ton';
-        return `${d} halvtoner`;
+        if (d === 0) return T('scaleBuilder.interval.none');
+        if (d === 1) return T('scaleBuilder.interval.half');
+        if (d === 2) return T('scaleBuilder.interval.whole');
+        if (d === 3) return T('scaleBuilder.interval.wholeHalf');
+        return T('scaleBuilder.interval.n', { n: d });
     }
 
     startRound() {
@@ -88,7 +88,7 @@ class MollskalanBuilderExercise {
         this.scale = this.buildScale(root);
         this.stepIndex = 1;
 
-        document.getElementById('scale-target').textContent = `Bygg ${this.currentRootName}-moll`;
+        document.getElementById('scale-target').textContent = T('scaleBuilder.buildMinor', { root: this.currentRootName });
 
         this.setHintExpanded(false);
 
@@ -101,8 +101,8 @@ class MollskalanBuilderExercise {
     askStep() {
         const builtSoFar = this.scale.slice(0, this.stepIndex).map(n => n.name).join(' - ');
         document.getElementById('scale-progress').textContent = `${builtSoFar} - ?`;
-        document.getElementById('step-info').textContent = `Steg ${this.stepIndex} av 7`;
-        document.getElementById('question').textContent = 'Vilken ton kommer härnäst?';
+        document.getElementById('step-info').textContent = T('scaleBuilder.stepInfo', { step: this.stepIndex });
+        document.getElementById('question').textContent = T('scaleBuilder.question');
 
         const targetLetter = this.scale[this.stepIndex].letter;
         const natural = this.naturalSemitone[targetLetter];
@@ -146,17 +146,15 @@ class MollskalanBuilderExercise {
         void feedbackMessage.offsetWidth; // tvingar reflow så shake-animationen startar om vid upprepade felsvar
 
         if (isCorrect) {
-            feedbackMessage.textContent = '✓ Rätt!';
+            feedbackMessage.textContent = T('scaleBuilder.correct');
             feedbackMessage.classList.add('show-correct');
             guessedButton.classList.add('correct');
         } else {
-            let detail;
             if (guessDistance === 0) {
-                detail = `${prev.name} → ${option.name} är ingen skillnad alls.`;
+                feedbackMessage.textContent = T('scaleBuilder.incorrectSame', { prev: prev.name, option: option.name });
             } else {
-                detail = `${prev.name} → ${option.name} är ${this.intervalWord(guessDistance)}.`;
+                feedbackMessage.textContent = T('scaleBuilder.incorrectDistance', { prev: prev.name, option: option.name, interval: this.intervalWord(guessDistance) });
             }
-            feedbackMessage.textContent = `Inte riktigt. ${detail} Försök igen.`;
             feedbackMessage.classList.add('show-incorrect');
             guessedButton.classList.add('incorrect');
         }
@@ -194,9 +192,9 @@ class MollskalanBuilderExercise {
         const question = document.getElementById('question');
         question.innerHTML = `
             <div class="level-complete">
-                <h2>✓ Du byggde ${this.currentRootName}-mollskalan!</h2>
+                <h2>${T('scaleBuilder.finishTitleMinor', { root: this.currentRootName })}</h2>
                 <p>${fullScale}</p>
-                <button class="btn btn-primary" id="restart-btn">Nästa skala →</button>
+                <button class="btn btn-primary" id="restart-btn">${T('scaleBuilder.nextScale')}</button>
             </div>
         `;
 
@@ -209,7 +207,7 @@ class MollskalanBuilderExercise {
         const backBtn = document.getElementById('back-to-hub-btn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                window.location.href = '../ovningar.html';
+                window.location.href = localUrl('../ovningar.html');
             });
         }
 
@@ -224,8 +222,8 @@ class MollskalanBuilderExercise {
         const hintText = document.getElementById('hint-box-text');
         hintBtn.setAttribute('aria-expanded', String(expanded));
         hintText.innerHTML = expanded
-            ? '<strong>Mönster:</strong> Hel - Halv - Hel - Hel - Halv - Hel - Hel'
-            : '💡 Behöver du hjälp? Visa tips';
+            ? T('scaleBuilder.hintPatternMinor')
+            : T('scaleBuilder.hintCollapsed');
     }
 }
 
