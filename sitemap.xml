@@ -319,14 +319,14 @@
     <url>
         <loc>https://musikteori.com/quiz/tonernas-namn-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/tonernas-namn-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/note-names-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/en/quiz/tonernas-namn-quiz.html</loc>
+        <loc>https://musikteori.com/en/quiz/note-names-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/tonernas-namn-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/note-names-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/tonernas-namn-quiz.html"/>
         <priority>0.7</priority>
     </url>
@@ -334,14 +334,14 @@
     <url>
         <loc>https://musikteori.com/quiz/noterna-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/noterna-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/noterna-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/note-values-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/noterna-quiz.html"/>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/en/quiz/noterna-quiz.html</loc>
+        <loc>https://musikteori.com/en/quiz/note-values-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/noterna-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/noterna-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/note-values-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/noterna-quiz.html"/>
         <priority>0.7</priority>
     </url>
@@ -349,14 +349,14 @@
     <url>
         <loc>https://musikteori.com/quiz/pauser-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/pauser-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/pauser-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/rests-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/pauser-quiz.html"/>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/en/quiz/pauser-quiz.html</loc>
+        <loc>https://musikteori.com/en/quiz/rests-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/pauser-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/pauser-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/rests-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/pauser-quiz.html"/>
         <priority>0.7</priority>
     </url>
@@ -364,14 +364,14 @@
     <url>
         <loc>https://musikteori.com/quiz/taktarter-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/taktarter-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/time-signatures-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/en/quiz/taktarter-quiz.html</loc>
+        <loc>https://musikteori.com/en/quiz/time-signatures-quiz.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/taktarter-quiz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/time-signatures-quiz.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/taktarter-quiz.html"/>
         <priority>0.7</priority>
     </url>
@@ -379,14 +379,14 @@
     <url>
         <loc>https://musikteori.com/quiz/avslutande-prov.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/avslutande-prov.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/avslutande-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/final-exam.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/avslutande-prov.html"/>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://musikteori.com/en/quiz/avslutande-prov.html</loc>
+        <loc>https://musikteori.com/en/quiz/final-exam.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/avslutande-prov.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/avslutande-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/final-exam.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/avslutande-prov.html"/>
         <priority>0.7</priority>
     </url>
