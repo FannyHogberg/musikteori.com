@@ -1,6 +1,6 @@
 /* Interaktiv kvintcirkel: klick på en tonart visar dess fasta förtecken, både som text och på notsystemet. */
 (() => {
-    const KEYS = [
+    const KEYS_SV = [
         { major: 'C-dur', minor: 'A-moll', type: 'none', count: 0, text: 'Inga fasta förtecken.' },
         { major: 'G-dur', minor: 'E-moll', type: 'sharp', count: 1, text: 'Ett korsförtecken: F♯.' },
         { major: 'D-dur', minor: 'B-moll', type: 'sharp', count: 2, text: 'Två korsförtecken: F♯, C♯.' },
@@ -14,6 +14,23 @@
         { major: 'B♭-dur', minor: 'G-moll', type: 'flat', count: 2, text: 'Två b-förtecken: B♭, E♭.' },
         { major: 'F-dur', minor: 'D-moll', type: 'flat', count: 1, text: 'Ett b-förtecken: B♭.' },
     ];
+
+    const KEYS_EN = [
+        { major: 'C major', minor: 'A minor', type: 'none', count: 0, text: 'No key signature.' },
+        { major: 'G major', minor: 'E minor', type: 'sharp', count: 1, text: 'One sharp: F♯.' },
+        { major: 'D major', minor: 'B minor', type: 'sharp', count: 2, text: 'Two sharps: F♯, C♯.' },
+        { major: 'A major', minor: 'F♯ minor', type: 'sharp', count: 3, text: 'Three sharps: F♯, C♯, G♯.' },
+        { major: 'E major', minor: 'C♯ minor', type: 'sharp', count: 4, text: 'Four sharps: F♯, C♯, G♯, D♯.' },
+        { major: 'B major', minor: 'G♯ minor', type: 'sharp', count: 5, text: 'Five sharps: F♯, C♯, G♯, D♯, A♯.' },
+        { major: 'F♯ major / G♭ major', minor: 'D♯ minor / E♭ minor', type: 'sharp', count: 6, text: 'Six sharps: F♯, C♯, G♯, D♯, A♯, E♯. (The same key can also be written as G♭ major, with six flats instead.)' },
+        { major: 'D♭ major', minor: 'B♭ minor', type: 'flat', count: 5, text: 'Five flats: B♭, E♭, A♭, D♭, G♭.' },
+        { major: 'A♭ major', minor: 'F minor', type: 'flat', count: 4, text: 'Four flats: B♭, E♭, A♭, D♭.' },
+        { major: 'E♭ major', minor: 'C minor', type: 'flat', count: 3, text: 'Three flats: B♭, E♭, A♭.' },
+        { major: 'B♭ major', minor: 'G minor', type: 'flat', count: 2, text: 'Two flats: B♭, E♭.' },
+        { major: 'F major', minor: 'D minor', type: 'flat', count: 1, text: 'One flat: B♭.' },
+    ];
+
+    const KEYS = (typeof LANG !== 'undefined' && LANG === 'en') ? KEYS_EN : KEYS_SV;
 
     const circle = document.querySelector('[data-quint-circle]');
     const description = document.querySelector('[data-quint-circle-description]');

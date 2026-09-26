@@ -58,7 +58,7 @@
             const { width, height } = button.getBoundingClientRect();
             button.style.width = `${width}px`;
             button.style.height = `${height}px`;
-            button.textContent = '■\u2002Stoppa';
+            button.textContent = (typeof LANG !== 'undefined' && LANG === 'en') ? '■\u2002Stop' : '■\u2002Stoppa';
             button.setAttribute('aria-pressed', 'true');
         }
         try {
@@ -77,7 +77,9 @@
         } catch (_) {
             if (request !== generation) return;
             stop();
-            status.textContent = 'Ljudet kunde inte startas. Prova att trycka igen eller använd en annan webbläsare.';
+            status.textContent = (typeof LANG !== 'undefined' && LANG === 'en')
+                    ? 'The sound could not start. Try pressing again or use a different browser.'
+                    : 'Ljudet kunde inte startas. Prova att trycka igen eller använd en annan webbläsare.';
         }
     }
 

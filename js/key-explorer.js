@@ -18,7 +18,7 @@
         return steps;
     }
 
-    const KEYS = {
+    const KEYS_SV = {
         'c-dur': {
             label: 'C-dur',
             tonicLabel: 'C är tonika.',
@@ -69,6 +69,33 @@
         },
     };
 
+    const KEYS_EN = {
+        'c-dur': {
+            label: 'C major',
+            tonicLabel: 'C is the tonic.',
+            rest: 'The key uses C, D, E, F, G, A and B.',
+            tonicMidis: [60, 72],
+            notes: KEYS_SV['c-dur'].notes,
+        },
+        'a-moll': {
+            label: 'A minor',
+            tonicLabel: 'A is the tonic.',
+            rest: 'A minor uses the same notes as C major, but A acts as the center.',
+            tonicMidis: [57, 69],
+            notes: KEYS_SV['a-moll'].notes,
+        },
+        'g-dur': {
+            label: 'G major',
+            tonicLabel: 'G is the tonic.',
+            rest: 'G major has F♯ instead of F.',
+            tonicMidis: [67, 79],
+            notes: KEYS_SV['g-dur'].notes,
+        },
+    };
+
+    const KEYS = (typeof LANG !== 'undefined' && LANG === 'en') ? KEYS_EN : KEYS_SV;
+    const PLAY_PREFIX = (typeof LANG !== 'undefined' && LANG === 'en') ? '▶ Play' : '▶ Spela';
+
     const explorer = document.querySelector('[data-key-explorer]');
     if (!explorer) return;
 
@@ -113,7 +140,7 @@
         });
 
         playButton.dataset.scale = key.notes.map(n => n.midi).join(',');
-        const label = `▶ Spela ${key.label}`;
+        const label = `${PLAY_PREFIX} ${key.label}`;
         playButton.textContent = label;
         playButton.dataset.label = label;
         playButton.setAttribute('aria-pressed', 'false');

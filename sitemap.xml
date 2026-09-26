@@ -219,42 +219,98 @@
     <url>
         <loc>https://musikteori.com/kurser/skalor-tonarter/index.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/index.html"/>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/scales-and-keys/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/index.html"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://musikteori.com/kurser/skalor-tonarter/del-1-heltoner-och-halvtoner.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-1-heltoner-och-halvtoner.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-1-whole-and-half-steps.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-1-heltoner-och-halvtoner.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/scales-and-keys/part-1-whole-and-half-steps.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-1-heltoner-och-halvtoner.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-1-whole-and-half-steps.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-1-heltoner-och-halvtoner.html"/>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://musikteori.com/kurser/skalor-tonarter/del-2-durskalan.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-2-durskalan.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-2-the-major-scale.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-2-durskalan.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/scales-and-keys/part-2-the-major-scale.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-2-durskalan.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-2-the-major-scale.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-2-durskalan.html"/>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://musikteori.com/kurser/skalor-tonarter/del-3-mollskalan.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-3-mollskalan.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-3-the-minor-scale.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-3-mollskalan.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/scales-and-keys/part-3-the-minor-scale.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-3-mollskalan.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-3-the-minor-scale.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-3-mollskalan.html"/>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://musikteori.com/kurser/skalor-tonarter/del-4-tonarter.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-4-tonarter.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-4-keys.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-4-tonarter.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/scales-and-keys/part-4-keys.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-4-tonarter.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-4-keys.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-4-tonarter.html"/>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-5-key-signatures.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/scales-and-keys/part-5-key-signatures.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-5-key-signatures.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-5-fasta-fortecken.html"/>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-6-circle-of-fifths.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/courses/scales-and-keys/part-6-circle-of-fifths.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses/scales-and-keys/part-6-circle-of-fifths.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser/skalor-tonarter/del-6-kvintcirkeln.html"/>
         <priority>0.8</priority>
     </url>
@@ -338,6 +394,14 @@
     <url>
         <loc>https://musikteori.com/quiz/skalor-tonarter-prov.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/skalor-tonarter-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/scales-and-keys-test.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/skalor-tonarter-prov.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/quiz/scales-and-keys-test.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/quiz/skalor-tonarter-prov.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz/scales-and-keys-test.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz/skalor-tonarter-prov.html"/>
         <priority>0.7</priority>
     </url>
@@ -542,24 +606,56 @@
     <url>
         <loc>https://musikteori.com/ovningar/heltoner-halvtoner-ova.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/heltoner-halvtoner-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/whole-half-steps-exercise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/heltoner-halvtoner-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/whole-half-steps-exercise.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/heltoner-halvtoner-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/whole-half-steps-exercise.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/heltoner-halvtoner-ova.html"/>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://musikteori.com/ovningar/durskalan-ova.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/durskalan-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/major-scale-exercise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/durskalan-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/major-scale-exercise.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/durskalan-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/major-scale-exercise.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/durskalan-ova.html"/>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://musikteori.com/ovningar/mollskalan-ova.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/mollskalan-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/minor-scale-exercise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/mollskalan-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/minor-scale-exercise.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/mollskalan-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/minor-scale-exercise.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/mollskalan-ova.html"/>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://musikteori.com/ovningar/kvintcirkeln-ova.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/kvintcirkeln-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/key-signatures-exercise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/kvintcirkeln-ova.html"/>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://musikteori.com/en/exercises/key-signatures-exercise.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/kvintcirkeln-ova.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/key-signatures-exercise.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/kvintcirkeln-ova.html"/>
         <priority>0.7</priority>
     </url>

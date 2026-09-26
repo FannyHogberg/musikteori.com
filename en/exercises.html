@@ -281,25 +281,28 @@
     <script src="../js/ads.js"></script>
     <script>
         // Handle noter prov button
-        document.getElementById('start-noter-prov-btn').addEventListener('click', function() {
-            const lilla = document.getElementById('check-lilla-noter').checked;
-            const ettstrukna = document.getElementById('check-ettstrukna-noter').checked;
-            const tvastrukna = document.getElementById('check-tvastrukna-noter').checked;
+        const startNoterProvBtn = document.getElementById('start-noter-prov-btn');
+        if (startNoterProvBtn) {
+            startNoterProvBtn.addEventListener('click', function() {
+                const lilla = document.getElementById('check-lilla-noter').checked;
+                const ettstrukna = document.getElementById('check-ettstrukna-noter').checked;
+                const tvastrukna = document.getElementById('check-tvastrukna-noter').checked;
 
-            // Check at least one is selected
-            if (!lilla && !ettstrukna && !tvastrukna) {
-                alert('Select at least one octave!');
-                return;
-            }
+                // Check at least one is selected
+                if (!lilla && !ettstrukna && !tvastrukna) {
+                    alert('Select at least one octave!');
+                    return;
+                }
 
-            // Build URL with selected octaves
-            const octaves = [];
-            if (lilla) octaves.push('lilla');
-            if (ettstrukna) octaves.push('ettstrukna');
-            if (tvastrukna) octaves.push('tvastrukna');
+                // Build URL with selected octaves
+                const octaves = [];
+                if (lilla) octaves.push('lilla');
+                if (ettstrukna) octaves.push('ettstrukna');
+                if (tvastrukna) octaves.push('tvastrukna');
 
-            window.location.href = `ovningar/piano-flera-oktaver.html?octaves=${octaves.join(',')}`;
-        });
+                window.location.href = `ovningar/piano-flera-oktaver.html?octaves=${octaves.join(',')}`;
+            });
+        }
     </script>
 </body>
 </html>
