@@ -101,7 +101,6 @@ class KvintcirkelnExercise {
         });
 
         const isCorrect = guess === this.correctName;
-        const optionSuffix = this.currentAskType === 'dur' ? '-dur' : '-moll';
         const feedbackMessage = document.getElementById('feedback-message');
         feedbackMessage.classList.remove('show-correct', 'show-incorrect');
         void feedbackMessage.offsetWidth;
@@ -111,7 +110,7 @@ class KvintcirkelnExercise {
             feedbackMessage.classList.add('show-correct');
             guessedButton.classList.add('correct');
         } else {
-            feedbackMessage.textContent = `Inte riktigt. Rätt svar var ${this.correctName}${optionSuffix}. Försök igen.`;
+            feedbackMessage.textContent = 'Inte riktigt. Försök igen.';
             feedbackMessage.classList.add('show-incorrect');
             guessedButton.classList.add('incorrect');
         }
