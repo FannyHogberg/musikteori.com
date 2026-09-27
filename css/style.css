@@ -3791,6 +3791,8 @@ html {
     .piano-exercise .note-image,
     .piano-test .note-image,
     .question-image img,
+    .option-content img,
+    .review-option img,
     .review-image {
         background: #e8e8e8;
         border-radius: 8px;
