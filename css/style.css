@@ -3391,29 +3391,26 @@ html {
     font-weight: 700;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     letter-spacing: 0.5px;
+    color: #1a1a1a;
 }
 
 .badge-gold {
     background: #ffd700;
-    color: var(--neutral-dark);
     transform: rotate(-2deg);
 }
 
 .badge-green {
     background: var(--primary-color);
-    color: var(--text-on-primary);
     transform: rotate(1deg);
 }
 
 .badge-blue {
     background: var(--accent-blue);
-    color: white;
     transform: rotate(1deg);
 }
 
 .badge-purple {
     background: var(--accent-purple);
-    color: white;
     transform: rotate(1deg);
 }
 
