@@ -10,6 +10,8 @@ class PianoAllaTonerTest {
         this.currentNote = null;
         this.currentQuestionType = null;
         this.isDisabled = false;
+        this.deck = [];
+        this.lastNote = null;
 
         // Two octaves for context
         this.pianoOctaves = [
@@ -122,11 +124,34 @@ class PianoAllaTonerTest {
         pianoKeys.classList.add('hide-labels');
     }
 
+    shuffle(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    drawNote(notes) {
+        if (this.deck.length === 0) {
+            this.deck = this.shuffle(notes);
+
+            // Undvik att samma ton kommer två gånger i rad när en ny kortlek börjar
+            if (this.lastNote && this.deck[0] === this.lastNote && this.deck.length > 1) {
+                [this.deck[0], this.deck[1]] = [this.deck[1], this.deck[0]];
+            }
+        }
+
+        const note = this.deck.shift();
+        this.lastNote = note;
+        return note;
+    }
+
     askQuestion() {
         this.questionCount++;
 
-        const randomIndex = Math.floor(Math.random() * this.notes.length);
-        this.currentNote = this.notes[randomIndex];
+        this.currentNote = this.drawNote(this.notes);
 
         // Randomly choose question type (50/50)
         this.currentQuestionType = Math.random() < 0.5 ? 'findKey' : 'nameKey';

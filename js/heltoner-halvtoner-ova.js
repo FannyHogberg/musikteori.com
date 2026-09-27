@@ -24,6 +24,10 @@ class HalvtonHeltonExercise {
             { note: 'C', octave: 'o2' }
         ];
 
+        this.allPairs = this.buildAllPairs();
+        this.deck = [];
+        this.lastPair = null;
+
         this.init();
     }
 
@@ -94,24 +98,43 @@ class HalvtonHeltonExercise {
         });
     }
 
-    buildPairs() {
-        const halvton = [];
-        const helton = [];
+    buildAllPairs() {
+        const pairs = [];
         for (let i = 0; i < this.chain.length - 1; i++) {
-            halvton.push([i, i + 1]);
+            pairs.push({ type: 'halvton', i, j: i + 1 });
         }
         for (let i = 0; i < this.chain.length - 2; i++) {
-            helton.push([i, i + 2]);
+            pairs.push({ type: 'helton', i, j: i + 2 });
         }
-        return { halvton, helton };
+        return pairs;
+    }
+
+    shuffle(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    drawPair() {
+        if (this.deck.length === 0) {
+            this.deck = this.shuffle(this.allPairs);
+
+            // Undvik att samma par kommer två gånger i rad när en ny kortlek börjar
+            if (this.lastPair && this.deck[0] === this.lastPair && this.deck.length > 1) {
+                [this.deck[0], this.deck[1]] = [this.deck[1], this.deck[0]];
+            }
+        }
+
+        const pair = this.deck.shift();
+        this.lastPair = pair;
+        return pair;
     }
 
     askQuestion() {
-        const { halvton, helton } = this.buildPairs();
-        const type = Math.random() < 0.5 ? 'halvton' : 'helton';
-        const pairs = type === 'halvton' ? halvton : helton;
-        const [i, j] = pairs[Math.floor(Math.random() * pairs.length)];
-
+        const { type, i, j } = this.drawPair();
         this.currentPair = { type, from: this.chain[i], to: this.chain[j] };
 
         document.getElementById('question').textContent = T('wholeHalf.question');

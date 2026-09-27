@@ -125,8 +125,34 @@ class PianoOctaveExercise {
         this.questionCount = 0;
         this.currentNote = null;
         this.isDisabled = false;
+        this.deck = [];
+        this.lastNote = null;
 
         this.init();
+    }
+
+    shuffle(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    drawNote(notes) {
+        if (this.deck.length === 0) {
+            this.deck = this.shuffle(notes);
+
+            // Undvik att samma ton kommer två gånger i rad när en ny kortlek börjar
+            if (this.lastNote && this.deck[0] === this.lastNote && this.deck.length > 1) {
+                [this.deck[0], this.deck[1]] = [this.deck[1], this.deck[0]];
+            }
+        }
+
+        const note = this.deck.shift();
+        this.lastNote = note;
+        return note;
     }
 
     getImagePath(note) {
@@ -260,8 +286,7 @@ class PianoOctaveExercise {
 
     askQuestion() {
         const level = this.levels[this.currentLevel];
-        const randomIndex = Math.floor(Math.random() * level.notes.length);
-        const noteOnly = level.notes[randomIndex];
+        const noteOnly = this.drawNote(level.notes);
 
         // Create full note identifier with octave
         this.currentNote = `${noteOnly}-${this.config.questionOctave}`;
@@ -447,6 +472,8 @@ class PianoOctaveExercise {
         this.incorrectCount = 0;
         this.levelCorrectCount = 0;
         this.questionCount = 0;
+        this.deck = [];
+        this.lastNote = null;
         this.updateStats();
         this.loadLevel();
         const question = document.getElementById('question');

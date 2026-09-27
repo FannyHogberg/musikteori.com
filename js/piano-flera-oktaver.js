@@ -54,6 +54,8 @@ class PianoMultipleOctavesExercise {
         this.answers = []; // Store all answers
         this.currentNote = null;
         this.isDisabled = false;
+        this.deck = [];
+        this.lastNote = null;
 
         // All white keys for three octaves
         this.allWhiteKeys = [
@@ -195,12 +197,34 @@ class PianoMultipleOctavesExercise {
         });
     }
 
+    shuffle(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    drawNote(notes) {
+        if (this.deck.length === 0) {
+            this.deck = this.shuffle(notes);
+
+            // Undvik att samma ton kommer två gånger i rad när en ny kortlek börjar
+            if (this.lastNote && this.deck[0] === this.lastNote && this.deck.length > 1) {
+                [this.deck[0], this.deck[1]] = [this.deck[1], this.deck[0]];
+            }
+        }
+
+        const note = this.deck.shift();
+        this.lastNote = note;
+        return note;
+    }
+
     askQuestion() {
         this.questionCount++;
 
-        // Pick random note from available notes
-        const randomIndex = Math.floor(Math.random() * this.availableNotes.length);
-        this.currentNote = this.availableNotes[randomIndex];
+        this.currentNote = this.drawNote(this.availableNotes);
 
         // Update progress
         document.getElementById('current-level').textContent =
