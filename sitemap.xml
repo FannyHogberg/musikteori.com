@@ -589,21 +589,6 @@
     </url>
 
     <url>
-        <loc>https://musikteori.com/ovningar/notlasning.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/notlasning.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/note-reading.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/notlasning.html"/>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://musikteori.com/en/exercises/note-reading.html</loc>
-        <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/notlasning.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/note-reading.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar/notlasning.html"/>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
         <loc>https://musikteori.com/ovningar/heltoner-halvtoner-ova.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://musikteori.com/ovningar/heltoner-halvtoner-ova.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises/whole-half-steps-exercise.html"/>

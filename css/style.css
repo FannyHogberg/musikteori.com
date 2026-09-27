@@ -1851,43 +1851,6 @@ html {
     }
 }
 
-/* ===================
-   NOTLÄSNING ÖVNING
-   =================== */
-
-.notlasning-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.notlasning-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.notlasning-header h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-}
-
-.notlasning-stats {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    background: var(--background-alt);
-    border-radius: 12px;
-    min-width: 100px;
-}
-
 .stat-label {
     font-size: 0.9rem;
     color: var(--text-light);
@@ -1898,69 +1861,6 @@ html {
     font-size: 1.8rem;
     font-weight: 800;
     color: var(--primary-dark);
-}
-
-.notlasning-body {
-    background: white;
-    border-radius: 16px;
-    padding: 3rem 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    margin-bottom: 2rem;
-}
-
-.note-display {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: var(--background-alt);
-    border-radius: 16px;
-}
-
-.note-display .note-image {
-    max-width: 200px;
-    max-height: 200px;
-    object-fit: contain;
-}
-
-.note-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.note-option-btn {
-    padding: 1.5rem 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    background: var(--background-alt);
-    border: 3px solid transparent;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.2s;
-    color: var(--text-color);
-}
-
-.note-option-btn:hover:not(:disabled) {
-    background: var(--primary-light);
-    border-color: var(--primary-color);
-    transform: translateY(-2px);
-}
-
-.note-option-btn:disabled {
-    cursor: not-allowed;
-}
-
-.note-option-btn.correct {
-    background: var(--feedback-success);
-    color: white;
-    border-color: #45a049;
-}
-
-.note-option-btn.incorrect {
-    background: var(--feedback-error);
-    color: white;
-    border-color: #da190b;
 }
 
 /* Responsiv för Quiz-systemet */
@@ -2057,31 +1957,6 @@ html {
 
 .feedback-incorrect {
     color: var(--feedback-error);
-}
-
-.notlasning-actions {
-    text-align: center;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .note-options {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .note-option-btn {
-        font-size: 1.2rem;
-        padding: 1rem 0.5rem;
-    }
-
-    .notlasning-stats {
-        gap: 1rem;
-    }
-
-    .stat {
-        min-width: 80px;
-        padding: 0.75rem 1rem;
-    }
 }
 
 /* ===================
@@ -3852,26 +3727,6 @@ html {
     }
 
     .quiz-progress {
-        color: var(--primary-color);
-    }
-
-    /* Notlasning */
-    .notlasning-body {
-        background: var(--background-alt);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    .note-display {
-        background: var(--surface-elevated);
-    }
-
-    .note-option-btn {
-        background: var(--surface-elevated);
-        color: var(--text-color);
-    }
-
-    .note-option-btn:hover:not(:disabled) {
-        background: var(--primary-light);
         color: var(--primary-color);
     }
 

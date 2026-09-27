@@ -392,34 +392,6 @@ const _translations = {
     },
 
     // =====================
-    // notlasning.js
-    // =====================
-    'noteReading.title': {
-        sv: 'Notläsning',
-        en: 'Note Reading'
-    },
-    'noteReading.correct': {
-        sv: 'Rätt:',
-        en: 'Correct:'
-    },
-    'noteReading.attempts': {
-        sv: 'Försök:',
-        en: 'Attempts:'
-    },
-    'noteReading.streak': {
-        sv: 'Rad:',
-        en: 'Streak:'
-    },
-    'noteReading.restart': {
-        sv: 'Börja om',
-        en: 'Start over'
-    },
-    'noteReading.noteAlt': {
-        sv: 'Not att läsa',
-        en: 'Note to read'
-    },
-
-    // =====================
     // notvarden.js
     // =====================
     'audio.listen': {
@@ -635,7 +607,6 @@ function localUrl(path) {
         'piano-flera-oktaver.html': 'piano-multiple-octaves.html',
         'noter-g-klav-hub.html': 'notes-treble-clef-hub.html',
         'noter-f-klav-hub.html': 'notes-bass-clef-hub.html',
-        'notlasning.html': 'note-reading.html',
         '../ovningar.html': '../exercises.html',
         'heltoner-halvtoner-ova.html': 'whole-half-steps-exercise.html',
         'durskalan-ova.html': 'major-scale-exercise.html',
