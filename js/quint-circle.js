@@ -42,11 +42,12 @@
     const sharpImages = document.querySelectorAll('.quint-circle-sharp');
     const flatImages = document.querySelectorAll('.quint-circle-flat');
 
-    /* På bredare skärmar får notbladet plats mitt i cirkeln; på smala skärmar
-       är hålet i mitten för litet, så då visas det i stället under diagrammet. */
+    /* Notbladet får plats mitt i cirkeln på i princip alla skärmar (cirkelns
+       håldiameter är alltid proportionellt större än notbladet). Bara vid
+       extremt smala vyer visas det i stället under diagrammet. */
     if (staff && wrap) {
         const noscript = wrap.querySelector('noscript');
-        const mq = window.matchMedia('(min-width: 600px)');
+        const mq = window.matchMedia('(min-width: 300px)');
 
         const layoutStaff = mql => {
             const isCentered = mql.matches;
