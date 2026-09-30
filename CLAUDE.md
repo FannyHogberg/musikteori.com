@@ -32,7 +32,6 @@ There is no build step, linting, or test commands. This is a static site that ru
 ├── js/
 │   ├── main.js            # Mobile menu toggle
 │   ├── quiz.js            # Quiz class (auto-initializes)
-│   ├── notlasning.js      # Note reading exercise
 │   ├── piano-tangenter-ova.js  # Piano key exercises
 │   └── piano-oktav.js     # Note reading on piano exercises
 ├── data/quiz/             # JSON quiz data files
@@ -55,7 +54,7 @@ The site uses **class-based JavaScript components** that auto-initialize via dat
 - Supports single-choice and multiple-choice questions
 - Optional navigation: `data-next-url` and `data-quiz-list-url`
 
-**Exercise System** (`js/notlasning.js`, `js/piano-tangenter-ova.js`, `js/piano-oktav.js`):
+**Exercise System** (`js/piano-tangenter-ova.js`, `js/piano-oktav.js`):
 - Each exercise is a standalone class-based component
 - Piano exercises use progressive levels with URL parameters (e.g., `?octave=ettstrukna&level=1&clef=g-klav`)
 - Separate files for exercises (ova) and tests (prov)
@@ -117,7 +116,7 @@ The quiz system calculates relative paths dynamically:
 
 ### Adding a New Exercise
 
-1. Create exercise class in `/js/exercise-name.js` following the pattern in `notlasning.js`
+1. Create exercise class in `/js/exercise-name.js` following the pattern in `piano-oktav.js`
 2. Auto-initialize via `data-exercise="exercise-name"` attribute
 3. Create HTML page in `/ovningar/exercise-name.html` with the exercise container
 
