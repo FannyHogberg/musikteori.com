@@ -566,8 +566,13 @@ footer {
 }
 
 .quiz-section-title {
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.quiz-section-title + .features {
+    padding-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -1589,7 +1594,6 @@ html {
 }
 
 .question-container {
-    min-height: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -1906,10 +1910,6 @@ html {
 
     .quiz-header h2 {
         font-size: 1.4rem;
-    }
-
-    .question-container {
-        min-height: 300px;
     }
 
     .question-text {
@@ -3221,7 +3221,7 @@ html {
 
 .level-badge.challenge {
     background: #ff6b6b;
-    color: white;
+    color: #000;
 }
 
 .level-grid {

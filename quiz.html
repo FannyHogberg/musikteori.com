@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz i musikteori - Musikteori.com</title>
-    <meta name="description" content="Testa dina kunskaper i musikteori med interaktiva quiz. Frågor om noter, notvärden, pauser, taktarter, tonnamn, skalor och tonarter.">
+    <title>Gratis quiz i musikteori för nybörjare - Musikteori.com</title>
+    <meta name="description" content="Gratis quiz och prov i musikteori för nybörjare. Testa dig på notvärden, pauser, taktarter, tonernas namn, durskalan, mollskalan och kvintcirkeln.">
     <link rel="canonical" href="https://musikteori.com/quiz.html">
-    <meta property="og:title" content="Quiz i musikteori">
-    <meta property="og:description" content="Testa dina kunskaper i musikteori med interaktiva quiz. Frågor om noter, notvärden, pauser, taktarter, tonnamn, skalor och tonarter.">
+    <meta property="og:title" content="Gratis quiz i musikteori för nybörjare">
+    <meta property="og:description" content="Gratis quiz och prov i musikteori för nybörjare. Testa dig på notvärden, pauser, taktarter, tonernas namn, durskalan, mollskalan och kvintcirkeln.">
     <meta property="og:image" content="https://musikteori.com/images/og-image.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://musikteori.com/quiz.html">
@@ -19,6 +19,32 @@
     <link rel="alternate" hreflang="en" href="https://musikteori.com/en/quiz.html">
     <link rel="alternate" hreflang="x-default" href="https://musikteori.com/quiz.html">
     <link rel="stylesheet" href="css/style.css?v=9">
+    <style>
+        /* Samma bredd och sidopadding som .features så texten linjerar med korten */
+        .list-intro {
+            max-width: 1200px;
+            margin: 0 auto 2.5rem;
+            padding: 0 2rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 900px) {
+            .list-intro {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .list-intro {
+                padding: 0 0.75rem;
+            }
+        }
+
+        .list-intro p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,6 +73,11 @@
         </section>
 
         <div class="container quiz-list-container">
+            <div class="list-intro">
+                <p>Här hittar du quiz i musikteori för nybörjare som hör ihop med <a href="kurser.html">kurserna</a> på Musikteori.com.<br>
+                Frågorna slumpas varje gång, så du kan göra om ett quiz och få nya frågor.</p>
+            </div>
+
             <h2 class="quiz-section-title">Grundläggande Musikteori</h2>
 
             <div class="features">
@@ -110,5 +141,24 @@
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/ads.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Hem",
+                "item": "https://musikteori.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Quiz"
+            }
+        ]
+    }
+    </script>
 </body>
 </html>

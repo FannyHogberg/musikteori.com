@@ -98,7 +98,8 @@ class PianoMultipleOctavesExercise {
         // Update header
         const octaveNames = this.selectedOctaves.map(o => {
             if (o === 'lilla') return T('octave.lillaShort');
-            if (o === 'ettstrukna') return T('octave.ettstruknaShort');
+            if (o === 'stora') return T('octave.storaShort');
+            if (o === 'ettstrukna' || o === 'ettstrukna-fg') return T('octave.ettstruknaShort');
             if (o === 'tvastrukna') return T('octave.tvastruknaShort');
         }).join(', ');
 

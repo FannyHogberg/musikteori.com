@@ -96,9 +96,12 @@ class Quiz {
             this.audio.stop();
         }
 
+        // Om sidan redan har en h1 visas inte quiztiteln igen (undviker dubbel rubrik)
+        const pageHasH1 = document.querySelector('h1') !== null;
+
         this.container.innerHTML = `
             <div class="quiz-header">
-                <h2>${this.quizData.title}</h2>
+                ${pageHasH1 ? '' : `<h2>${this.quizData.title}</h2>`}
                 <p class="quiz-description">${this.quizData.description || ''}</p>
                 <div class="quiz-progress">
                     ${T('quiz.progress', {current: this.currentQuestionIndex + 1, total: this.quizData.questions.length})}

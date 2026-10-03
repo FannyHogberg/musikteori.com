@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music theory exercises - Musikteori.com</title>
-    <meta name="description" content="Interactive music theory exercises. Practice piano keys, note reading in treble clef and bass clef with exercises and tests.">
+    <title>Interactive Music Theory Exercises - Musikteori.com</title>
+    <meta name="description" content="Free interactive music theory exercises: learn the piano keys, read notes in treble and bass clef, and practise steps, scales and key signatures.">
     <link rel="canonical" href="https://musikteori.com/en/exercises.html">
-    <meta property="og:title" content="Music theory exercises">
-    <meta property="og:description" content="Interactive music theory exercises. Practice piano keys, note reading in treble clef and bass clef with exercises and tests.">
+    <meta property="og:title" content="Interactive Music Theory Exercises">
+    <meta property="og:description" content="Free interactive music theory exercises: learn the piano keys, read notes in treble and bass clef, and practise steps, scales and key signatures.">
     <meta property="og:image" content="https://musikteori.com/images/en/og-image.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://musikteori.com/en/exercises.html">
@@ -19,6 +19,7 @@
     <link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises.html">
     <link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar.html">
     <link rel="stylesheet" href="../css/style.css?v=8">
+    <link rel="stylesheet" href="../css/seo-info.css?v=4">
     <style>
         @media (max-width: 768px) {
             .exercise-box {
@@ -90,7 +91,7 @@
 
     <main>
         <section class="page-header">
-            <h1>Exercises</h1>
+            <h1>Music Theory Exercises</h1>
             <p>Practice your skills with interactive exercises</p>
         </section>
 
@@ -258,6 +259,10 @@
                 </div>
             </a>
         </div>
+
+        <section class="exercise-info">
+            <p class="exercise-info-links">Want the theory first? Read the courses <a href="courses/basic-music-theory/index.html">Music Theory from Scratch</a> and <a href="courses/scales-and-keys/index.html">Scales and Keys</a>, or test yourself in the <a href="quiz.html">quizzes</a>.</p>
+        </section>
     </main>
 
     <footer>
@@ -291,6 +296,25 @@
                 window.location.href = `ovningar/piano-flera-oktaver.html?octaves=${octaves.join(',')}`;
             });
         }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://musikteori.com/en/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Exercises"
+            }
+        ]
+    }
     </script>
 </body>
 </html>

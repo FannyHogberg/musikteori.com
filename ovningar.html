@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Övningar i musikteori - Musikteori.com</title>
-    <meta name="description" content="Interaktiva övningar i musikteori. Öva pianotangenter, notläsning i G-klav och F-klav med övningar och prov.">
+    <title>Interaktiva övningar i musikteori - Musikteori.com</title>
+    <meta name="description" content="Gratis interaktiva övningar i musikteori. Lär dig tonerna på pianot, läs noter i G-klav och F-klav och öva halvtoner, dur- och mollskalor och tonarter.">
     <link rel="canonical" href="https://musikteori.com/ovningar.html">
-    <meta property="og:title" content="Övningar i musikteori">
-    <meta property="og:description" content="Interaktiva övningar i musikteori. Öva pianotangenter, notläsning i G-klav och F-klav med övningar och prov.">
+    <meta property="og:title" content="Interaktiva övningar i musikteori">
+    <meta property="og:description" content="Gratis interaktiva övningar i musikteori. Lär dig tonerna på pianot, läs noter i G-klav och F-klav och öva halvtoner, dur- och mollskalor och tonarter.">
     <meta property="og:image" content="https://musikteori.com/images/og-image.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://musikteori.com/ovningar.html">
@@ -19,6 +19,7 @@
     <link rel="alternate" hreflang="en" href="https://musikteori.com/en/exercises.html">
     <link rel="alternate" hreflang="x-default" href="https://musikteori.com/ovningar.html">
     <link rel="stylesheet" href="css/style.css?v=8">
+    <link rel="stylesheet" href="css/seo-info.css?v=4">
     <style>
         @media (max-width: 768px) {
             .exercise-box {
@@ -90,7 +91,7 @@
 
     <main>
         <section class="page-header">
-            <h1>Övningar</h1>
+            <h1>Övningar i musikteori</h1>
             <p>Träna dina färdigheter med interaktiva övningar</p>
         </section>
 
@@ -287,7 +288,7 @@
 
                     <!-- Lilla oktaven -->
                     <div style="margin-bottom: 2rem;">
-                        <h3 style="margin-bottom: 0.75rem; color: var(--primary-color);">Lilla oktaven (g - h)</h3>
+                        <h3 style="margin-bottom: 0.75rem; color: var(--primary-color);">Lilla oktaven (g - b)</h3>
                         <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
                             <a href="ovningar/piano-oktav.html?octave=lilla&level=1" class="btn btn-primary" style="flex: 1;">
                                 Nivå 1
@@ -363,6 +364,9 @@
                 </div>
             </div>
         </div>
+        <section class="exercise-info">
+            <p class="exercise-info-links">Vill du läsa teorin först? Se våra <a href="kurser.html">kurser i musikteori</a>, till exempel <a href="kurser/grundlaggande-musikteori/index.html">Musikteori från grunden</a> och <a href="kurser/skalor-tonarter/index.html">Skalor och tonarter</a>, eller testa dig med ett <a href="quiz.html">quiz</a>.</p>
+        </section>
     </main>
 
     <footer>
@@ -393,6 +397,25 @@
 
             window.location.href = `ovningar/piano-flera-oktaver.html?octaves=${octaves.join(',')}`;
         });
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Hem",
+                "item": "https://musikteori.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Övningar"
+            }
+        ]
+    }
     </script>
 </body>
 </html>

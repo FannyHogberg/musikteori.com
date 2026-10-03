@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurser i musikteori - Musikteori.com</title>
-    <meta name="description" content="Gratis kurser i musikteori. Lär dig grunderna, skalor och tonarter steg för steg.">
+    <title>Gratis kurser i musikteori för nybörjare - Musikteori.com</title>
+    <meta name="description" content="Gratis onlinekurser i musikteori för nybörjare. Lär dig läsa noter, notvärden och taktarter, durskalan, mollskalan, tonarter och kvintcirkeln steg för steg.">
     <link rel="canonical" href="https://musikteori.com/kurser.html">
-    <meta property="og:title" content="Kurser i musikteori">
-    <meta property="og:description" content="Gratis kurser i musikteori. Lär dig grunderna, skalor och tonarter steg för steg.">
+    <meta property="og:title" content="Gratis kurser i musikteori för nybörjare">
+    <meta property="og:description" content="Gratis onlinekurser i musikteori för nybörjare. Lär dig läsa noter, notvärden och taktarter, durskalan, mollskalan, tonarter och kvintcirkeln steg för steg.">
     <meta property="og:image" content="https://musikteori.com/images/og-image.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://musikteori.com/kurser.html">
@@ -19,6 +19,18 @@
     <link rel="alternate" hreflang="en" href="https://musikteori.com/en/courses.html">
     <link rel="alternate" hreflang="x-default" href="https://musikteori.com/kurser.html">
     <link rel="stylesheet" href="css/style.css?v=9">
+    <style>
+        .list-intro {
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            color: var(--text-color);
+        }
+
+        .list-intro p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,6 +59,11 @@
         </section>
 
         <div class="container course-list-container">
+            <div class="list-intro">
+                <p>På Musikteori.com kan du lära dig musikteori gratis, i din egen takt och på svenska. Kurserna är skrivna för nybörjare och bygger på varandra, så du behöver inga förkunskaper för att komma igång. Börja med Musikteori från grunden, där du lär dig tonernas namn, att läsa noter i G-klav och F-klav, oktaver, kors- och b-förtecken, notvärden, pauser och taktarter. Fortsätt sedan med Skalor och tonarter, där du går igenom heltoner och halvtoner, durskalan, mollskalan, tonarter, fasta förtecken och kvintcirkeln.</p>
+                <p>Varje kursdel har förklaringar, bilder och exempel. Du kan testa dina kunskaper i våra <a href="quiz.html">quiz</a> och träna notläsning och pianotangenter i <a href="ovningar.html">övningarna</a>.</p>
+            </div>
+
             <a href="kurser/grundlaggande-musikteori/index.html" class="course-card-link">
                 <article class="course-card">
                     <div class="course-card-image">
@@ -82,5 +99,24 @@
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/ads.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Hem",
+                "item": "https://musikteori.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kurser"
+            }
+        ]
+    }
+    </script>
 </body>
 </html>

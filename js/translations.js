@@ -276,6 +276,10 @@ const _translations = {
         sv: 'Lilla',
         en: 'Small'
     },
+    'octave.storaShort': {
+        sv: 'Stora',
+        en: 'Great'
+    },
     'octave.ettstruknaShort': {
         sv: 'Ettstrukna',
         en: 'One-line'
