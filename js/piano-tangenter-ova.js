@@ -801,7 +801,7 @@ class PianoKeysExercise {
             `;
 
             document.getElementById('test-btn').addEventListener('click', () => {
-                window.location.href = localUrl('piano-tangenter-prov.html');
+                window.location.href = localUrl('piano-alla-toner-prov.html');
             });
         }
     }

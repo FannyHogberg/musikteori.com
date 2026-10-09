@@ -362,10 +362,6 @@ const _translations = {
     },
 
     // Specific test continuation buttons
-    'test.startSection1': {
-        sv: 'Börja med Del 1: Stamtoner →',
-        en: 'Start with Part 1: Natural Notes →'
-    },
     'test.continueSection2': {
         sv: 'Fortsätt till Del 2: Korsförtecken →',
         en: 'Continue to Part 2: Sharps →'
@@ -601,7 +597,6 @@ function localUrl(path) {
     var mapping = {
         'piano-hub.html': 'piano-hub.html',
         'piano-tangenter-ova.html': 'piano-keys-exercise.html',
-        'piano-tangenter-prov.html': 'piano-keys-test.html',
         'piano-stamtoner-prov.html': 'piano-natural-notes-test.html',
         'piano-kors-prov.html': 'piano-sharps-test.html',
         'piano-b-prov.html': 'piano-flats-test.html',
