@@ -248,8 +248,6 @@ class PianoKeysExercise {
         } else {
             pianoKeys.classList.remove('hide-black-labels');
         }
-
-        this.levelCorrectCount = 0;
     }
 
     shuffle(array) {

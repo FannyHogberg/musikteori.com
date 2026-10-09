@@ -279,9 +279,6 @@ class PianoOctaveExercise {
         } else {
             questionText.style.display = 'block';
         }
-
-        this.levelCorrectCount = 0;
-        this.questionCount = 0;
     }
 
     askQuestion() {
