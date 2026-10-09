@@ -337,12 +337,12 @@ class PianoBTest {
         if (passed) {
             document.getElementById('continue-btn').addEventListener('click', () => {
                 // Go to Del 4: Alla toner, Nivå 1
-                window.location.href = 'piano-tangenter-ova.html?level=10';
+                window.location.href = localUrl('piano-tangenter-ova.html?level=10');
             });
         }
 
         document.getElementById('back-btn').addEventListener('click', () => {
-            window.location.href = 'piano-hub.html';
+            window.location.href = localUrl('piano-hub.html');
         });
 
         document.getElementById('retry-btn').addEventListener('click', () => {
